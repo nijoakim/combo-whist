@@ -3,8 +3,15 @@
 
 % Packages
 \usepackage{hyperref}
-\usepackage{float}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx} % For \rotatebox
+\usepackage{tabularx}
+\usepackage{pbox}
+
+% Commands
+\newcommand{\rotccw}[1] {
+	\rotatebox{90}{{#1}}
+}
 
 % Title
 \title{Combo Whist}
@@ -64,7 +71,7 @@
 			
 	\section{Miscellaneous}
 		\subsection{Rules for more than 4 players}
-		If there are more than 4 players participating in the game. All players but 4 sits out (that is, they doesn't participate in the game) for every deal. These players are the ones that are closest to the right of the dealer.
+		If there are more than 4 players participating in the game. For every deal, all players but 4 sits out (that is, they don't participate in the game). These players are the ones that are closest to the right of the dealer.
 		
 		% Changes for 3 players table
 		\input{3-player-bids.tex}
@@ -73,7 +80,7 @@
 		A certain amount of talk is allowed in Combo Whist, but the players are not allowed to give \emph{any} hints about what cards they have.
 		
 		\subsection{Cheating}
-		A player who intentionally cheats in Combo Whist is never again allowed to play it as that player obviously doesn't respect the game's magnificence.
+		A player who intentionally cheats in Combo Whist obviously doesn't respect the game's magnificence and is never again allowed to play it.
 		
 		\subsection{Changelog}
 			\subsubsection{Version 1.0}
