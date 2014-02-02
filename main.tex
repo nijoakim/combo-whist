@@ -14,16 +14,22 @@
 % along with this text.  If not, see <http://www.gnu.org/licenses/>.
 
 % Document class
-\documentclass[a4paper, 11pt]{article}
+\documentclass[a4paper]{article}
 
 % Packages
-\usepackage{hyperref}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx} % For \rotatebox
-\usepackage{tabularx}
-\usepackage{pbox}
+\usepackage{tabularx} % For the X column specifier
+\usepackage[labelfont=bf]{caption} % Table captions boldface
+\usepackage{verbatim}
+\usepackage{hyperref}
 
-% Commands
+% Setup ref style
+\hypersetup{
+	pdfborderstyle={/S/U/W 1}
+}
+
+% Command: Rotate text 90 degrees
 \newcommand{\rotccw}[1] {
 	\rotatebox{90}{{#1}}
 }
@@ -42,53 +48,93 @@
 		\includegraphics[width = \textwidth]{logo.png}
 	\end{center}
 	
+	\vfill
+	
+	\begin{verbatim}
+		Copyright 2014 Joakim Nilsson
+
+		This text is free software: you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation, either version 3 of the License, or
+		(at your option) any later version.
+
+		This text is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+		GNU General Public License for more details.
+	\end{verbatim}
+	\verb|You should have received a copy of the GNU General Public License|\\
+	\verb|along with this text.  If not, see <|\url{http://www.gnu.org/licenses/}\verb|>.|
+	
 	\thispagestyle{empty}
 	\pagebreak
 	
-	% Table of contents
+	% Table of contents and list of tables
 	\setcounter{tocdepth}{3}
 	\tableofcontents
+	\listoftables
 	\thispagestyle{empty}
 	\pagebreak
 	
 	\section{Overview}
 		
-		Combo Whist is a trick-taking card game and is, as the implies, a variant of Whist. The key trait of Combo Whist its great variety of tactics while still the rules are kept fairly simple (although the rule-set is undeniably somewhat large). The many and varied tactics takes away a quite a bit of randomness that usually is present in Whist games without making the game overly complicated, keeping in fun to play even for beginners and casual card players.
+		Combo Whist is a trick-taking card game and is, as the implies, a variant of Whist. The key trait of Combo Whist its great variety of available tactics while still having a ruleset that is fairly simple (although the rule-set is undeniably somewhat large). The many and varied tactics takes away a quite a bit of randomness that is usually present in Whist games without making the game overly complicated, keeping it fun to play for both experienced and casual card players.
 		
-		\paragraph{Number of players}
+		\paragraph{Number of players:}
 		Preferably 4, but 3 to $\infty$ is also possible with some modifications to the rules.
 		
-		\paragraph{Requirements}
-		\begin{itemize}
-			\item a standard 52 card deck
-			\item pen and paper
-		\end{itemize}
+		\paragraph{Requirements:}
+		A standard 52 card deck, a pen and a piece of paper.
 		
-	\section{The game}
-		\subsection{Preparation}
-		First, one of the players is chosen by vote to be the dealer. If no majority is formed, the dealer is selected at random. On the paper, one column per player is drawn. Here each players' score and some additional information to be explained later are to be written down.
+		\paragraph{Card Value:}
+		From lowest to highest: 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A
+		
+	\section{How to play}
+		\subsection{Preparations}
+		On the paper, draw a column for each player. Here, each player's score is to be kept track of, along with some additional information. Then, choose a dealer at random.
 
-		\subsection{The deal}
-		There are 2 main parts of a deal. The first is the bidding process and the second is the play. The play is described before the bidding process as some information about the play is required to understand the bidding process. However, the deal starts by the dealer, who deals 13 cards to each player (or 17, if there are only 3 players, whereas also the 2 of clubs is removed from the deck before the game starts). After the play, one notes all players scores and a new deal starts with a new dealer (the player to the left of the previous dealer).
-			\subsubsection{The play}
-			The play is very similar to the common play in a Whist card game. The player to the right of the declarer (The term \emph{declarer} is explained in the ``The bidding process'' section.) begins by playing a card. Then the player to the left of him plays another card which must follow the suite of the first card. Then the next player (the player to the left of the second player) plays yet another card which must also follow the first card's suite, and so on until all players have played one card each. If a player doesn't have a card in the leading suite, he may discard any card or play a trump. There is no obligation to play a trump. The player who played the highest card in the leading suite takes the book (that is, takes all the played cards and puts them face down on the table by himself) unless a trump is played. In the latter case, the player who played the highest trump takes the book. Thereafter, the player who took the book plays the first card and the play goes on until all cards has been played.
+		\subsection{Deal}
+		There are two main parts of a deal. The first is the \emph{bidding} and the second is the \emph{game}. However, we describe the game before the bidding as things should be easier to understand in that order.
+		
+		Anyhow, a deal starts by the dealer dealing 13 cards to each player (or 17, if there are only 3 players, whereas also $[\clubsuit2]$ is removed from the deck). Then, the bidding begins and when the bidding has finished, the game begins.
+		
+		After the game, players' new scores are noted down on the paper and a new deal starts with the next dealer being the player who sits to the left of the current dealer.
+			\subsubsection{Game}
+			The game plays very similarly to how any Whist variant is played. The player to the right of the \emph{declarer}\footnote{The term \emph{``declarer''} is explained in the \textit{\nameref{sec:bidding}} section.} begins by playing a card. Then, the player to the left of the initial player plays another card which must follow the suit of the first card. After that, the next player (the player to the left of the second player) plays yet another card which must also follow the suit of the first card, and so on until all players have played one card each.
 			
-			\subsubsection{The bidding process}
-			In Combo Whist players make combo bids. A combo bid is a bid composed of one standard bid and any amount of different extra bids. The different bids have different rules to be obeyed during the play assigned to them. The players takes turns by bidding in a clockwise pattern and the player to the left of the dealer begins. One can either make a combo bid (from here on simply referred to as a \emph{bid}) which has a higher value than the previous bid or pass. If a player passes, he's out of the bidding process and may therefore not make any new bids until the next deal. A bid's value is the sum of the standard bid's and the extra bids' values and must always be greater than 0. A proposed time limit between each bid is 1 minute, but for beginners a higher limit or no limit is recommended. The bidding process continues until all players but one have passed. That player becomes \emph{declarer} and the play starts. The available standard bids and extra bids are listed in tables \ref{tab:standardBids} and \ref{tab:extraBids}, respectively. The number of books to bring home is specified in the standard bids table in the ``Books'' column and in some cases under the ``Specific rules'' column. An extra bid cannot be bid in combination with another bid listed in the ``Incompatibility'' column. Note that there is a difference between \emph{value} and \emph{score}, where \emph{value} is the bid's value (You guessed it!) and \emph{score} is the number of points the declarer scores if he completes the bid. The standard bids marked with an asterisk (*) have modified rules assigned to them when there are only 3 players participating in the game. These bids are listed in table \ref{tab:standardBids3}.
+			If a player doesn't have a card in the leading suit, they may discard any card or play a trump. Unlike in many variants of Whist, there is no obligation to play a trump when you are empty in the lead suit.
+			
+			The player who played the highest card in the leading suit takes the \emph{trick} (that is, takes all the played cards and puts them face down on the table by themself) unless a trump is played in which case, the player who played the highest trump takes the trick.
+			
+			Thereafter, the player who took the trick plays the first card and the game goes on until all cards have been played.
+			
+			\subsubsection{Bidding}
+			\label{sec:bidding}
+			In Combo Whist, players make \emph{combo bids}. A combo bid is composed of exactly one standard bid and any amount (including zero) of unique extra bids. The different bids have different additional rules to be associated with them. These additional rules apply during the game and during scoring.
+			
+			The players takes turns by bidding in a clockwise manner and the player to the left of the dealer begins. A player can either pass or make a combo bid that is worth more than the previous combo bid (from here on simply referred to as a \emph{bid}). If a player passes, they are out of the bidding process and may therefore not make any new bids until the next deal.
+			
+			A bid's worth is defined as the standard bid's and the extra bids' combined worth and must always be greater than 0. A proposed time limit between each bid is 1 minute, but for beginners a higher limit or no limit is recommended. The bidding process continues until all players but one have passed. That player becomes \emph{declarer} and the game starts.
+			
+			The available standard bids and extra bids are listed in Tables~\ref{tab:standardBids}~and~\ref{tab:extraBids}, respectively. The number of tricks to bring home is specified in the standard bids table in the \textbf{``Tricks''} column and in some cases under the \textbf{``Additional rules''} column. An extra bid cannot be bid in combination with another bid listed in the \textbf{``Incompatibility''} column. Note that there is a difference between \emph{worth} and \emph{score}, where worth is the bid's worth (You guessed it!) and score is the number of points the declarer scores if they complete a given bid.
+			
+			The standard bids that are marked with an asterisk (*) have modified rules associated with them when there are only 3 players participating in the game. These bids are listed in Table \ref{tab:standardBids3}.
 			
 			% Bid tables
 			\input{standard-bids.tex}
 			\input{extra-bids.tex}
 			
 			\subsubsection{Scoring}
-			After the play has finished the declarer scores different number of points depending on whether he completed his bid or not. If he completed the bid, he scores as many points as is written in the ``Score'' column of the standard bid. If the declarer, on the other hand, didn't complete the bid, 2 points is subtracted from his previous score count. If he hadn't gathered enough points to pay for his score loss, his score is set to zero, he is put into ``blockade'' and as many B:s are noted in his column as there were points that he couldn't pay for. These B:s are removed one by one after each play (not counting the one that just has been played). Until he has got rid of these bids he may not participate in the bidding process.
+			After the game has finished the declarer scores a number of points determined by the standard bid they bid and whether they completed their combo bid. If they completed the bid, they score as many points as is written in the \textbf{``Score''} column of the standard bid. On the other hand, if the declarer didn't complete the bid, 2 points are subtracted from their previous score count.
+			
+			If a player hasn't gathered enough points to pay for their score loss, their score is set to zero, they are put into \emph{blockade} and as many B:s are noted in his column as there were points that he couldn't pay for. These B:s are removed one by one after each deal (not counting the one that just has been played). Until they have got rid of these B:s they may not participate in the bidding process.
 			
 			\subsubsection{Winning}
-			The player who first reaches 13 points wins the game. If there are several players reaching 13 points at the same time, the player with the highest score wins. If the player who has the highest score has as high score as any other player, the game continues.
+			The player who first reaches 13 points is the winner.
 			
 	\section{Miscellaneous}
 		\subsection{Rules for more than 4 players}
-		If there are more than 4 players participating in the game. For every deal, all players but 4 sits out (that is, they don't participate in the game). These players are the ones that are closest to the right of the dealer.
+		If there are more than 4 players participating in the game, for every deal, all players but 4 sits out (that is, they don't participate in the deal). These players are the ones that are closest to the right of the dealer.
 		
 		% Changes for 3 players table
 		\input{3-player-bids.tex}

@@ -16,6 +16,7 @@ countpdf: pdf
 
 clean:
 	rm -f $(SRC).toc
+	rm -f $(SRC).lot
 	rm -f $(SRC).aux
 	rm -f $(SRC).log
 	rm -f $(SRC).out
