@@ -23,3 +23,4 @@ clean:
 	rm -f $(SRC).pdf
 	rm -f $(SRC).bbl
 	rm -f $(SRC).blg
+	rm -f $(OUT).pdf
