@@ -1,26 +1,22 @@
 SRC=main
 OUT=combo-whist
-PDFFLAGS=-interaction=nonstopmode
-VIEW=evince
+PDFFLAGS=-nonstopmode -synctex=1 -output-directory=tmp
+VIEW=zathura
+TEX=$(wildcard *.tex)
 
-pdf:
-	pdflatex $(PDFFLAGS) $(SRC).tex
-	pdflatex $(PDFFLAGS) $(SRC).tex
-	cp $(SRC).pdf $(OUT).pdf
+all: main.pdf
 
-viewpdf: pdf
-	$(VIEW) $(OUT).pdf
+%.pdf: %.tex $(TEX)
+	mkdir -p tmp
+	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
+	cp tmp/$@ .
+	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
+	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
+	cp tmp/$@ .
 
-countpdf: pdf
-	pdftotext $(OUT).pdf - | wc -w
+viewpdf: all
+	$(VIEW) $(SRC).pdf &
 
 clean:
-	rm -f $(SRC).toc
-	rm -f $(SRC).lot
-	rm -f $(SRC).aux
-	rm -f $(SRC).log
-	rm -f $(SRC).out
-	rm -f $(SRC).pdf
-	rm -f $(SRC).bbl
-	rm -f $(SRC).blg
-	rm -f $(OUT).pdf
+	rm -f tmp/*
+	rm -f *.pdf

@@ -1,4 +1,4 @@
-% Copyright 2014 Joakim Nilsson
+% Copyright 2014-2016 Joakim Nilsson
 %
 % This text is free software: you can redistribute it and/or modify
 % it under the terms of the GNU General Public License as published by
@@ -13,85 +13,177 @@
 % You should have received a copy of the GNU General Public License
 % along with this text.  If not, see <http://www.gnu.org/licenses/>.
 
+\newcommand{\standardBidItem}[6]{%
+	\\ \hline
+	\textit{#1} &
+	#2 &
+	#3 &
+	#4 &
+	#5 &
+	#6
+}
+
 \begin{table}
+	\caption{Standard bids}\label{tab:standardBids}
 	\begin{center}
-		\footnotesize {
-			\begin{tabular*}{\textwidth}{ lcccc | p{5cm} }
-					\textbf{Name} & \rotccw{\textbf{Worth}} & \rotccw{\textbf{Score}} & \rotccw{\textbf{Trump}} & \rotccw{\textbf{Tricks}} & \textbf{Additional rules}
-					\\ \hline
-					
-					\textit{Dumb Skip} &
-					0 & 1 & no & varies &
+		\begin{tabularx}{\textwidth}{lcccc|X}
+				\textbf{Name} &
+				\rotccw{\textbf{Worth}} &
+				\rotccw{\textbf{Score}} &
+				\rotccw{\textbf{Trump}} &
+				\rotccw{\textbf{Tricks}} &
+				\textbf{Additional rules}
+				\\[-3ex]
+
+				\standardBidItem%
+				{Dumb Skip}
+				{$0$}
+				{$1$}
+				{no}
+				{varies}
+				{%
 					The declarer must not bring home the greatest amount of tricks. If they bring home the same amount as any other player the bid is not completed.
-					\\ \hline
-					
-					\textit{Rough Guess} &
-					1 & 1 & no & varies &
+				}
+
+				\standardBidItem%
+				{Rough Guess}
+				{$1$}
+				{$1$}
+				{no}
+				{varies}
+				{%
 					The declarer guesses, before the beginning of the game, two possible amounts of tricks they think they could bring home. They must bring home one of the two amounts of tricks they guessed.
-					\\ \hline
-					
-					\textit{Trump*} &
-					1 & 1 & yes & min 5 &
+				}
+
+				\standardBidItem%
+				{Trump*}
+				{$1$}
+				{$1$}
+				{yes}
+				{min 5}
+				{%
 					The declarer decides trump suit.
-					\\ \hline
-					
-					\textit{Grill*} &
-					1 & 2 & yes & min 5 &
-					The declarer begins by deciding trump suit. This trump suit only applies the first round. After that round, the new trump suit is the suit which was led in the previous trick, and the game goes on like that until the end of the deal. \\ \hline
-					
-					\textit{Spades*} &
-					2 & 1 & yes & min 5 &
+				}
+
+				\standardBidItem%
+				{Grill*}
+				{$1$}
+				{$2$}
+				{yes}
+				{min 5}
+				{%
+					The declarer begins by deciding trump suit. This trump suit only applies the first round. After that round, the new trump suit is the suit which was led in the previous trick, and the game goes on like that until the end of the deal.
+				}
+				
+				\standardBidItem%
+				{Spades*}
+				{$2$}
+				{$1$}
+				{yes}
+				{min 5}
+				{%
 					The trump is spades.
-					\\ \hline
-					
-					\textit{Game*} &
-					2 & 2 & no & min 5 &
-					\\ \hline
-					
-					\textit{Greed*} &
-					3 & 3+ & no & min 6 &
+				}
+
+				\standardBidItem%
+				{Game*}
+				{$2$}
+				{$2$}
+				{no}
+				{min 5}
+				{%
+					---
+				}
+
+				\standardBidItem%
+				{Greed*}
+				{$3$}
+				{$3+$}
+				{no}
+				{min 6}
+				{%
 					The declarer receives 1 extra point for each trick exceeding the minimum required number of tricks they bring home.
-					\\ \hline
-					
-					\textit{Skip*} &
-					3 & 2 & no & varies &
+				}
+
+				\standardBidItem%
+				{Skip*}
+				{$3$}
+				{$2$}
+				{no}
+				{varies}
+				{%
 					The declarer must bring home the smallest amount of tricks. If they bring home the same amount as any other player, the bid is completed.
-					\\ \hline
-					
-					\textit{Precise Guess} &
-					3 & 2 & no & varies &
+				}
+
+				\standardBidItem%
+				{Precise Guess}
+				{$3$}
+				{$2$}
+				{no}
+				{varies}
+				{%
 					The declarer guesses, before the start of the game, how many tricks they think they will bring home. They must bring home the number of tricks they guessed.
-					\\ \hline
-					
-					\textit{Max Trump*} &
-					3 & 3 & yes & min 7 &
+				}
+
+				\standardBidItem%
+				{Max Trump*}
+				{$3$}
+				{$3$}
+				{yes}
+				{min 7}
+				{%
 					The declarer chooses trump suit.
-					\\ \hline
-					
-					\textit{Round Trump*} &
-					3 & 3 & yes & min 5 &
+				}
+
+				\standardBidItem%
+				{Round Trump*}
+				{$3$}
+				{$3$}
+				{yes}
+				{min 5}
+				{%
 					All players choose one card each. These cards are shuffled and then dealt again, this time with their faces up. The suit of the card that the declarer got is trump suit. All players keeps the new cards they just got.
-					\\ \hline
-					
-					\textit{Master's Game} &
-					4 & 3 & no & varies &
+				}
+
+				\standardBidItem%
+				{Master's Game}
+				{$4$}
+				{$3$}
+				{no}
+				{varies}
+				{%
 					The declarer must bring home the greatest amount of tricks. If they bring home the same amount as any other player, the bid is not completed. 
-					\\ \hline
-					
-					\textit{Nada} &
-					4 & 4 & no & none &
-					\\ \hline
-					
-					\textit{Master's Trump*} &
-					6 & 6 & yes & min 5 &
+				}
+
+				\standardBidItem%
+				{Nada}
+				{$4$}
+				{$4$}
+				{no}
+				{0}
+				{%
+					---
+				}
+
+				\standardBidItem%
+				{Master's Trump*}
+				{$6$}
+				{$6$}
+				{yes}
+				{min 5}
+				{%
 					The player to the left of the declarer decides trump suit, but first the other non-declarer players may say what trump suit they prefer and how much they prefer it on a scale from 1 to 10 (without any motivation as to why).
-					\\ \hline
-					
-					\textit{Taintless Master's Game} &
-					6 & 6 & no & all &
-			\end{tabular*}
-		}
+				}
+
+				\standardBidItem%
+				{Taintless Master's Game}
+				{$6$}
+				{$6$}
+				{no}
+				{all}
+				{%
+					---
+				}
+		\end{tabularx}
 	\end{center}
-	\caption{Standard bids}
-	\label{tab:standardBids}
 \end{table}

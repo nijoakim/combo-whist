@@ -1,0 +1,141 @@
+% Copyright 2014-2016 Joakim Nilsson
+%
+% This text is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This text is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this text.  If not, see <http://www.gnu.org/licenses/>.
+
+\newcommand{\specialBidItem}[4]{%
+	\\ \hline
+	\textit{#1} &
+	#2 &
+	\raggedright\textit{#3} &
+	#4
+}
+
+\newcommand{\nonTrump}{\textnormal{non-trump bids}}
+
+\begin{table}
+	\caption{Special bids}\label{tab:specialBids}
+	\begin{center}
+		\begin{tabularx}{\textwidth}{lcp{3cm}|X}
+			\textbf{Name} &
+			\textbf{Worth} &
+			\textbf{Incompatibility} &
+			\textbf{Additional rules}
+			\\[-3ex]
+
+			\specialBidItem%
+			{Triumph Trump}
+			{$-3$}
+			{---}
+			{%
+				The declarer selects any card before the game starts.This card becomes the triumph trump. The declarer decides who takes a trick containing the triumph trump. A triumph trump retains its old suit.
+			}
+
+			\specialBidItem%
+			{Potential}
+			{$-2$}
+			{---}
+			{%
+				If this bid is completed it is marked by a P, a potential, in the declarer's column.
+			}
+
+			\specialBidItem%
+			{Lead}
+			{$-2$}
+			{---}
+			{%
+				The declarer leads the first trick.
+			}
+
+			\specialBidItem%
+			{Switcharoo}
+			{$-1$}
+			{---}
+			{%
+				Before the game starts, all players send 3 cards in a direction the declarer chooses (to the right, to the left or to the player opposite to oneself).
+			}
+
+			\specialBidItem%
+			{Iron}
+			{$-1$}
+			{---}
+			{%
+				The aces now rank the lowest.
+			}
+
+			\specialBidItem%
+			{Finishing Dog}
+			{$1$}
+			{Nada}
+			{%
+				The declarer must not bring home the last trick. 
+			}
+
+			\specialBidItem%
+			{Atelier}
+			{$1$}
+			{Open Hand}
+			{---}
+			{%
+				The declarer chooses 4 cards that they put in ``the atelier''. These cards must be shown to all players during the game. As soon as the atelier no longer consists of 4 cards, the declarer must add a card to it provided they have cards in their hand.}
+
+			\specialBidItem%
+			{Open Trump}
+			{$1$}
+			{\nonTrump, Grill, Open Hand}
+			{%
+				The declarer must play with open trump cards. That is, all of the declarer’s trump cards must be shown to all players during the game. If combined with \emph{Atelier}, the atelier must not contain any trump cards.
+			}
+
+			\specialBidItem%
+			{Lock}
+			{$2$}
+			{Nada}
+			{%
+				The declarer must not bring home any of the first 3 tricks.
+			}
+
+			\specialBidItem%
+			{Punishment}
+			{$2$}
+			{---}
+			{%
+				If the declarer does not complete his bid, 2 extra points are subtracted from their score.
+			}
+
+			\specialBidItem%
+			{Extended Bid}
+			{$2$}
+			{---}
+			{%
+				This bid may only be bid if the declarer has completed the special bid \emph{Potential}. When it is bid, one P that the declarer has gathered through completing \emph{Potential} is erased. Several \emph{Extended Bid}s may be included in a single combination bid.
+			}
+
+			\specialBidItem%
+			{Master's Switcharoo}
+			{$3$}
+			{\nonTrump}
+			{%
+				Before the game starts, all players but the declarer sends 4 cards to the player to the right (skipping the declarer). If \emph{Switcharoo} has been bid, the \emph{Switcharoo}-cards are sent before the \emph{Master's Switcharoo}-cards.
+			}
+
+			\specialBidItem%
+			{Open Hand}
+			{$3$}
+			{Atelier, Open Trump}
+			{%
+				The declarer must play with an open hand. That is, all of the his cards must be shown during the game.
+			}
+		\end{tabularx}
+	\end{center}
+\end{table}
