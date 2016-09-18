@@ -1,0 +1,44 @@
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}              % For \rotatebox
+\usepackage{tabularx}              % For the X column specifier
+\usepackage[pass]{geometry}        % For changing margins
+\usepackage[labelfont=bf]{caption} % Captions boldface
+\usepackage{verbatim}
+\usepackage{hyperref}
+
+% Set-up reference style
+\hypersetup{%
+	pdfborderstyle={/S/U/W 1}
+}
+
+% Rotate text 90 degrees
+\newcommand{\rotccw}[1] {%
+	\rotatebox{90}{{#1}}
+}
+
+\newcommand{\introPages}{%
+	% Title
+	\maketitle
+
+	\vfill
+
+	% Logo
+	\begin{center}
+		\includegraphics[width = \textwidth]{../logo.png}
+	\end{center}
+
+	\vfill
+
+	\input{../license.tex}
+
+	\thispagestyle{empty}
+	\pagebreak
+
+	% Table of contents and list of tables
+	\setcounter{tocdepth}{3}
+	\tableofcontents
+	\listoftables
+	\thispagestyle{empty}
+	\pagebreak
+}

@@ -16,24 +16,7 @@
 % Document class
 \documentclass[a4paper]{article}
 
-% Packages
-\usepackage[utf8]{inputenc}
-\usepackage{graphicx} % For \rotatebox
-\usepackage{tabularx} % For the X column specifier
-\usepackage[labelfont=bf]{caption} % Captions boldface
-\usepackage[pass]{geometry}
-\usepackage{verbatim}
-\usepackage{hyperref}
-
-% Setup ref style
-\hypersetup{%
-	pdfborderstyle={/S/U/W 1}
-}
-
-% Command: Rotate text 90 degrees
-\newcommand{\rotccw}[1] {%
-	\rotatebox{90}{{#1}}
-}
+\input{../common.tex}
 
 % Title
 \title{Combo Whist}
@@ -42,44 +25,7 @@
 
 % Document
 \begin{document}
-	% Title
-	\maketitle
-
-	\vfill
-
-	% Logo
-	\begin{center}
-		\includegraphics[width = \textwidth]{logo.png}
-	\end{center}
-
-	\vfill
-
-	% License notice
-	\begin{verbatim}
-		Copyright 2014-2016 Joakim Nilsson
-
-		This text is free software: you can redistribute it and/or modify
-		it under the terms of the GNU General Public License as published by
-		the Free Software Foundation, either version 3 of the License, or
-		(at your option) any later version.
-
-		This text is distributed in the hope that it will be useful,
-		but WITHOUT ANY WARRANTY; without even the implied warranty of
-		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-		GNU General Public License for more details.
-	\end{verbatim}
-	\verb|You should have received a copy of the GNU General Public License|\\
-	\verb|along with this text.  If not, see <|\url{http://www.gnu.org/licenses/}\verb|>.|
-
-	\thispagestyle{empty}
-	\pagebreak
-
-	% Table of contents and list of tables
-	\setcounter{tocdepth}{3}
-	\tableofcontents
-	\listoftables
-	\thispagestyle{empty}
-	\pagebreak
+	\introPages
 
 	\section{Overview}{%
 		Combo Whist is a trick-taking card game and is a variant of Whist as its name implies. The key trait of Combo Whist its great variety of available tactics while still having a rule set that is fairly simple (although the rule set is undeniably somewhat large). The many and varied tactics takes away a substantial amount of randomness that is usually present in Whist games without making the game overly complicated, keeping it fun to play for both experienced and casual card players.

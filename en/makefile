@@ -1,8 +1,9 @@
 SRC=main
 OUT=../combo-whist-en
-PDFFLAGS=-nonstopmode -synctex=1 -output-directory=tmp
+PDFFLAGS=-interaction=nonstopmode -synctex=1 -output-directory=tmp
 VIEW=zathura
 TEX=$(wildcard *.tex)
+TEX+=../common.tex ../license.tex
 
 all: main.pdf
 	cp $< $(OUT).pdf
