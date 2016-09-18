@@ -1,5 +1,5 @@
 SRC=main
-OUT=combo-whist
+OUT=combo-whist-en
 PDFFLAGS=-nonstopmode -synctex=1 -output-directory=tmp
 VIEW=zathura
 TEX=$(wildcard *.tex)
@@ -14,7 +14,7 @@ all: main.pdf
 	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
 	cp tmp/$@ .
 
-viewpdf: all
+pdf: all
 	$(VIEW) $(SRC).pdf &
 
 clean:
