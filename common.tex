@@ -17,6 +17,24 @@
 	\rotatebox{90}{{#1}}
 }
 
+\newcommand{\standardBidItem}[6]{%
+	\\ \hline
+	\textit{#1} &
+	#2 &
+	#3 &
+	#4 &
+	#5 &
+	#6
+}
+
+\newcommand{\specialBidItem}[4]{%
+	\\ \hline
+	\textit{#1} &
+	#2 &
+	\raggedright\textit{#3} &
+	#4
+}
+
 \newcommand{\introPages}{%
 	% Title
 	\maketitle
