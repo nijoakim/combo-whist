@@ -1,0 +1,179 @@
+% Copyright 2014-2016 Joakim Nilsson
+%
+% This text is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This text is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this text.  If nejt, see <http://www.gnu.org/licenses/>.
+
+\begin{table}
+	\caption{Standardbud}\label{tab:standardBids}
+	\begin{center}
+		\begin{tabularx}{\textwidth}{lcccc|X}
+				\textbf{Namn} &
+				\rotccw{\textbf{Värde}} &
+				\rotccw{\textbf{Poäng}} &
+				\rotccw{\textbf{Trumf}} &
+				\rotccw{\textbf{Stick}} &
+				\textbf{Regler som läggs till}
+				\\[-3ex]
+
+				\standardBidItem%
+				{Dumskipp}
+				{$0$}
+				{$1$}
+				{nej}
+				{varierar}
+				{%
+					Spelföraren får inte ta hem flest stick. Om de tar hem samma mängd som någon annan spelare genomförs inte budet.
+				}
+
+				\standardBidItem%
+				{Ungefär}
+				{$1$}
+				{$1$}
+				{nej}
+				{varierar}
+				{%
+					Före spelets början gissar spelföraren på två möjliga mängder stick denne kommer att ta hem. Hen måste ta hem en av de två möjliga mängderna som gissades.
+				}
+
+				\standardBidItem%
+				{Trumf*}
+				{$1$}
+				{$1$}
+				{ja}
+				{min 5}
+				{%
+					Spelföraren bestämmer trumffärg.
+				}
+
+				\standardBidItem%
+				{Grill*}
+				{$1$}
+				{$2$}
+				{ja}
+				{min 5}
+				{%
+					Spelföraren börjar med att bestämma trumffärg. Denna trumffärg gäller bara första sticket. Därefter blir den färg som spelades ut i föregångde stick ny trumffärg och så fortsätter det till spelets slut.
+				}
+				
+				\standardBidItem%
+				{Spader*}
+				{$2$}
+				{$1$}
+				{ja}
+				{min 5}
+				{%
+					Trumffärgen är spader.
+				}
+
+				\standardBidItem%
+				{Spel*}
+				{$2$}
+				{$2$}
+				{nej}
+				{min 5}
+				{%
+					---
+				}
+
+				\standardBidItem%
+				{Girighet*}
+				{$3$}
+				{$3+$}
+				{nej}
+				{min 6}
+				{%
+					Spelföraren får $1$ extra poäng för varje stick som överstiger den minsta mängd som krävs för att genomföra budet.
+				}
+
+				\standardBidItem%
+				{Skipp*}
+				{$3$}
+				{$2$}
+				{nej}
+				{varierar}
+				{%
+					Spelföraren måste ta hem färst stick. Om ingen tar hem färre stick än spelföraren genomförs budet.
+				}
+
+				\standardBidItem%
+				{Exakt}
+				{$3$}
+				{$2$}
+				{nej}
+				{varierar}
+				{%
+					Före spelets början gissar spelföraren på en möjlig mängder stick denne kommer att ta hem. Hen måste ta hem den mängd som gissades.
+				}
+
+				\standardBidItem%
+				{Maxtrumf*}
+				{$3$}
+				{$3$}
+				{ja}
+				{min 7}
+				{%
+					Spelföraren väljer trumffärg.
+				}
+
+				\standardBidItem%
+				{Rundtrumf*}
+				{$3$}
+				{$3$}
+				{ja}
+				{min 5}
+				{%
+					Alla spelare väljer ett kort var. Dessa kort blandas och delas sen ut igen, denna gång med bildsidorna uppåt. Färgen av det kort som spelföraren får är trumffärgen. Alla spelare behåller de kort de just fått.
+				}
+
+				\standardBidItem%
+				{Mästarspel}
+				{$4$}
+				{$3$}
+				{nej}
+				{varierar}
+				{%
+					Spelföraren måste ta hem flest stick. Om denna tar hem lika många som nån annan spelare så genomförs inte budet.
+				}
+
+				\standardBidItem%
+				{Noll}
+				{$4$}
+				{$4$}
+				{nej}
+				{0}
+				{%
+					---
+				}
+
+				\standardBidItem%
+				{Mästartrumf*}
+				{$6$}
+				{$6$}
+				{ja}
+				{min 5}
+				{%
+					Spelaren till vänster om spelföraren bestämmer trumffärg, men först får de andra icke-spelförarna säge vilken trumffärg de föredrar och hur mycket de föredrar denna på en skala från $1$ till $10$ (utan motivering).
+				}
+
+				\standardBidItem%
+				{Obesudlat Mästarspel}
+				{$6$}
+				{$6$}
+				{nej}
+				{all}
+				{%
+					---
+				}
+		\end{tabularx}
+	\end{center}
+\end{table}

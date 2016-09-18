@@ -1,0 +1,133 @@
+% Copyright 2014-2016 Joakim Nilsson
+%
+% This text is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This text is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this text.  If not, see <http://www.gnu.org/licenses/>.
+
+\newcommand{\nonTrump}{\textnormal{icke-trumf-bud}}
+
+\begin{table}
+	\caption{Specialbud}\label{tab:specialBids}
+	\begin{center}
+		\begin{tabularx}{\textwidth}{lcp{3cm}|X}
+			\textbf{Namn} &
+			\textbf{Värde} &
+			\textbf{Inkompatibilitet} &
+			\textbf{Regler som läggs till}
+			\\[-3ex]
+
+			\specialBidItem%
+			{Triumf-Trumf}
+			{$-3$}
+			{---}
+			{%
+				Spelföraren väljer ett valfritt kort före spelet börjar. Detta kort blir \emph{triumf-trumfen}. Spelföraren bestämmer vem som tar sticket med trium-trumfen när detta stick tas hem. Triumf-trumfen hamnar \emph{inte} i trumffärgen utan behåller sin gamla färg.
+			}
+
+			\specialBidItem%
+			{Potential}
+			{$-2$}
+			{---}
+			{%
+				Om detta bud genomförs markeras det med ett P, en \emph{potential}, i spelförarens kolonn och denne blir \emph{potentiell}.
+			}
+
+			\specialBidItem%
+			{Bly}
+			{$-2$}
+			{---}
+			{%
+				Spelföraren spelar ut i första sticket.
+			}
+
+			\specialBidItem%
+			{Skick}
+			{$-1$}
+			{---}
+			{%
+				Före spelet börjar skickar alla spelare $3$ kort i en riktning som spelföraren väljer (till höger, till vänster eller tvärs över).
+			}
+
+			\specialBidItem%
+			{Järn}
+			{$-1$}
+			{---}
+			{%
+				Essen är nu de lägsta korten.
+			}
+
+			\specialBidItem%
+			{Slut-Hund}
+			{$1$}
+			{Noll}
+			{%
+				Spelföraren får inte ta hem det sista sticket.
+			}
+
+			\specialBidItem%
+			{Ateljé}
+			{$1$}
+			{Öppen Hand}
+			{%
+				Spelföraren väljer $4$ kort som denne lägger i ``ateljén''. Dessa kort visas till samtliga spelare under spelets gång. Så fort det inte längre finns $4$ kort i ateljen måste spelföraren lägga dit ett nytt kort från handen såvida detta är möjligt.
+			}
+
+			\specialBidItem%
+			{Öppen Trumf}
+			{$1$}
+			{\nonTrump, Grill, Öppen Hand}
+			{%
+				Spelföraren måste spela med öppna trumfkort. Det vill säga, spelförarens trumfkort måste visas till samtliga spelare under spelets gång. Om detta bud kombineras med \emph{Ateljé} så får ateljén inte innehålla några trumfkort.
+			}
+
+			\specialBidItem%
+			{Lås}
+			{$2$}
+			{Noll}
+			{%
+				Spelföraren får inte ta hem något av de $3$ första sticken.
+			}
+
+			\specialBidItem%
+			{Straff}
+			{$2$}
+			{---}
+			{%
+				Om spelföraren inte genomför sitt bud så dras $2$ extra poäng bort från dennes poängsumma.
+			}
+
+			\specialBidItem%
+			{Utökat Bud}
+			{$2$}
+			{---}
+			{%
+				Detta bud får endast bjudas om spelföraren har genomfört specialbudet \emph{Potential}, det vill säga om spelföraren är potentiell. När det bjuds stryks ett P som spelföraren har samlat på sig genom att genomföra \emph{Potential}. Flertalet \emph{Utökade Bud} får ingå i ett kombinations-bud.
+			}
+
+			\specialBidItem%
+			{Mästarskick}
+			{$3$}
+			{\nonTrump}
+			{%
+				Före spelet börjar skickar alla utom spelföraren $4$ kort till spelaren till höger (spelföraren hoppas över). Om \emph{Skick} har bjudids så skickar \emph{Skick}-korten före \emph{Mästarskick}-korten.
+			}
+
+			\specialBidItem%
+			{Öppen Hand}
+			{$3$}
+			{Atelier, Open Trump}
+			{%
+				Spelföraren måste spela med öppen hand. Det vill säga, alla dennes kort måste visas till samtliga spelare under spelets gång.
+			}
+		\end{tabularx}
+	\end{center}
+\end{table}

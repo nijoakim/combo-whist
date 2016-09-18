@@ -1,2 +1,3 @@
 all:
-	cd en; make
+	cd en; make # English
+	cd sv; make # Swedish

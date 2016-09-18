@@ -1,0 +1,124 @@
+% Copyright 2014-2016 Joakim Nilsson
+%
+% This text is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This text is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this text.  If not, see <http://www.gnu.org/licenses/>.
+
+% Document class
+\documentclass[a4paper]{article}
+
+\usepackage[swedish]{babel}
+\input{../common.tex}
+
+% Title
+\title{Kombinations-Whist}
+\author{Av Joakim Nilsson}
+\date{Version 1.1.1--sv --- \today}
+
+% Document
+\begin{document}
+	\introPages
+
+	\section{Översikt}{%
+		Kombinations-Whist är ett kortspel som bygger på sticktagande och är, som namnet antyder, en variant av Whist. Kombinations-Whists huvudsakliga utmärkande drag är dess varierade utbud av möjliga strategier med acceptabelt simpla regler. (Det måste dock erkännas att regelboken trots det är någorlunda lång.) Möjligheten att spela enligt många varierade strategier tar bort en substantiell mängd slump som vanligtvis finnes i andra Whist-spel utan att att göra spelet alltför komplicerat. Detta gör Kombinations-Whist till ett spel som är kul att spela båda för erfarna spelare såväl som för nybörjare.
+
+		\paragraph{Antal spelare:}
+		$4$ är att föredra, men $3$ till $\infty$ går också bra med regelmodifikationer.
+
+		\paragraph{Vad som behövs för att spela:}
+		En standard kortlek med 52 kort samt penna och papper.
+
+		\paragraph{Kortens värde:}
+		Från högst till lägst: E, K, D, Kn, $10$, $9$, $8$, $7$, $6$, $5$, $4$, $3$, $2$
+	}
+
+	\section{Hur man spelar}{%
+		\subsection{Förberedelser}{%
+			Gör en kolonn för varje spelare på pappret. Detta för att hålla koll på poångställningen samt lite annan information om spelet. Efter att pappret är förberett, slumpa då fram vem som blir giv.
+		}
+
+		\subsection{Given}{%
+			Det finns två huvudsakliga delar av en giv. Den första är \emph{budgivningen} och den andra är \emph{spelet}. Eftersom det borde bli lättare att förstå dessa två delar i omvänd ordning beskrivs spelet före budgivningen.
+
+			En giv börjar med att given delar ut $13$ kort till varje spelare (eller $17$ om det bara finns $3$ spelare, i vilket fall $\clubsuit 2$ tas bort ur leken). Därefter börjar budgivningen och när den är avklarad börjar spelet.
+
+			Efter spelet noteras spelarnas poäng och en ny giv börjar där spelaren till vänster om den föregående given blir ny giv.
+
+			\subsubsection{Spelet}{%
+				Spelet spelas likt de flesta Whist-varianter. Spelaren till höger om \emph{spelföraren}\footnote{Termen ``spelförare'' förklaras i stycket \textit{\nameref{sec:bidding}}.} börjar med att spela ut en kort. Sen blir det spelaren till höger om denne som spelar ut nästa kort som dessutom måste följa färg. Därefter spelar näste spelare (till vänster om föregående) ut ännu ett kort som också måste följa det första kortets färg och så vidare till det att alla spelare har spelat ut ett kort vardera.
+
+				Om en spelare har slut kort i den först utspelade färgen får denne saka valfritt kort eller spela en trumf. Till skillnad från många Whist-varianter finns inget trumftvång.
+
+				Den spelare som spelade det högsta kortet i den först utspelade färgen tar hem \emph{sticket} (det vill säga, tar alla utspelade kort och lägger dem med bildsidan ned på bordet) såvida ingen har spelat ut en trumf. Om så skulle vara fallet är det den spelare som har spelat ut den högsta trumfen som tar hem sticket.
+
+				Den spelare som tog hem det senaste sticket spelar ut först i nästa.
+			}
+
+			\subsubsection{Budgivningen}{\label{sec:bidding}
+				I Kombimations-Whist bjuder man med \emph{kombinations-bud}. Ett kombinations-bud består av precis ett standardbud och en valfri mängd (inklusive noll) specialbud. Buden har särskilda regler förknippade med dem som appliceras under spelet och poängberäkningen.
+
+				Spelarna bjuder medsols och spelaren till vänster om given börjar. En spelar kan antingen passa eller bjuda ett kombinations-bud som är värt mer än föregående kombinations-bud (som vi, från och med nu, helt enkelt kommer att kalla bud). Om en spelare passar är denne ute ur budgivningen och får därför inte göra några nya bud förrän nästa giv. Om alla spelare passar blir det omgiv där samma giv ger igen.
+
+				Ett buds värde definieras som det kombinerade värdet av standard- och specialbudet som det består av. Det föreslås att en tidsgräns på $20$ sekunder sätts mellan varje bud och $1$ minut före det första budet. För nybörjare är dock längre eller inga tidsgränser rekommenderade. Om en spelare inte har lagt ett bud inom den givna tiden så passar denna automatiskt. Budgivningen fortsätter fram till att alla spelare förutom en har passat. Den spelaren blir spelförare och spelet börjar.
+
+				De standardbud och specialbud som finns att tillgå finns listade i Tabellerna~\ref{tab:standardBids}~respektive~\ref{tab:specialBids}. Antalet stick att ta hem för att genomföra ett bud finnes i standardbudstabellens ``Stick''-kolonn. Ett specialbud kan inte kobineras med ett annat bud som finns listade i ``Inkompatibilitet''-kolonnen. Notera att det finns en skillnad mellan värde och poäng. Värde är budets värde (Rätt gissat!) och poäng är antalet poäng som spelföraren får om denne genomför budet.
+
+				De stanardbud som är markerade med en asterisk (*) har andra regler i fallet när bara $3$ spelare deltar i spelet. Dessa bud finns listade i Tabell~\ref{tab:standardBids3}.
+			}
+
+			\subsubsection{Poängberäkningen}{%
+				Efter att spelet är klart så får spelföraren det antal poäng baserat på vilket kombinations-bud som bjöds och huruvida detta bud genomfördes. Om budet genomfördes får spelföraren det antal poäng som specificeras ``Poäng''-kolonnen för standardbudet. Om budet inte genomfördes så förlorar spelföraren $2$ poäng. En spelare kan anta en negativ poängsumma. Om en spelare antar en poängsumma lägre än $-5$, så tillåts denne inte längre att bjuda i budgivningar. Hen får dock $1$ gratispoång när den given är klar (även om ingen bjuder och det blir omgiv).
+			}
+
+			\subsubsection{Vem som vinner}{%
+				Den som först uppnår \emph{vinstsumman} vinner. Vinstsumman börjar på $13$, men $1$ dras bort från den varje gång alla spelare har varit giv en gång vardera. En spelare kan endast vinna genom att genomföra ett bud och kan därför inte vinna enbart därför att vinstsumman just minskade. En spelare kan inte heller vinna om denne inte har enskilt flest poäng.
+			}
+		}
+	}
+
+	\section{Övrigt}{%
+		\subsection{Regler för fler än 4 spelare}{%
+			Om fler är $4$ spelare deltar i spelet så får alla utom $4$ sitta ut (avstå att delta) i varje giv. De spelare som sitter ut är de som sitter närmast till höger om given.
+			
+			% Changes for 3 players table
+			\input{3-player-bids.tex}
+		}
+		
+		\subsection{Prat}{%
+			En viss mängd av prat tillåts i KombinationsWhist, men spelarna tillåts inte ge \emph{några som helst} ledtrådar om vad de har för kort.
+		}
+		
+		\subsection{Fusk}{%
+			En spelare som avsiktligen fuskar i Kombinations-Whist får aldrig mer spela spelet eftersom denne uppenbarligen inte respekterar spelets prakt.
+		}
+
+		\subsection{Versionsnummer}{%
+			Kombinations-Whists versionsformat specifieras som följer:
+
+			\begin{verbatim}
+				<huvudversion> . <underordnad version> . <revision> - <språk>
+			\end{verbatim}
+
+			Huvudversionen ökar enbart när omvälvande ändringar görs i spelet. Det är osannolikt att detta nånsin kommer att hända.
+
+			Den underordnade versionen ökar när signifikanta ändringar görs i reglerna. Till exempel skulle nya bud eller att bud tas bort motivera en ny underordnad version.
+
+			Revisionen ökar när små ändringar görs till parametrar i spelet, såsom en ändring i ett buds värde.
+		}
+	}
+
+	% Bid tables
+	\pagebreak
+	\newgeometry{left=1cm, right=1cm, top=1cm}
+	\input{standard-bids.tex}
+	\input{special-bids.tex}
+\end{document}
