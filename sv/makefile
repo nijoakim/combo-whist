@@ -1,5 +1,5 @@
 SRC=main
-OUT=../combo-whist-sv
+OUT=../combo-whist-$(VERSION)-sv
 PDFFLAGS=-interaction=nonstopmode -synctex=1 -output-directory=tmp
 VIEW=zathura
 TEX=$(wildcard *.tex)

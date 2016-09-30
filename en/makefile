@@ -1,5 +1,5 @@
 SRC=main
-OUT=../combo-whist-en
+OUT=../combo-whist-$(VERSION)-en
 PDFFLAGS=-interaction=nonstopmode -synctex=1 -output-directory=tmp
 VIEW=zathura
 TEX=$(wildcard *.tex)
@@ -7,6 +7,9 @@ TEX+=../common.tex ../license.tex
 
 all: main.pdf
 	cp $< $(OUT).pdf
+
+book: $(OUT).pdf
+	pdfbook2 --paper=a4paper $<
 
 %.pdf: %.tex $(TEX)
 	mkdir -p tmp
