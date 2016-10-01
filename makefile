@@ -1,6 +1,6 @@
 VERSION=1.1.1
-SOURCE=sv en
-PDF=$(patsubst %,combo-whist-$(VERSION)-%.pdf,$(SOURCE))
+LANGUAGES=sv en
+PDF=$(patsubst %,combo-whist-$(VERSION)-%.pdf,$(LANGUAGES))
 BOOK_PDF=$(patsubst %.pdf,%-book.pdf,$(PDF))
 
 all: $(PDF)
@@ -10,7 +10,7 @@ pdf: $(PDF)
 book: $(BOOK_PDF)
 
 clean:
-	$(foreach var,$(SOURCE),cd $(var); make clean; cd ..;)
+	$(foreach var,$(LANGUAGES),cd $(var); make clean; cd ..;)
 	rm -f $(PDF)
 	rm -f $(patsubst %.pdf,%-book.pdf,$(PDF))
 

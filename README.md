@@ -4,22 +4,22 @@ Combo Whist, a variant of Whist, is a trick-taking card game with a taintless bi
 For more detailed information check out the actual rules.
 
 ## Building
-Combo whist is distributed as a LaTeX source which can generate pdfs containing the rules. To generate the ruleset for all languages use
+Combo whist is distributed as a LaTeX LANGUAGES which can generate pdfs containing the rules. To generate the ruleset for all languages use
 
 	$ make
 
 ### Languages
 To only make a specific language or a set of language, do
 
-	$ make SOURCE=<languages>
+	$ make LANGUAGES=<languages>
 
 For example to make only the Swedish version, do
 
-	$ make SOURCE=sv
+	$ make LANGUAGES=sv
 
 To make the Swedish and English versions, do
 
-	$ make SOURCE="sv en"
+	$ make LANGUAGES="sv en"
 
 ### Book format
 It is also possible to generate pdfs in book format which can be folded into a mini-book when printed. Use:
@@ -28,7 +28,7 @@ It is also possible to generate pdfs in book format which can be folded into a m
 
 Of course, books can be made only for a specific language too, like so:
 
-	$ make SOURCE=<languages>
+	$ make LANGUAGES=<languages> book
 
 ### Dependencies
 Although large (~3 GB last time I checked), texlive-full will provide all you need. On Debian-based, systems, do
