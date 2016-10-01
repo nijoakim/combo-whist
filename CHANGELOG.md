@@ -12,6 +12,6 @@ Version 1.1.0 - 5 Apr 2016
 - The special bid 'Zeroification' was removed.
 - The special bid 'Bingo' was removed.
 
-Version 1.0.0 - 3 Feb 2014
+Version 1.0.0 - 2 Feb 2014
 ==========================
 - Initial release!
