@@ -1,4 +1,4 @@
-VERSION=1.1.1
+VERSION=v1.1.1
 LANGUAGES=sv en
 PDF=$(patsubst %,combo-whist-$(VERSION)-%.pdf,$(LANGUAGES))
 BOOK_PDF=$(patsubst %.pdf,%-book.pdf,$(PDF))
