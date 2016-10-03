@@ -6,7 +6,7 @@ Current development version
 - The standard bid, 'Taintless Master's Game', was modified. Its score and worth were changed and another not so insignificant rule was added to it.
 
 ## Completely new bids
-- The special bid, 'Last Word', was introduced.
+- The special bid, 'Sloth', was introduced.
 
 Version 1.1.1 - 18 Sep 2016
 ===========================
