@@ -1,12 +1,12 @@
 Current development version
 ===========================
 ## Bid adjustments
-- The standard bid 'Greed' was changed to a special bid and was slightly adjusted.
-- The standard bid 'Round Trump' was removed in favour of 'Sneaky Trump'.
-- The standard bid 'Taintless Master's Game' was modified. It's score and worth were changed and another not so insignificant rule was added to it.
+- The standard bid, 'Greed', was changed into a special bid and was slightly adjusted.
+- The standard bid, 'Round Trump', was removed in favour of 'Sneaky Trump'.
+- The standard bid, 'Taintless Master's Game', was modified. It's score and worth were changed and another not so insignificant rule was added to it.
 
 ## Completely new bids
-- The special bid 'Last Word' was introduced.
+- The special bid, 'Last Word', was introduced.
 
 Version 1.1.1 - 18 Sep 2016
 ===========================
@@ -18,9 +18,9 @@ Version 1.1.0 - 5 Apr 2016
 - The rules for winning were slightly adjusted.
 
 ## Bid adjustments
-- The special bid 'Theft' was removed in favour of 'Triumph Trump'.
-- The special bid 'Zeroification' was removed.
-- The special bid 'Bingo' was removed.
+- The special bid, 'Theft', was removed in favour of 'Triumph Trump'.
+- The special bid, 'Zeroification', was removed.
+- The special bid, 'Bingo', was removed.
 
 Version 1.0.0 - 2 Feb 2014
 ==========================
