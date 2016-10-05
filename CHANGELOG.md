@@ -6,6 +6,7 @@ Current development version
 - The standard bid, 'Taintless Master's Game', was modified. Its score and worth were changed and another not so insignificant rule was added to it.
 - Multiple 'Extended Bid's can no longer be included in a combo bid.
 - Multiple P:s can no longer be acquired by repeatedly bidding 'Potential'.
+- The special bid, 'Master's Switcharoo' can is now incompatible with 'Grill'.
 
 ## Completely new bids
 - The special bid, 'Sloth', was introduced.
