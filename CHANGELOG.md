@@ -4,7 +4,8 @@ Current development version
 - The standard bid, 'Greed', was changed into a special bid and was slightly adjusted.
 - The standard bid, 'Round Trump', was removed in favour of 'Sneaky Trump'.
 - The standard bid, 'Taintless Master's Game', was modified. Its score and worth were changed and another not so insignificant rule was added to it.
-## Multiple 'Extended Bid's can no longer be included in a combo bid.
+- Multiple 'Extended Bid's can no longer be included in a combo bid.
+- Multiple P:s can no longer be acquired by repeatedly bidding 'Potential'.
 
 ## Completely new bids
 - The special bid, 'Sloth', was introduced.
