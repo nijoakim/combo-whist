@@ -1,9 +1,9 @@
-VERSION=v1.1.1
+VERSION=dev
 LANGUAGES=sv en
 PDF=$(patsubst %,combo-whist-$(VERSION)-%.pdf,$(LANGUAGES))
 BOOK_PDF=$(patsubst %.pdf,%-book.pdf,$(PDF))
 
-all: $(PDF)
+all: pdf
 
 pdf: $(PDF)
 
@@ -16,7 +16,7 @@ clean:
 
 # %.pdf
 combo-whist-$(VERSION)-%.pdf: %
-	cd $<; make VERSION=$(VERSION)
+	cd $<; make cpdown
 
 # %-book.pdf
 combo-whist-$(VERSION)-%-book.pdf: combo-whist-$(VERSION)-%.pdf

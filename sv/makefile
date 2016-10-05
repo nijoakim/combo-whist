@@ -1,24 +1,4 @@
-SRC=main
-OUT=../combo-whist-$(VERSION)-sv
-PDFFLAGS=-interaction=nonstopmode -synctex=1 -output-directory=tmp
-VIEW=zathura
-TEX=$(wildcard *.tex)
-TEX+=../common.tex ../license.tex
+VERSION=dev
+LANGUAGE=sv
 
-all: main.pdf
-	cp $< $(OUT).pdf
-
-%.pdf: %.tex $(TEX)
-	mkdir -p tmp
-	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
-	cp tmp/$@ .
-	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
-	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
-	cp tmp/$@ .
-
-view: all
-	$(VIEW) $(SRC).pdf &
-
-clean:
-	rm -f tmp/*
-	rm -f *.pdf
+include ../makefile.common
