@@ -1,7 +1,7 @@
 SRC=main
 OUT=../combo-whist-$(VERSION)-$(LANGUAGE)
 PDFFLAGS=-interaction=nonstopmode -synctex=1 -output-directory=tmp
-VIEW=zathura
+VIEW=xdg-open
 TEX=$(wildcard *.tex)
 TEX+=../common.tex ../license.tex
 
