@@ -9,6 +9,7 @@ Current development version
 - The special bid, 'Master's Switcharoo' can is now incompatible with 'Grill'.
 
 ## Completely new bids
+- The standard bid, 'Limbo', was introduced.
 - The special bid, 'Sloth', was introduced.
 
 Version 1.1.1 - 18 Sep 2016
