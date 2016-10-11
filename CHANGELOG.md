@@ -1,16 +1,20 @@
 Current development version
 ===========================
 ## Bid adjustments
-- The standard bid, 'Greed', was changed into a special bid and was slightly adjusted.
+- The standard bid, 'Greed', was changed to be a special bid and adjusted to fit that role.
 - The standard bid, 'Round Trump', was removed in favour of 'Sneaky Trump'.
 - The standard bid, 'Taintless Master's Game', was modified. Its score and worth were changed and another not so insignificant rule was added to it.
 - Multiple 'Extended Bid's can no longer be included in a combo bid.
 - Multiple P:s can no longer be acquired by repeatedly bidding 'Potential'.
-- The special bid, 'Master's Switcharoo' can is now incompatible with 'Grill'.
+- The special bid, 'Master's Switcharoo' is now incompatible with 'Grill'.
 
 ## Completely new bids
 - The standard bid, 'Limbo', was introduced.
 - The special bid, 'Sloth', was introduced.
+
+## Renamed bids
+- 'Dumb Skip' was renamed to 'Bid of Shame'
+- 'Skip' was renamed to 'Bid of Virtue'
 
 Version 1.1.1 - 18 Sep 2016
 ===========================
