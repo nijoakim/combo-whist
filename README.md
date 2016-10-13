@@ -35,7 +35,7 @@ Although large (~3 GB last time I checked), texlive-full will provide all that y
 
 	$ sudo aptitude install texlive-full
 
-There is also the possibility to get only the texlive packages you need. Unfortunately, I have so far been (and possibly will be forever) too lazy to gather up exactly which ones they are.
+There is also the possibility to get only the texlive packages you need. Unfortunately, I have so far been (and possibly will be forever) too lazy to gather up exactly which ones those are.
 
 ## Translations
 Combo Whist is currently available in the following languages:
