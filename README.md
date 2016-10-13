@@ -31,7 +31,7 @@ Of course, books can be made only for a specific language too, like so:
 	$ make LANGUAGES=<languages> book
 
 ### Dependencies
-Although large (~3 GB last time I checked), texlive-full will provide all you need. On Debian-based, systems, do
+Although large (~3 GB last time I checked), texlive-full will provide all that you will need. On Debian-based systems, do
 
 	$ sudo aptitude install texlive-full
 
