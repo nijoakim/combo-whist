@@ -1,7 +1,7 @@
 # Combo Whist
 Combo Whist, a variant of Whist, is a trick-taking card game with a taintless bidding system. It's main goal is to remove the high amount of randomness commonly present in Whist games without making the rules overly complicated. The ruleset is still somewhat large, yet simple.
 
-For more detailed information [check out the rules and background story](http://nijoakim.asuscomm.com/main.php?page=projects/combo-whist).
+For more detailed information check out the [rules and background story](http://nijoakim.asuscomm.com/main.php?page=projects/combo-whist).
 
 ## Building
 Combo whist is distributed as a LaTeX source which can generate pdfs containing the rules. To generate the ruleset for all languages use
