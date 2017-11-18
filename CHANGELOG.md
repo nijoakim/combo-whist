@@ -7,11 +7,12 @@ Current development version
 - The standard bid, 'Greed', was changed to be a special bid and adjusted to fit that role.
 - The standard bid, 'Round Trump', was removed in favour of 'Sneaky Trump'.
 - The standard bid, 'Taintless Master's Game', was modified. Its score and worth were changed and another not so insignificant rule was added to it.
-- Multiple 'Extended Bid's can no longer be included in a combo bid.
 - The special bid, 'Master's Switcharoo' is now incompatible with 'Grill'.
+- Multiple 'Extended Bid's can no longer be included in a combo bid.
 
 ## Completely new bids
 - The standard bid, 'Limbo', was introduced.
+- The special bid, 'Plague', was introduced.
 - The special bid, 'Sloth', was introduced.
 
 ## Renamed bids
