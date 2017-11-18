@@ -15,7 +15,7 @@ clean:
 	rm -f $(patsubst %.pdf,%-book.pdf,$(PDF))
 
 view:
-	for lang in $(LANGUAGES) ; do \
+	@for lang in $(LANGUAGES) ; do \
 		cd $$lang ; \
 		make view ; \
 		cd .. ; \
