@@ -16,8 +16,9 @@ Current development version
 - The special bid, 'Sloth', was introduced.
 
 ## Renamed bids
-- 'Dumb Skip' was renamed to 'Bid of Shame'
-- 'Skip' was renamed to 'Bid of Virtue'
+- 'Dumb Skip' was renamed to 'Bid of Shame'.
+- 'Skip' was renamed to 'Bid of Virtue'.
+- 'Finishing Dog' was renamed to 'Ending Dog'.
 
 Version 1.1.1 - 18 Sep 2016
 ===========================
