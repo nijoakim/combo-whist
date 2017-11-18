@@ -1,5 +1,8 @@
 Current development version
 ===========================
+## General changes
+- 13 cards are now dealt to each player even in case for only 3 players.
+
 ## Bid adjustments
 - The standard bid, 'Greed', was changed to be a special bid and adjusted to fit that role.
 - The standard bid, 'Round Trump', was removed in favour of 'Sneaky Trump'.
