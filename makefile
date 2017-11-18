@@ -14,6 +14,13 @@ clean:
 	rm -f $(PDF)
 	rm -f $(patsubst %.pdf,%-book.pdf,$(PDF))
 
+view:
+	for lang in $(LANGUAGES) ; do \
+		cd $$lang ; \
+		make view ; \
+		cd .. ; \
+	done
+
 # %.pdf
 combo-whist-$(VERSION)-%.pdf: %
 	cd $<; make cpdown
