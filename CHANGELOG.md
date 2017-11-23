@@ -4,21 +4,21 @@ Current development version
 - 13 cards are now dealt to each player even in case for only 3 players.
 
 ## Bid adjustments
-- The standard bid, 'Greed', was changed to be a special bid and adjusted to fit that role.
-- The standard bid, 'Round Trump', was removed in favour of 'Sneaky Trump'.
-- The standard bid, 'Taintless Master's Game', was modified. Its score and worth were changed and another not so insignificant rule was added to it.
-- The special bid, 'Master's Switcharoo', is now incompatible with 'Grill'.
-- Multiple 'Extended Bid's can no longer be included in a combo bid.
+- The standard bid, _Greed_, was changed to be a special bid and adjusted to fit that role.
+- The standard bid, _Round Trump_, was removed in favour of _Sneaky Trump_.
+- The standard bid, _Taintless Master's Game_, was modified. Its score and worth were changed and another not so insignificant rule was added to it.
+- The special bid, _Master's Switcharoo_, is now incompatible with _Grill_.
+- Multiple _Extended Bid_s can no longer be included in a combo bid.
 
 ## Completely new bids
-- The standard bid, 'Limbo', was introduced.
-- The special bid, 'Plague', was introduced.
-- The special bid, 'Sloth', was introduced.
+- The standard bid, _Limbo_, was introduced.
+- The special bid, _Plague_, was introduced.
+- The special bid, _Sloth_, was introduced.
 
 ## Renamed bids
-- 'Dumb Skip' was renamed to 'Bid of Shame'.
-- 'Skip' was renamed to 'Bid of Virtue'.
-- 'Finishing Dog' was renamed to 'Ending Dog'.
+- _Dumb Skip_ was renamed to _Bid of Shame_.
+- _Skip_ was renamed to _Bid of Virtue_.
+- _Finishing Dog_ was renamed to _Ending Dog_.
 
 Version 1.1.1 - 18 Sep 2016
 ===========================
@@ -30,9 +30,9 @@ Version 1.1.0 - 5 Apr 2016
 - The rules for winning were slightly adjusted.
 
 ## Bid adjustments
-- The special bid, 'Theft', was removed in favour of 'Triumph Trump'.
-- The special bid, 'Zeroification', was removed.
-- The special bid, 'Bingo', was removed.
+- The special bid, _Theft_, was removed in favour of _Triumph Trump_.
+- The special bid, _Zeroification_, was removed.
+- The special bid, _Bingo_, was removed.
 
 Version 1.0.0 - 2 Feb 2014
 ==========================
