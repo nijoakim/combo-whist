@@ -2,7 +2,7 @@ Current development version
 ===========================
 ## General changes
 - 13 cards are now dealt to each player even in case for only 3 players.
-- The rules for winning were slightly adjusted to deal with players who intentionally delay the game.
+- The rules for winning were slightly adjusted to deal with players who conspire to delay the game.
 
 ## Bid adjustments
 - The standard bid, _Greed_, was changed to be a special bid and adjusted to fit that role.
