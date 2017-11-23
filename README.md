@@ -37,6 +37,17 @@ Although large (~3 GB last time I checked), texlive-full will provide all that y
 
 There is also the possibility to get only the texlive packages you need. Unfortunately, I have so far been (and possibly will be forever) too lazy to gather up exactly which ones those are.
 
+## Versioning
+Combo Whist's version format is specified as follows:
+
+	<major version> . <minor version> . <revision> - <language>
+
+Major version is bumped only when very major changes to the game are made. This is unlikely ever happen.
+
+Minor version is bumped when significant changes are made to the rules. An example would be that bids are added or removed from the game.
+
+Revision is bumped when smaller tweaks are made parameters in the game such as changing the worth of a bid.
+
 ## Translations
 Combo Whist is currently available in the following languages:
 
