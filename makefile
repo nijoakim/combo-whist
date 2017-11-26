@@ -1,4 +1,4 @@
-VERSION=dev
+VERSION=1.2.0
 LANGUAGES=sv en
 PDF=$(patsubst %,combo-whist-$(VERSION)-%.pdf,$(LANGUAGES))
 BOOK_PDF=$(patsubst %.pdf,%-book.pdf,$(PDF))
@@ -17,13 +17,13 @@ clean:
 view:
 	@for lang in $(LANGUAGES) ; do \
 		cd $$lang ; \
-		make view ; \
+		make view VERSION=$(VERSION); \
 		cd .. ; \
 	done
 
 # %.pdf
 combo-whist-$(VERSION)-%.pdf: %
-	cd $<; make cpdown
+	cd $<; make cpdown VERSION=$(VERSION)
 
 # %-book.pdf
 combo-whist-$(VERSION)-%-book.pdf: combo-whist-$(VERSION)-%.pdf
