@@ -11,7 +11,7 @@ Current development version
 - The special bid, _Master's Switcharoo_, is now incompatible with _Grill_.
 - Multiple _Extended Bids_ can no longer be included in a single combo bid.
 
-## Brand new bids
+## New bids
 - The standard bid, _Limbo_, was introduced.
 - The special bid, _Plague_, was introduced.
 - The special bid, _Sloth_, was introduced.
