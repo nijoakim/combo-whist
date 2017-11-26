@@ -1,4 +1,4 @@
-Current development version
+Version 1.2.0 - 27 Nov 2017
 ===========================
 ## General changes
 - 13 cards are now dealt to each player even in case for only 3 players.
