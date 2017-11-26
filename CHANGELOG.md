@@ -20,6 +20,7 @@ Current development version
 - _Dumb Skip_ was renamed to _Bid of Shame_.
 - _Skip_ was renamed to _Bid of Virtue_.
 - _Finishing Dog_ was renamed to _Ending Dog_.
+- _Punishment_ was renamed to _Penalty_.
 
 Version 1.1.1 - 18 Sep 2016
 ===========================
