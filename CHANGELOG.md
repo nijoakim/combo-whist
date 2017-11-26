@@ -18,7 +18,7 @@ Current development version
 
 ## Renamed bids
 - _Dumb Skip_ was renamed to _Bid of Shame_.
-- _Skip_ was renamed to _Bid of Virtue_.
+- _Skip_ was renamed to _Master's Bid of Shame_.
 - _Finishing Dog_ was renamed to _Ending Dog_.
 - _Punishment_ was renamed to _Penalty_.
 
