@@ -4,20 +4,20 @@ Combo Whist, a variant of Whist, is a trick-taking card game with a taintless bi
 For more detailed information check out the [rules and background story](http://nijoakim.asuscomm.com/main.php?page=projects/combo-whist).
 
 ## Building
-Combo whist is distributed as a LaTeX source which can generate pdfs containing the rules. To generate the ruleset for all languages use
+Combo whist is distributed as a LaTeX source which can generate pdfs containing the rules. To generate the ruleset for all languages run
 
 	$ make
 
 ### Languages
-To only make a specific language or a set of language, do
+To only make a specific language or a set of languages, run
 
 	$ make LANGUAGES=<languages>
 
-For example to make only the Swedish version, do
+For example to make only the Swedish version, run
 
 	$ make LANGUAGES=sv
 
-To make the Swedish and English versions, do
+To make the Swedish and English versions, run
 
 	$ make LANGUAGES="sv en"
 
