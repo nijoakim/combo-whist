@@ -12,9 +12,9 @@ Version 1.2.0 - 27 Nov 2017
 - Multiple _Extended Bids_ can no longer be included in a single combo bid.
 
 ## New bids
-- The standard bid, _Limbo_, was introduced.
-- The special bid, _Plague_, was introduced.
-- The special bid, _Sloth_, was introduced.
+- A new standard bid, _Limbo_, was introduced.
+- A new special bid, _Plague_, was introduced.
+- A new special bid, _Sloth_, was introduced.
 
 ## Renamed bids
 - The standard bids, _Dumb Skip_ and _Skip_, were renamed to _Bid of Shame_ and _Master's Bid of Shame_, respectively.
