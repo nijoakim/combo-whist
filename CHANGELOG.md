@@ -5,7 +5,7 @@ Version 1.2.0 - 27 Nov 2017
 - The rules for winning were slightly adjusted to deal with players who conspire to delay the game.
 
 ## Bid adjustments
-- The standard bid, _Greed_, was changed to be a special bid and adjusted to fit that role.
+- The standard bid, _Greed_, was changed into a special bid and adjusted to fit that role.
 - The standard bid, _Round Trump_, was removed in favour of a new standard bid, _Sneaky Trump_.
 - The standard bid, _Taintless Master's Game_, was modified. Its score and worth were changed and another not-so-insignificant rule was added to it.
 - The special bid, _Master's Switcheroo_, is now incompatible with _Grill_.
