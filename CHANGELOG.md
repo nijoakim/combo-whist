@@ -17,9 +17,9 @@ Version 1.2.0 - 27 Nov 2017
 - The special bid, _Sloth_, was introduced.
 
 ## Renamed bids
-- _Dumb Skip_ and _Skip_ were renamed to _Bid of Shame_ and _Master's Bid of Shame_, respectively.
-- _Finishing Dog_ was renamed to _Ending Dog_.
-- _Punishment_ was renamed to _Penalty_.
+- The standard bids, _Dumb Skip_ and _Skip_, were renamed to _Bid of Shame_ and _Master's Bid of Shame_, respectively.
+- The special bid, _Finishing Dog_, was renamed to _Ending Dog_.
+- The special bid, _Punishment_, was renamed to _Penalty_.
 
 Version 1.1.1 - 18 Sep 2016
 ===========================
