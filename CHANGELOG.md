@@ -1,7 +1,7 @@
 Version 1.2.0 - 27 Nov 2017
 ===========================
 ## General changes
-- 13 cards are now dealt to each player even in case for only 3 players.
+- 13 cards are now dealt to each player even in the case of only 3 players.
 - The rules for winning were slightly adjusted to deal with players who conspire to delay the game.
 
 ## Bid adjustments
