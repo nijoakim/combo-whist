@@ -1,3 +1,5 @@
+VERSION=dev
+VERSION_BASE=?.?.?
 SRC=main
 OUT=../combo-whist-$(VERSION)-$(LANGUAGE)
 PDFFLAGS=-interaction=nonstopmode -synctex=1 -output-directory=tmp
@@ -10,7 +12,17 @@ all: main.pdf
 cpdown: main.pdf
 	cp $< $(OUT).pdf
 
-%.pdf: %.tex $(TEX)
+tmp/vars.tex:
+	mkdir -p tmp
+ifeq ($(VERSION),dev)
+	echo '\\newcommand*{\\varDev}{}' > tmp/vars.tex
+else
+	echo '' > tmp/vars.tex
+endif
+	echo '\\newcommand*{\\varVersion}{$(VERSION_BASE)}' >> tmp/vars.tex
+	echo '\\newcommand*{\\varLanguage}{$(LANGUAGE)}' >> tmp/vars.tex
+
+%.pdf: %.tex $(TEX) tmp/vars.tex
 	mkdir -p tmp
 	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
 	cp tmp/$@ .

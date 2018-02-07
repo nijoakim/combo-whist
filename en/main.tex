@@ -1,6 +1,6 @@
 % This file is part of Combo Whist.
 %
-% Copyright 2007-2017 Joakim Nilsson
+% Copyright 2007-2018 Joakim Nilsson
 %
 % This file is part of Combo Whist.
 %
@@ -26,7 +26,11 @@
 % Title
 \title{Combo Whist}
 \author{By Joakim Nilsson}
-\date{Development version (based on version 1.1.1-en) --- \today}
+\ifdefined\varDev
+	\date{Development version (based on version \varVersion-\varLanguage) --- \today}
+\else
+	\date{Version \varVersion-\varLanguage\ --- \today}
+\fi
 
 % Document
 \begin{document}
