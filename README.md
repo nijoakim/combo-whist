@@ -54,4 +54,4 @@ Combo Whist is currently available in the following languages:
 - English
 - Swedish
 
-If you want to help out to extend the list, contact me or submit a pull request. Otherwise, this list is likely to never be extended (unless my french miracelously improves).
+If you want to help out to extend the list, contact me or submit a pull request. Otherwise, this list is likely to never be extended (unless my french miraculously improves).
