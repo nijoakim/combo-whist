@@ -1,6 +1,6 @@
 % This file is part of Combo Whist.
 %
-% Copyright 2007-2018 Joakim Nilsson
+% Copyright 2007-2019 Joakim Nilsson
 %
 % This file is part of Combo Whist.
 %
@@ -82,7 +82,8 @@
 				Efter att spelet är klart får spelföraren ett antal poäng baserat på vilket kombinations-bud som lagts och huruvida detta bud gick hem. Om budet gick hem får spelföraren det antal poäng som specificeras ``Poäng''-kolumnen för standardbudet. Om budet inte gick hem så förlorar spelföraren 2 poäng. En spelare kan anta en negativ poängsumma. Om en spelare antar en poängsumma lägre än -5, så tillåts denne inte längre att buda i budgivningar. Denne får dock 1 gratispoäng när den given är klar (även om ingen budar och det blir omgiv).
 
 			\subsubsection{Vem som vinner}
-				Den som först uppnår \emph{vinstsumman} vinner. Vinstsumman börjar på 13, men minskar med 1 varje gång alla spelare har varit giv en gång vardera fram tills vinstsumman når 1. En spelare kan endast vinna genom att ett bud går hem och kan därför inte vinna enbart därför att vinstsumman just minskade. En spelare kan inte heller vinna om denne inte enskilt har flest poäng. Om alla spelare utom en innehar $-5$ poäng eller färre så vinner den spelare som har fler poäng automatiskt. Detta sätt att vinnas kallas en \emph{Skamvinst}.
+				\label{sec:winning}
+				Den som först uppnår \emph{vinstsumman} vinner. Vinstsumman börjar på 13, men minskar med 1 varje gång alla spelare har varit giv en gång vardera fram tills vinstsumman når 1. En spelare kan endast vinna genom att ett bud går hem och kan därför inte vinna enbart därför att vinstsumman just minskade. En spelare kan inte heller vinna om denne inte enskilt har flest poäng. Om alla spelare utom en innehar $-5$ poäng eller färre så vinner den spelare som har flest poäng automatiskt. Detta sätt att vinna kallas en \emph{Skamvinst}.
 
 	\section{Övrigt}
 		\subsection{Regler för fler än 4 spelare}
@@ -96,7 +97,7 @@
 
 	% Bid tables
 	\pagebreak
-	\newgeometry{left=1cm, right=1cm, top=1cm}
+	\newgeometry{left=1cm, right=1cm, top=1cm, bottom=3cm}
 	\input{standard-bids.tex}
 	\input{special-bids.tex}
 \end{document}
