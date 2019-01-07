@@ -2,6 +2,7 @@ Development Version
 ===================
 ## Bid adjustments
 - The special bid, _Extended Bid_, was removed in favour of the new but similar bid, _Inverse Potential_.
+- An honourable rule was added to the special bid, _Plague_.
 
 Version 1.2.0 - 27 Nov 2017
 ===========================
