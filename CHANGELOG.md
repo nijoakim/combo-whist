@@ -45,6 +45,9 @@ Version 1.1.0 - 5 Apr 2016
 - The special bid, _Zeroification_, was removed.
 - The special bid, _Bingo_, was removed.
 
+## Renamed bids
+- The special bid, _Nada_, was renamed into _Zero_.
+
 Version 1.0.0 - 2 Feb 2014
 ==========================
 - 7 years after Combo Whist's conception, "Combo Whist - Version 1.0.0" was published.
