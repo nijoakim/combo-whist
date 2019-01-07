@@ -42,11 +42,13 @@ Version 1.1.0 - 5 Apr 2016
 
 ## Bid adjustments
 - The special bid, _Theft_, was removed in favour of a new special bid, _Triumph Trump_.
-- The special bid, _Zeroification_, was removed.
-- The special bid, _Bingo_, was removed.
 
 ## Renamed bids
 - The special bid, _Nada_, was renamed into _Zero_.
+
+## Removed bids
+- The special bid, _Zeroification_, was removed.
+- The special bid, _Bingo_, was removed.
 
 Version 1.0.0 - 2 Feb 2014
 ==========================
