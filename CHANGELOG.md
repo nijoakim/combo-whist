@@ -4,6 +4,9 @@ Development Version
 - The special bid, _Potential_, was adjusted to yield a more permanent benefit when completed. As a result, the special bid _Extended Bid_, is no longer needed and has thus been removed.
 - An honourable rule was added to the special bid, _Plague_.
 
+## Removed bids
+- The standard bid, _Spades_ was removed.
+
 Version 1.2.0 - 27 Nov 2017
 ===========================
 ## General changes
