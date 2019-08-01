@@ -2,7 +2,7 @@ Development Version
 ===================
 
 ## General changes
-- A variant for determining who is the winner was introduced. The variants are now separated into _classic_ and _limited_ variants.
+- A variant on determining who is the winner was introduced. The variants are now separated into _classic_ and _limited_ variants.
 
 ## Bid adjustments
 - The special bid, _Potential_, was adjusted to yield a more permanent benefit when completed. As a result, the special bid _Extended Bid_, is no longer needed and has thus been removed.
