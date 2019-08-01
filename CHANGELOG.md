@@ -5,6 +5,9 @@ Development Version
 - An honorable rule was added to the special bid, _Plague_.
 - The special bid, _Plague_, is no longer compatible with the standard bid, _Taintless Master's Game_.
 
+## Renamed bids
+- The standard bids, _Exactly_ and _Approximately_, were renamed to _Exact_ and _Approximate_, respectively.
+
 ## Removed bids
 - The standard bid, _Spades_, was removed.
 
