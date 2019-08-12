@@ -9,6 +9,13 @@ PNG=$(wildcard *.png) $(wildcard ../*.png)
 
 all: main.pdf
 
+clean:
+	rm -f tmp/*
+	rm -f main.pdf
+
+view: all
+	$(VIEW) $(SRC).pdf &
+
 cpdown: main.pdf
 	cp $< $(OUT).pdf
 
@@ -29,10 +36,3 @@ endif
 	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
 	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
 	cp tmp/$@ .
-
-view: all
-	$(VIEW) $(SRC).pdf &
-
-clean:
-	rm -f tmp/*
-	rm -f main.pdf

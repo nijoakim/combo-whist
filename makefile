@@ -4,10 +4,8 @@ LANGUAGES=sv en
 PDF=$(patsubst %,combo-whist-$(VERSION)-%.pdf,$(LANGUAGES))
 BOOK_PDF=$(patsubst %.pdf,%-book.pdf,$(PDF))
 
-all: pdf
-
-pdf: $(PDF)
-
+all:  pdf
+pdf:  $(PDF)
 book: $(BOOK_PDF)
 
 clean:
