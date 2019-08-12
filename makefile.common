@@ -4,8 +4,8 @@ SRC=main
 OUT=../combo-whist-$(VERSION)-$(LANGUAGE)
 PDFFLAGS=-interaction=nonstopmode -synctex=1 -output-directory=tmp
 VIEW=xdg-open
-TEX=$(wildcard *.tex)
-TEX+=../common.tex ../license.tex
+TEX=$(wildcard *.tex) $(wildcard ../*.tex) tmp/vars.tex
+PNG=$(wildcard *.png) $(wildcard ../*.png)
 
 all: main.pdf
 
@@ -22,7 +22,7 @@ endif
 	echo '\\newcommand*{\\varVersion}{$(VERSION_BASE)}' >> tmp/vars.tex
 	echo '\\newcommand*{\\varLanguage}{$(LANGUAGE)}' >> tmp/vars.tex
 
-%.pdf: %.tex $(TEX) tmp/vars.tex
+%.pdf: %.tex $(TEX) $(PNG)
 	mkdir -p tmp
 	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
 	cp tmp/$@ .

@@ -23,7 +23,7 @@ view:
 	done
 
 # %.pdf
-combo-whist-$(VERSION)-%.pdf: % *.tex
+combo-whist-$(VERSION)-%.pdf: % *.tex *.png
 	cd $<; make cpdown VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE)
 
 # %-book.pdf
