@@ -1,8 +1,13 @@
 VERSION=dev
 VERSION_BASE=1.2.0
 LANGUAGES=sv en
+
+# Files
 PDF=$(patsubst %,combo-whist-$(VERSION)-%.pdf,$(LANGUAGES))
 BOOK_PDF=$(patsubst %.pdf,%-book.pdf,$(PDF))
+TEX=$(wildcard *.tex)
+PNG=$(wildcard *.png)
+MAKEFILE=makefile makefile.common
 
 all:  pdf
 pdf:  $(PDF)
@@ -21,7 +26,7 @@ view:
 	done
 
 # %.pdf
-combo-whist-$(VERSION)-%.pdf: % *.tex *.png
+combo-whist-$(VERSION)-%.pdf: % $(TEX) $(PNG) $(MAKEFILE)
 	cd $<; make cpdown VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE)
 
 # %-book.pdf

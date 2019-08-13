@@ -1,11 +1,13 @@
 VERSION=dev
 VERSION_BASE=?.?.?
-SRC=main
-OUT=../combo-whist-$(VERSION)-$(LANGUAGE)
 PDFFLAGS=-interaction=nonstopmode -synctex=1 -output-directory=tmp
 VIEW=xdg-open
+
+# Files
+OUT=../combo-whist-$(VERSION)-$(LANGUAGE).pdf
 TEX=$(wildcard *.tex) $(wildcard ../*.tex) tmp/vars.tex
 PNG=$(wildcard *.png) $(wildcard ../*.png)
+MAKEFILE=../makefile ../makefile.common
 
 all: main.pdf
 
@@ -14,10 +16,10 @@ clean:
 	rm -f main.pdf
 
 view: all
-	$(VIEW) $(SRC).pdf &
+	$(VIEW) $(OUT) &
 
 cpdown: main.pdf
-	cp $< $(OUT).pdf
+	cp $< $(OUT)
 
 tmp/vars.tex:
 	mkdir -p tmp
@@ -29,7 +31,7 @@ endif
 	echo '\\newcommand*{\\varVersion}{$(VERSION_BASE)}' >> tmp/vars.tex
 	echo '\\newcommand*{\\varLanguage}{$(LANGUAGE)}' >> tmp/vars.tex
 
-%.pdf: %.tex $(TEX) $(PNG)
+%.pdf: %.tex $(TEX) $(PNG) $(MAKEFILE)
 	mkdir -p tmp
 	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
 	cp tmp/$@ .
