@@ -8,7 +8,6 @@ PDF=$(patsubst %,combo-whist-$(VERSION)-%.pdf,$(LANGUAGES))
 BOOK_PDF=$(patsubst %.pdf,%-book.pdf,$(PDF))
 TEX=$(wildcard *.tex)
 PNG=$(wildcard *.png)
-MAKEFILE=makefile makefile.common
 
 all:  pdf
 pdf:  $(PDF)
@@ -27,7 +26,7 @@ view:
 	done
 
 # %.pdf
-combo-whist-$(VERSION)-%.pdf: % $(TEX) $(PNG) $(MAKEFILE)
+combo-whist-$(VERSION)-%.pdf: % $(TEX) $(PNG)
 	cd $<; make copy-down VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE)
 
 # %-book.pdf

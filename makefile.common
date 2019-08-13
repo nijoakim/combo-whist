@@ -10,7 +10,6 @@ VIEW=xdg-open
 OUT=../combo-whist-$(VERSION)-$(LANGUAGE).pdf
 TEX=$(wildcard *.tex) $(wildcard ../*.tex) tmp/vars.tex
 PNG=$(wildcard *.png) $(wildcard ../*.png)
-MAKEFILE=../makefile ../makefile.common
 
 all: main.pdf
 
@@ -34,7 +33,7 @@ endif
 	echo '\\newcommand*{\\varVersion}{$(VERSION_BASE)}' >> tmp/vars.tex
 	echo '\\newcommand*{\\varLanguage}{$(LANGUAGE)}' >> tmp/vars.tex
 
-%.pdf: %.tex $(TEX) $(PNG) $(MAKEFILE)
+%.pdf: %.tex $(TEX) $(PNG)
 	mkdir -p tmp
 	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
 	cp tmp/$@ .
