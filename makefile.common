@@ -1,5 +1,8 @@
+# Version configuration
 VERSION=dev
 VERSION_BASE=?.?.?
+
+# Utility configuration
 PDFFLAGS=-interaction=nonstopmode -synctex=1 -output-directory=tmp
 VIEW=xdg-open
 
@@ -18,7 +21,7 @@ clean:
 view: all
 	$(VIEW) $(OUT) &
 
-cpdown: main.pdf
+copy-down: main.pdf
 	cp $< $(OUT)
 
 tmp/vars.tex:

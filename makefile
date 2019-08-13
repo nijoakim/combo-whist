@@ -1,3 +1,4 @@
+# Version configuration
 VERSION=dev
 VERSION_BASE=1.2.0
 LANGUAGES=sv en
@@ -27,7 +28,7 @@ view:
 
 # %.pdf
 combo-whist-$(VERSION)-%.pdf: % $(TEX) $(PNG) $(MAKEFILE)
-	cd $<; make cpdown VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE)
+	cd $<; make copy-down VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE)
 
 # %-book.pdf
 combo-whist-$(VERSION)-%-book.pdf: combo-whist-$(VERSION)-%.pdf
