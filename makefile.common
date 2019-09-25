@@ -11,15 +11,19 @@ OUT=../combo-whist-$(VERSION)-$(LANGUAGE).pdf
 TEX=$(wildcard *.tex) $(wildcard ../*.tex) tmp/vars.tex
 PNG=$(wildcard *.png) $(wildcard ../*.png)
 
+.PHONY: all
 all: main.pdf
 
+.PHONY: clean
 clean:
 	rm -f tmp/*
 	rm -f main.pdf
 
+.PHONY: view
 view: all
 	$(VIEW) $(OUT) &
 
+.PHONY: copy-down
 copy-down: main.pdf
 	cp $< $(OUT)
 

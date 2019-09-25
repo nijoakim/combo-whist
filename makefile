@@ -9,15 +9,22 @@ BOOK_PDF=$(patsubst %.pdf,%-book.pdf,$(PDF))
 TEX=$(wildcard *.tex)
 PNG=$(wildcard *.png)
 
+.PHONY: all
 all:  pdf
-pdf:  $(PDF)
+
+.PHONY: pdf
+pdf: $(PDF)
+
+.PHONY: book
 book: $(BOOK_PDF)
 
+.PHONY: clean
 clean:
 	$(foreach var,$(LANGUAGES),cd $(var); make clean; cd ..;)
 	rm -f $(PDF)
 	rm -f $(patsubst %.pdf,%-book.pdf,$(PDF))
 
+.PHONY: view
 view:
 	@for lang in $(LANGUAGES) ; do \
 		cd $$lang ; \
