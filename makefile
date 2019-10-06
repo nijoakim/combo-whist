@@ -10,7 +10,7 @@ TEX=$(wildcard *.tex)
 PNG=$(wildcard *.png)
 
 .PHONY: all
-all:  pdf
+all: pdf
 
 .PHONY: pdf
 pdf: $(PDF)
@@ -25,7 +25,7 @@ clean:
 	rm -f $(patsubst %.pdf,%-book.pdf,$(PDF))
 
 .PHONY: view
-view:
+view: pdf
 	@for lang in $(LANGUAGES) ; do \
 		cd $$lang ; \
 		make view VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE); \
