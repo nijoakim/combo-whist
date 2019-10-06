@@ -52,7 +52,7 @@ Version 1.1.0 - 5 Apr 2016
 - The special bid, _Theft_, was removed in favor of a new special bid, _Triumph Trump_.
 
 ## Renamed bids
-- The special bid, _Nada_, was renamed into _Zero_.
+- The special bid, _Nada_, was renamed to _Zero_.
 
 ## Removed bids
 - The special bid, _Zeroification_, was removed.
