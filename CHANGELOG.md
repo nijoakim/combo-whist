@@ -22,7 +22,7 @@ Version 1.2.0 - 27 Nov 2017
 - The rules for winning were slightly adjusted to deal with players who conspire to delay the game.
 
 ## Bid adjustments
-- The standard bid, _Greed_, was changed into a special bid and adjusted to fit that role.
+- The standard bid, _Greed_, was converted to a special bid and adjusted to fit that role.
 - The standard bid, _Round Trump_, was removed in favor of a new standard bid, _Sneaky Trump_.
 - The standard bid, _Taintless Master's Game_, was modified. Its score and worth were adjusted, the former to match the worth of the combo bid. Another not-so-insignificant rule was also added to the bid.
 - The worth of the special bid, _Triumph Trump_, was decreased from -3 to -4.
