@@ -46,7 +46,7 @@ Major version is bumped only when very major changes to the game are made. This 
 
 Minor version is bumped when significant changes are made to the rules. An example would be that bids are added or removed from the game.
 
-Revision is bumped when smaller tweaks are made parameters in the game such as changing the worth of a bid.
+Revision is bumped when smaller tweaks are made parameters in the game. An example would be changing the worth of a bid.
 
 ## Translations
 Combo Whist is currently available in the following languages:
