@@ -5,15 +5,13 @@ Development Version
 - A variant on determining who is the winner was introduced. The variants are now separated into the _classic_ and _limited_ variants.
 
 ## Bid adjustments
+- The standard bid, _Spades_, was removed in favor of a new standard bid, _Block Trump_.
 - The special bid, _Potential_, was adjusted to yield a more permanent benefit when completed. As a result, the special bid _Extended Bid_, is no longer needed and has thus been removed.
 - An honorable rule was added to the special bid, _Plague_.
 - The special bid, _Plague_, is no longer compatible with the standard bid, _Taintless Master's Game_.
 
 ## Renamed bids
 - The standard bids, _Exactly_ and _Approximately_, were renamed to _Exact_ and _Approximate_, respectively.
-
-## Removed bids
-- The standard bid, _Spades_, was removed.
 
 Version 1.2.0 - 27 Nov 2017
 ===========================

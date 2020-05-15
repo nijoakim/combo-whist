@@ -1,4 +1,4 @@
-% Copyright 2007-2019 Joakim Nilsson
+% Copyright 2007-2020 Joakim Nilsson
 %
 % This file is part of Combo Whist.
 %
@@ -72,6 +72,16 @@
 					The declarer begins by deciding trump suit. This trump suit only applies to the first trick. After that trick, the new trump suit is the suit which was led in the previous trick, and this procedure is repeated until the game is finished.
 				}
 
+				\standardBidItem%
+				{Block Trump}
+				{2}
+				{1}
+				{yes}
+				{min 5}
+				{%
+					The declarer decides trump suit. Unless left with no other option, the declarer is not allowed to play any trump cards before another player has already played a trump card.
+				}
+				
 				\standardBidItem%
 				{Limbo}
 				{2}
