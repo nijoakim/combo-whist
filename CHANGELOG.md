@@ -1,6 +1,5 @@
-Development Version
-===================
-
+Version 1.3.0 - 15 May 2020
+===========================
 ## General changes
 - A variant on determining who is the winner was introduced. The variants are now separated into the _classic_ and _limited_ variants.
 
