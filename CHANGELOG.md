@@ -12,6 +12,7 @@ Development Version
 
 ## Renamed bids
 - The standard bids, _Exactly_ and _Approximately_, were renamed to _Exact_ and _Approximate_, respectively.
+- The standard bid, _Sneaky Trump_, was renamed to _Sub-Trump_.
 
 Version 1.2.0 - 27 Nov 2017
 ===========================
