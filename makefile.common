@@ -27,7 +27,7 @@ view: all
 copy-down: main.pdf
 	cp $< $(OUT)
 
-tmp/vars.tex:
+tmp/vars.tex: ../makefile ../makefile.common
 	mkdir -p tmp
 ifeq ($(VERSION),dev)
 	echo '\\newcommand*{\\varDev}{}' > tmp/vars.tex

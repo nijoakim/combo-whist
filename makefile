@@ -33,7 +33,7 @@ view: pdf
 	done
 
 # %.pdf
-combo-whist-$(VERSION)-%.pdf: % $(TEX) $(PNG)
+combo-whist-$(VERSION)-%.pdf: % $(TEX) $(PNG) makefile makefile.common
 	cd $<; make copy-down VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE)
 
 # %-book.pdf
