@@ -62,4 +62,4 @@ Version 1.1.0 - 5 Apr 2016
 
 Version 1.0.0 - 2 Feb 2014
 ==========================
-- 7 years after Combo Whist's first conception, "Combo Whist - Version 1.0.0" was published.
+- 7 years after Combo Whist's first conception, "Combo Whist&mdash;Version 1.0.0" was published.
