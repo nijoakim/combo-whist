@@ -1,6 +1,7 @@
 Development Version
 ===================
-- No changes so far.
+## Bid adjustments
+- The standard bid, _Taintless Master's Game's_, score was adjusted to avoid yielding non-integer scores.
 
 Version 1.3.0 - 15 May 2020
 ===========================
