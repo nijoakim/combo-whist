@@ -3,6 +3,9 @@ Development Version
 ## Bid adjustments
 - The standard bid _Taintless Master's Game's_ score was adjusted to avoid yielding non-integer scores.
 
+## New bids
+- A new standard bid, _Rank Trump_, was introduced.
+
 Version 1.3.0 - 15 May 2020
 ===========================
 ## General changes
