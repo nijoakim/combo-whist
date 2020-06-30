@@ -9,6 +9,9 @@ Development Version
 ## New bids
 - A new standard bid _Rank Trump_ was introduced.
 
+## Renamed bids
+- The special bids _Switcheroo_ and _Master's Switcheroo_ were renamed to _Mail_ and _Master's Mail_, respectively.
+
 Version 1.3.0 - 15 May 2020
 ===========================
 ## General changes
