@@ -1,8 +1,8 @@
 Development Version
 ===================
 ## Bid adjustments
-- The standard bid _Taintless Master's Game's_ score was adjusted to avoid yielding non-integer scores.
 - The standard bid _Master's Game's_ score was changed from 3 to 4.
+- The standard bid _Taintless Master's Game's_ score was adjusted to avoid yielding non-integer scores.
 - The honorable rule in the special bid _Plague_ now only applies if the full combo bid is fulfilled.
 
 ## New bids
