@@ -4,6 +4,7 @@ Development Version
 - The standard bid _Master's Game's_ score was increased from 3 to 4.
 - The standard bid _Taintless Master's Game's_ score was adjusted to avoid yielding non-integer scores.
 - The honorable rule in the special bid _Plague_ now only applies if the full combo bid is fulfilled.
+- The choosing of plague color in the special bid _Plague_ now happens before all other events.
 
 ## New bids
 - A new standard bid _Rank Trump_ was introduced.
