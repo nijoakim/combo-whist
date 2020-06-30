@@ -6,7 +6,7 @@ Development Version
 - The honorable rule in the special bid _Plague_ now only applies if the full combo bid is fulfilled.
 
 ## New bids
-- A new standard bid, _Rank Trump_, was introduced.
+- A new standard bid _Rank Trump_ was introduced.
 
 Version 1.3.0 - 15 May 2020
 ===========================
