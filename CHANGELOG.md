@@ -8,6 +8,7 @@ Development Version
 
 ## New bids
 - A new standard bid _Rank Trump_ was introduced.
+- A new special bid _Veto_ was introduced.
 
 ## Renamed bids
 - The special bids _Switcheroo_ and _Master's Switcheroo_ were renamed to _Mail_ and _Master's Mail_, respectively.
