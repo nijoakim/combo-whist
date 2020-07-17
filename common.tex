@@ -21,13 +21,13 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[protrusion=true]{microtype} % More readable layout
-\usepackage{graphicx}                   % For \rotatebox
-\usepackage{tabularx}                   % For the X column specifier
-\usepackage[pass]{geometry}             % For changing margins
+\usepackage{graphicx}                   % \rotatebox
+\usepackage{tabularx}                   % X column specifier in tables
+\usepackage[pass]{geometry}             % Changing margins
 \usepackage[labelfont=bf]{caption}      % Captions boldface
 \usepackage{siunitx}                    % Number alignment in tables
-\usepackage{xfrac}                      % For vulgar fractions
-\usepackage{verbatim}
+\usepackage{xfrac}                      % Vulgar fractions
+\usepackage{verbatim}                   % Monospaced text
 \usepackage[
 	ocgcolorlinks=true,
 	urlcolor={[rgb]{0,0,1}},
@@ -70,7 +70,6 @@
 \newcommand{\nonTrump}{\textnormal{non-trump bids}}
 
 \newcommand{\introPages}{%
-	% Title
 	\maketitle
 
 	\vfill
@@ -82,6 +81,7 @@
 
 	\vfill
 
+	% License
 	\input{../license.tex}
 
 	\thispagestyle{empty}
