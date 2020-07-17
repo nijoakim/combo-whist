@@ -1,5 +1,8 @@
 Development Version
 ===================
+## General changes
+- In case of 3 players, the 6 of clubs is removed instead of the 6 of spades.
+
 ## Bid adjustments
 - The standard bid _Master's Game's_ score was increased from 3 to 4.
 - The standard bid _Taintless Master's Game's_ score was adjusted to avoid yielding non-integer scores.
