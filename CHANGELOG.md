@@ -4,7 +4,7 @@ Development Version
 - In case of 3 players, the 6 of clubs is removed instead of the 6 of spades.
 
 ## Bid adjustments
-- The special bid _Potential_ was adjusted slightly.
+- The special bid _Potential's_ benefits upon completion were lessened in order to avoid worth-runaway.
 - The honorable rule in the special bid _Plague_ now only applies if the full combo bid is fulfilled.
 - The choosing of plague color in the special bid _Plague_ now happens before all other events.
 
