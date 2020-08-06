@@ -20,7 +20,7 @@
 	\begin{center}
 		\begin{tabularx}{\textwidth}{
 			l
-			S[table-number-alignment=center, table-figures-decimal=0]
+			S[table-number-alignment=center, table-format=1.0]
 			p{3cm}
 			|X
 		}
@@ -103,6 +103,14 @@
 			}
 
 			\specialBidItem%
+			{Master's Mail}
+			{{1 or 3}}
+			{---}
+			{%
+				If the bid is combined with a trump bid that is not \emph{Grill}, its worth is 3, and otherwise 1. Before the game starts, all players but the declarer sends 3 cards to the player to the right (skipping the declarer). If \emph{Mail} has been bid, the \emph{Mail} cards are sent before the \emph{Master's Mail} cards.
+			}
+
+			\specialBidItem%
 			{Open Trump}
 			{1}
 			{\nonTrump, Grill, Open Hand}
@@ -132,14 +140,6 @@
 			{Bid of Shame, Master's Bid of Shame, Taintless Master's Game, Zero}
 			{%
 				Before all other events the declarer chooses a suit to be the \emph{plague suit}. The declarer must not become \emph{beplagued}; that is, must not alone bring home the most plague cards (note: \emph{not} tricks), unless they become \emph{honorably beplagued} and bring home the whole plague suit as well as fulfill all the other requirements of the combo bid, in which case they also score 1 honorable extra point.
-			}
-
-			\specialBidItem%
-			{Master's Mail}
-			{3}
-			{\nonTrump, Grill}
-			{%
-				Before the game starts, all players but the declarer sends 4 cards to the player to the right (skipping the declarer). If \emph{Mail} has been bid, the \emph{Mail} cards are sent before the \emph{Master's Mail} cards.
 			}
 
 			\specialBidItem%
