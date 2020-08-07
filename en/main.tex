@@ -68,14 +68,15 @@
 
 			\subsubsection{Bidding}
 				\label{sec:bidding}
-				In Combo Whist, players make \emph{combo bids}. A combo bid is composed of exactly one standard bid and any amount (including zero) of unique special bids. The bids have certain additional rules associated with them that are applied during the game and during scoring. If it is unclear \emph{when} an event triggered by a bid is supposed to occur, the standard bids take priority before the special bids.
+				In Combo Whist, players make \emph{combo bids}. A combo bid is composed of exactly one standard bid and any amount (including zero) of unique special bids. The bids have certain additional rules associated with them that are applied during the game and during scoring.
 
 				The players take turns by bidding in a clockwise manner and the player to the left of the dealer makes the first bid. A player can either pass or make a combo bid that is worth more than the previous combo bids (from here on simply referred to as \emph{bids}). If a player passes, they are out of the bidding and may therefore not make any new bids until the next deal. If all players pass, the same dealer collects all cards and deals a new deal.
 
 				A bid's worth is defined as the combined worth of the standard and special bids it comprises. A bid must have a worth of least 1 in order for it to be eligible for bidding. A proposed time limit between bids is 20 seconds and 1 minute before the initial bid, but for beginners higher limits or no limits are recommended. If a player hasn't made a bid within the given time limit, they automatically pass. The bidding continues until all players but one have passed. That player becomes declarer and the game begins.
 
 				The available standard and special bids are listed in Tables~\ref{tab:standardBids}~and~\ref{tab:specialBids}, respectively. The number of tricks to bring home to complete the bid is given in the standard bids table in the ``Tricks'' column. A special bid cannot be combined with another bid listed in the ``Incompatibility'' column, nor are combo bids allowed which are impossible to complete regardless of the distribution of the cards of the opponents. Note that there is a difference between worth and score. Worth is a bid's worth (You guessed it!) and score is the number of points the declarer scores if they complete a bid.
-			
+
+				If it is unclear \emph{when} an event triggered by a bid is supposed to occur, refer to the special bids' ``Order'' column. The order of a bid decides in what order the events given by its additional rules will take place. The bids with the lowest order go first. All of the standard bids have order 0.
 
 			\subsubsection{Scoring}
 				After the game has finished the declarer scores a number of points determined by what combo bid was bid and whether it was completed. If the bid was completed, they score as many points as as noted in the ``Score'' column for the standard bid. If the bid was not completed, 2 points are subtracted from their previous score count. It is possible to attain a negative score. If a player has a score below $-5$, they are not allowed to bid during bidding. However, they automatically score 1 point after every deal they participate in (even if no one bids).
