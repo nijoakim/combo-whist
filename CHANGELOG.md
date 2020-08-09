@@ -4,7 +4,6 @@ Development Version
 - In case of 3 players, the 6 of clubs is removed instead of the 6 of spades.
 
 ## Bid adjustments
-- For the special bid _Block Trump_, leading in the trump suit by the declarer is now enabled after the declarer plays a trump card.
 - The special bid _Master's Mail's_ incompatibilities were removed, but instead it's worth was reduced to 1 if combined with the previously incompatible bids. The number of cards to send was also reduced from 4 to 3.
 - The special bid _Potential's_ benefits upon completion were reduce in order to avoid worth-runaway.
 - The honorable rule in the special bid _Plague_ now only applies if the full combo bid is fulfilled. Furthermore, the declarer is no longer allowed to lead in the plague suit before the plague suit has been played in some other way. Moreover, the choosing of plague color now happens before all other events.
