@@ -3,13 +3,13 @@ VERSION=dev
 VERSION_BASE=?.?.?
 
 # Utility configuration
-PDFFLAGS=-interaction=nonstopmode -synctex=1 -output-directory=tmp
+PDFFLAGS=-interaction=nonstopmode -shell-escape -synctex=1 -output-directory=tmp
 VIEW=xdg-open
 
 # Files
 OUT=../combo-whist-$(VERSION)-$(LANGUAGE).pdf
 TEX=$(wildcard *.tex) $(wildcard ../*.tex) tmp/vars.tex
-PNG=$(wildcard *.png) $(wildcard ../*.png)
+SVG=$(wildcard *.svg) $(wildcard ../*.svg)
 
 .PHONY: all
 all: main.pdf
@@ -37,7 +37,7 @@ endif
 	echo '\\newcommand*{\\varVersion}{$(VERSION_BASE)}' >> tmp/vars.tex
 	echo '\\newcommand*{\\varLanguage}{$(LANGUAGE)}' >> tmp/vars.tex
 
-%.pdf: %.tex $(TEX) $(PNG)
+%.pdf: %.tex $(TEX) $(SVG)
 	mkdir -p tmp
 	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
 	cp tmp/$@ .
