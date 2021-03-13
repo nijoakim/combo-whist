@@ -1,12 +1,21 @@
 # Combo Whist
 Combo Whist, a variant of Whist, is a trick-taking card game with a taintless bidding system. It's main goal is to avoid the high amount of randomness commonly present in Whist games without making the rules overly complicated. The ruleset is still somewhat large, yet simple.
 
-For more detailed information check out the [rules and background story](http://nijoakim.com/combo-whist).
+For more detailed information as well as downloads check out the [rules and background story](http://nijoakim.com/combo-whist).
 
 ## Building
 Combo whist is distributed as a LaTeX source which can generate PDFs containing the rules. To generate the ruleset for all languages run
 
 	$ make
+
+### Book format
+It is also possible to generate PDFs in book format which can be folded into a mini-book when printed. Use:
+
+	$ make book
+
+Of course, books can be made only for a specific language too, like so:
+
+	$ make LANGUAGES=<languages> book
 
 ### Languages
 To only make a specific language or a set of languages, run
@@ -20,15 +29,6 @@ For example to make only the Swedish version, run
 To make the Swedish and English versions, run
 
 	$ make LANGUAGES="sv en"
-
-### Book format
-It is also possible to generate PDFs in book format which can be folded into a mini-book when printed. Use:
-
-	$ make book
-
-Of course, books can be made only for a specific language too, like so:
-
-	$ make LANGUAGES=<languages> book
 
 ### Dependencies
 - TeX Live: Although large (~3 GB last time I checked), texlive-full will provide you with all the LaTeX packages you need.
