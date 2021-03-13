@@ -6,7 +6,7 @@ Development Version
 
 ## Bid adjustments
 - The special bid _Master's Mail's_ incompatibilities were removed, but instead it's worth was reduced to 1 if combined with the previously incompatible bids. The number of cards to send was also reduced from 4 to 3.
-- The special bid _Potential's_ benefits upon completion were reduce in order to avoid worth-runaway.
+- The special bid _Potential's_ benefits upon completion were reduced in order to avoid worth-runaway.
 - The honorable rule in the special bid _Plague_ now only applies if the full combo bid is fulfilled. Furthermore, the declarer is no longer allowed to lead in the plague suit before the plague suit has been played in some other way. Moreover, the choosing of plague color now happens before all other events.
 
 ## New bids
