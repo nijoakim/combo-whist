@@ -1,6 +1,8 @@
 Development Version
 ===================
-- No changes so far
+
+## Renamed bids
+- The standard bid _Exact_ was renamed to _Precise_.
 
 Version 1.4.0 - 13 March 2021
 =============================
