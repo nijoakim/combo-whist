@@ -14,6 +14,7 @@ Development Version
 
 ## Renamed bids
 - The special bids _Switcheroo_ and _Master's Switcheroo_ were renamed to _Mail_ and _Master's Mail_, respectively.
+- The hyphen was removed in the special bid _Sub-Trump_.
 
 Version 1.3.0 - 15 May 2020
 ===========================
