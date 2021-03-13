@@ -4,7 +4,7 @@ Combo Whist, a variant of Whist, is a trick-taking card game with a taintless bi
 For more detailed information check out the [rules and background story](http://nijoakim.com/combo-whist).
 
 ## Building
-Combo whist is distributed as a LaTeX source which can generate pdfs containing the rules. To generate the ruleset for all languages run
+Combo whist is distributed as a LaTeX source which can generate PDFs containing the rules. To generate the ruleset for all languages run
 
 	$ make
 
@@ -22,7 +22,7 @@ To make the Swedish and English versions, run
 	$ make LANGUAGES="sv en"
 
 ### Book format
-It is also possible to generate pdfs in book format which can be folded into a mini-book when printed. Use:
+It is also possible to generate PDFs in book format which can be folded into a mini-book when printed. Use:
 
 	$ make book
 
