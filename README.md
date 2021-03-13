@@ -31,11 +31,14 @@ Of course, books can be made only for a specific language too, like so:
 	$ make LANGUAGES=<languages> book
 
 ### Dependencies
-Although large (~3 GB last time I checked), texlive-full will provide all that you will need. On Debian-based systems, run
+- TeX Live: Although large (~3 GB last time I checked), texlive-full will provide you with all the LaTeX packages you need.
+- Inkscape: To include SVG-files in LaTeX, Inkscape is needed.
 
-	$ sudo aptitude install texlive-full
+To install all dependencies on Debian-based systems, run
 
-There is also the possibility to get only the texlive packages you need. Unfortunately, I have so far been (and possibly will be forever) too lazy to gather up exactly which ones those are.
+	$ sudo aptitude install texlive-full inkscape
+
+There is also the possibility to get only the TeX Live packages you need. Unfortunately, I have so far been (and possibly will be forever) too lazy to gather up exactly which ones those are.
 
 ## Versioning
 Combo Whist's version format is specified as follows:
