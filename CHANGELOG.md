@@ -1,5 +1,5 @@
-Development Version
-===================
+Version 1.4.0 - 13 March 2021
+=============================
 ## General changes
 - In case of 3 players, the 6 of clubs is removed instead of the 6 of spades.
 - The logo was updated to an SVG version.
