@@ -7,7 +7,7 @@ LANGUAGES=sv en
 PDF=$(patsubst %,combo-whist-$(VERSION)-%.pdf,$(LANGUAGES))
 BOOK_PDF=$(patsubst %.pdf,%-book.pdf,$(PDF))
 TEX=$(wildcard *.tex)
-PNG=$(wildcard *.png)
+SVG=$(wildcard *.svg)
 
 .PHONY: all
 all: pdf
@@ -33,7 +33,7 @@ view: pdf
 	done
 
 # %.pdf
-combo-whist-$(VERSION)-%.pdf: % $(TEX) $(PNG) makefile makefile.common
+combo-whist-$(VERSION)-%.pdf: % $(TEX) $(SVG) makefile makefile.common
 	cd $<; make copy-down VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE)
 
 # %-book.pdf
