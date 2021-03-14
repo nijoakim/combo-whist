@@ -1,6 +1,9 @@
 Development Version
 ===================
 
+## Bid adjustments
+- The standard bid _Taintless Master's Game_ was modified. Its worth was reduced from 9 to 8, and its stick requirement was changed to minimum 12.
+
 ## Renamed bids
 - The standard bid _Exact_ was renamed to _Precise_.
 - The special bid _Start_ was renamed to _Hurry_.
