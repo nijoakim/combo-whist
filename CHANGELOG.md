@@ -3,6 +3,7 @@ Development Version
 
 ## Renamed bids
 - The standard bid _Exact_ was renamed to _Precise_.
+- The special bid _Start_ was renamed to _Hurry_.
 - The special bid _Triumph Trump_ was renamed to _Justice_.
 
 Version 1.4.0 - 13 March 2021
