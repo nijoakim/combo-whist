@@ -1,6 +1,11 @@
 Development Version
 ===================
 
+- No changes so far.
+
+Version 1.4.1 - 23 May 2021
+===================
+
 ## Bid adjustments
 - The standard bid _Taintless Master's Game_ was modified. Its worth was reduced from 9 to 8, and its stick requirement was changed to minimum 12.
 
