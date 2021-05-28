@@ -17,7 +17,7 @@ Version 1.4.1&mdash;23 May 2021
 Version 1.4.0&mdash;13 March 2021
 =============================
 ## General changes
-- In case of 3 players, the 6 of clubs is removed instead of the 6 of spades.
+- In case of 3 players, &clubs;6 is removed instead of &spades;6.
 - The logo was updated to an SVG version.
 
 ## Bid adjustments
