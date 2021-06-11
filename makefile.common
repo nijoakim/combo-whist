@@ -40,7 +40,6 @@ endif
 %.pdf: %.tex $(TEX) $(SVG)
 	mkdir -p tmp
 	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
-	cp tmp/$@ .
 	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
 	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
 	cp tmp/$@ .
