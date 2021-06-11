@@ -3,7 +3,6 @@ VERSION=dev
 VERSION_BASE=?.?.?
 
 # Utility configuration
-PDFFLAGS=-interaction=nonstopmode -shell-escape -synctex=1 -output-directory=tmp
 VIEW=xdg-open
 
 # Files
@@ -25,21 +24,19 @@ view: all
 
 .PHONY: copy-down
 copy-down: main.pdf
-	cp $< $(OUT)
+	@cp $< $(OUT)
 
 tmp/vars.tex: ../makefile ../makefile.common
-	mkdir -p tmp
+	@mkdir -p tmp
 ifeq ($(VERSION),dev)
-	echo '\\newcommand*{\\varDev}{}' > tmp/vars.tex
+	@echo '\\newcommand*{\\varDev}{}' > tmp/vars.tex
 else
-	echo '' > tmp/vars.tex
+	@echo '' > tmp/vars.tex
 endif
-	echo '\\newcommand*{\\varVersion}{$(VERSION_BASE)}' >> tmp/vars.tex
-	echo '\\newcommand*{\\varLanguage}{$(LANGUAGE)}' >> tmp/vars.tex
+	@echo '\\newcommand*{\\varVersion}{$(VERSION_BASE)}' >> tmp/vars.tex
+	@echo '\\newcommand*{\\varLanguage}{$(LANGUAGE)}' >> tmp/vars.tex
 
 %.pdf: %.tex $(TEX) $(SVG)
-	mkdir -p tmp
-	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
-	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
-	max_print_line=1000000 pdflatex $(PDFFLAGS) $<
-	cp tmp/$@ .
+	@mkdir -p tmp
+	rubber --pdf --synctex --unsafe --into tmp/ $<
+	@cp tmp/$@ .

@@ -27,14 +27,14 @@ clean:
 .PHONY: view
 view: pdf
 	@for lang in $(LANGUAGES) ; do \
-		cd $$lang ; \
+		@cd $$lang ; \
 		make view VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE); \
-		cd .. ; \
+		@cd .. ; \
 	done
 
 # %.pdf
 combo-whist-$(VERSION)-%.pdf: % $(TEX) $(SVG) makefile makefile.common
-	cd $<; make copy-down VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE)
+	@cd $<; make copy-down VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE)
 
 # %-book.pdf
 combo-whist-$(VERSION)-%-book.pdf: combo-whist-$(VERSION)-%.pdf
