@@ -1,4 +1,5 @@
 combo-whist-*.pdf
 tmp/
 */main.pdf
+*/main.synctex.gz
 */tmp

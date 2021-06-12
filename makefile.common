@@ -17,6 +17,7 @@ all: main.pdf
 clean:
 	rm -rf tmp/*
 	rm -f  main.pdf
+	rm -f  main.synctex.gz
 
 .PHONY: view
 view: all
@@ -40,3 +41,4 @@ endif
 	@mkdir -p tmp
 	rubber --pdf --synctex --unsafe --into tmp/ $<
 	@cp tmp/$@ .
+	@cp $(patsubst %.pdf,%.synctex.gz,tmp/$@) .
