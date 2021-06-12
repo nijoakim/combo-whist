@@ -26,10 +26,10 @@ clean:
 
 .PHONY: view
 view: pdf
-	@for lang in $(LANGUAGES) ; do \
-		@cd $$lang ; \
+	for lang in $(LANGUAGES) ; do \
+		cd $$lang ; \
 		make view VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE); \
-		@cd .. ; \
+		cd .. ; \
 	done
 
 # %.pdf

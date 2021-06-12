@@ -15,7 +15,7 @@ all: main.pdf
 
 .PHONY: clean
 clean:
-	rm -f tmp/*
+	rm -rf tmp/*
 	rm -f main.pdf
 
 .PHONY: view
@@ -36,7 +36,7 @@ endif
 	@echo '\\newcommand*{\\varVersion}{$(VERSION_BASE)}' >> tmp/vars.tex
 	@echo '\\newcommand*{\\varLanguage}{$(LANGUAGE)}' >> tmp/vars.tex
 
-%.pdf: %.tex $(TEX) $(SVG)
+%.pdf: $(TEX) $(SVG)
 	@mkdir -p tmp
 	rubber --pdf --synctex --unsafe --into tmp/ $<
 	@cp tmp/$@ .
