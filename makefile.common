@@ -16,7 +16,7 @@ all: main.pdf
 .PHONY: clean
 clean:
 	rm -rf tmp/*
-	rm -f main.pdf
+	rm -f  main.pdf
 
 .PHONY: view
 view: all
