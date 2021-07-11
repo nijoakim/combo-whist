@@ -39,6 +39,12 @@
 
 \input{tmp/vars.tex}
 
+%===================
+% Include Lua files
+%===================
+
+\directlua{dofile('../../common.lua')}
+
 %==========
 % Commands
 %==========
@@ -74,15 +80,6 @@
 	#4 &
 	#5 &
 	\small #6
-}
-
-\newcommand{\specialBidItem}[5]{%
-	\\ \hline
-	\textsc{#1} &
-	#2 &
-	#3 &
-	\raggedright\textit{#4} &
-	\small #5
 }
 
 \newcommand{\introPages}{%

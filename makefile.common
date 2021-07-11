@@ -9,6 +9,7 @@ VIEW=xdg-open
 OUT=../combo-whist-$(VERSION)-$(LANGUAGE).pdf
 TEX=$(wildcard *.tex) $(wildcard ../*.tex) tmp/vars.tex
 SVG=$(wildcard *.svg) $(wildcard ../*.svg)
+LUA=$(wildcard *.lua) $(wildcard ../*.lua)
 
 .PHONY: all
 all: main.pdf
@@ -37,8 +38,8 @@ endif
 	@echo '\\newcommand*{\\varVersion}{$(VERSION_BASE)}' >> tmp/vars.tex
 	@echo '\\newcommand*{\\varLanguage}{$(LANGUAGE)}' >> tmp/vars.tex
 
-%.pdf: $(TEX) $(SVG)
+%.pdf: $(TEX) $(SVG) $(LUA)
 	@mkdir -p tmp
-	rubber --pdf --synctex --unsafe --into tmp/ $<
+	rubber --module lualatex --synctex --unsafe --into tmp/ $<
 	@cp tmp/$@ .
 	@cp $(patsubst %.pdf,%.synctex.gz,tmp/$@) .

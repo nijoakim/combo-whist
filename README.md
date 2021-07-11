@@ -32,12 +32,14 @@ To make the Swedish and English versions, run
 
 ### Dependencies
 - TeX Live: Although large (~3 GB last time I checked), texlive-full will provide you with all the LaTeX packages you need.
-- rubber: For more readable build output, the LaTeX build system rubber is used.
 - Inkscape: To include SVG-files in LaTeX, Inkscape is needed.
+- Rubber: For more readable build output, the LaTeX build system rubber is used. Because LuaLaTeX support is a relatively new feature of Rubber, Rubber version 1.6.0 or later is required.
 
-To install all dependencies on Debian-based systems, run
+To install TeX Live and Inkscape on Debian-based systems, run
 
-	$ sudo aptitude install texlive-full rubber inkscape
+	$ sudo aptitude install texlive-full inkscape
+
+Rubber version 1.6.0 or later can be installed from <a href="https://gitlab.com/latex-rubber/rubber">https://gitlab.com/latex-rubber/rubber</a>.
 
 There is also the possibility to get only the TeX Live packages you need. Unfortunately, I have so far been (and possibly will be forever) too lazy to gather up exactly which ones those are.
 
