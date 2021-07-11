@@ -38,4 +38,4 @@ combo-whist-$(VERSION)-%.pdf: % $(TEX) $(SVG) makefile makefile.common
 
 # %-book.pdf
 combo-whist-$(VERSION)-%-book.pdf: combo-whist-$(VERSION)-%.pdf
-	pdfbook2 --paper=a4paper $<
+	pdfbook2 --paper=a4paper --short-edge $<
