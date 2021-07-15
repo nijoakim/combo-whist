@@ -36,6 +36,10 @@
 
 % Document
 \begin{document}
+	%=============
+	% Intro pages
+	%=============
+
 	\introPages
 
 	% Links
@@ -47,6 +51,10 @@
 	}
 
 	\pagebreak
+
+	%======
+	% Body
+	%======
 
 	\section{Overview}
 		Combo Whist is a trick-taking card game and is---as its name implies---a variant of Whist. The key trait of Combo Whist is its great variety of available strategies while still having a rule set that is fairly simple (although the rule set is undeniably somewhat large). The possibility for many and varied strategies avoids a substantial amount of randomness that is usually present in Whist games without making the game overly complicated, keeping it fun to play for both experienced and casual card players.
@@ -118,9 +126,53 @@
 		\subsection{Cheating}
 			A player who intentionally cheats in Combo Whist is never again allowed to play it because it is obvious that they don't respect the game's magnificence.
 
+	%============
 	% Bid tables
+	%============
+
 	\pagebreak
 	\newgeometry{left=1cm, right=1cm, top=1cm}
-	\input{standard-bids.tex}
-	\input{special-bids.tex}
+
+	\section{Standard bids}
+		\begin{center}
+			\begin{tabularx}{\textwidth}{
+					l
+					S[table-number-alignment=center, table-format=1.0]
+					S[table-number-alignment=center, table-format=1.0]
+					cc|X
+				}
+
+				\textbf{Designation} &
+				\rotccw{\textbf{Worth}} &
+				\rotccw{\textbf{Score}} &
+				\rotccw{\textbf{Trump}} &
+				\rotccw{\textbf{Tricks}} &
+				\textbf{Rules}
+				\\[-3ex]
+
+				\directlua{tableItemsStandardBids()}
+			\end{tabularx}
+		\end{center}
+
+	\newcommand{\nonTrump}{\textnormal{non-trump bids}}
+	\section{Special bids}
+		\begin{center}
+			\begin{tabularx}{\textwidth}{
+					l
+					S[table-number-alignment=center, table-format=1.0]
+					S[table-number-alignment=center, table-format=1.0]
+					p{3cm}
+					|X
+				}
+
+				\textbf{Designation} &
+				\rotccw{\textbf{Worth}} &
+				\rotccw{\textbf{Order}} &
+				\textbf{Incompatibility} &
+				\textbf{Rules}
+				\\[-3ex]
+
+				\directlua{tableItemsSpecialBids()}
+			\end{tabularx}
+		\end{center}
 \end{document}

@@ -36,6 +36,10 @@
 
 % Document
 \begin{document}
+	%=============
+	% Intro pages
+	%=============
+
 	\introPages
 
 	% Links
@@ -47,6 +51,10 @@
 	}
 
 	\pagebreak
+
+	%======
+	% Body
+	%======
 
 	\section{Översikt}
 		Kombinations-Whist är ett kortspel som bygger på sticktagande och är---som namnet antyder---en variant av Whist. Kombinations-Whists huvudsakliga utmärkande drag är dess varierade utbud av möjliga strategier med acceptabelt simpla regler. (Det måste dock erkännas att regelboken trots det är någorlunda lång.) Möjligheten att spela enligt många varierade strategier undviker en substantiell mängd slump som vanligtvis finnes i andra Whist-spel utan att att göra spelet alltför komplicerat. Detta gör Kombinations-Whist till ett spel som är kul att spela både för erfarna spelare såväl som för nybörjare.
@@ -117,9 +125,52 @@
 		\subsection{Fusk}
 			En spelare som avsiktligen fuskar i Kombinations-Whist får aldrig mer spela spelet eftersom denne uppenbarligen inte respekterar spelets prakt.
 
+	%============
 	% Bid tables
+	%============
+
 	\pagebreak
 	\newgeometry{left=1cm, right=1cm, top=1cm}
-	\input{standard-bids.tex}
-	\input{special-bids.tex}
+
+	\section{Standardbud}
+		\begin{center}
+			\begin{tabularx}{\textwidth}{
+				l
+				S[table-number-alignment=center, table-format=1.0]
+				S[table-number-alignment=center, table-format=1.0]
+				cc|X
+			}
+					\textbf{Benämning} &
+					\rotccw{\textbf{Värde}} &
+					\rotccw{\textbf{Poäng}} &
+					\rotccw{\textbf{Trumf}} &
+					\rotccw{\textbf{Stick}} &
+					\textbf{Regler}
+					\\[-3ex]
+
+					\directlua{tableItemsStandardBids()}
+			\end{tabularx}
+		\end{center}
+
+	\newcommand{\nonTrump}{\textnormal{icke-trumf-bud}}
+	\section{Specialbud}
+		\begin{center}
+				\begin{tabularx}{\textwidth}{
+					l
+					S[table-number-alignment=center, table-format=1.0]
+					S[table-number-alignment=center, table-format=1.0]
+					p{3cm}
+					|X
+				}
+
+				\textbf{Benämning} &
+				\rotccw{\textbf{Värde}} &
+				\rotccw{\textbf{Ordning}} &
+				\textbf{Inkompatibilitet} &
+				\textbf{Regler}
+				\\[-3ex]
+
+				\directlua{tableItemsSpecialBids()}
+			\end{tabularx}
+		\end{center}
 \end{document}
