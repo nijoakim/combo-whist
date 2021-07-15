@@ -6,26 +6,26 @@ VERSION_BASE=?.?.?
 VIEW=xdg-open
 
 # Files
-OUT=../combo-whist-$(VERSION)-$(LANGUAGE).pdf
+OUT=../combo-whist-rules-$(VERSION)-$(LANGUAGE).pdf
 TEX=$(wildcard *.tex) $(wildcard ../*.tex) tmp/vars.tex
 SVG=$(wildcard *.svg) $(wildcard ../*.svg)
 LUA=$(wildcard *.lua) $(wildcard ../*.lua)
 
 .PHONY: all
-all: main.pdf
+all: rules.pdf
 
 .PHONY: clean
 clean:
 	rm -rf tmp/*
-	rm -f  main.pdf
-	rm -f  main.synctex.gz
+	rm -f  rules.pdf
+	rm -f  rules.synctex.gz
 
 .PHONY: view
 view: all
 	$(VIEW) $(OUT) &
 
 .PHONY: copy-down
-copy-down: main.pdf
+copy-down: rules.pdf
 	@cp $< $(OUT)
 
 tmp/vars.tex: ../makefile ../makefile.common

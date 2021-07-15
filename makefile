@@ -4,7 +4,7 @@ VERSION_BASE=1.4.1
 LANGUAGES=sv en
 
 # Files
-PDF=$(patsubst %,combo-whist-$(VERSION)-%.pdf,$(LANGUAGES))
+PDF=$(patsubst %,combo-whist-rules-$(VERSION)-%.pdf,$(LANGUAGES))
 BOOK_PDF=$(patsubst %.pdf,%-book.pdf,$(PDF))
 TEX=$(wildcard *.tex)
 SVG=$(wildcard *.svg)
@@ -34,9 +34,9 @@ view: pdf
 	done
 
 # %.pdf
-combo-whist-$(VERSION)-%.pdf: % $(TEX) $(SVG) $(LUA) makefile makefile.common
+combo-whist-rules-$(VERSION)-%.pdf: % $(TEX) $(SVG) $(LUA) makefile makefile.common
 	@cd $<; make copy-down VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE)
 
 # %-book.pdf
-combo-whist-$(VERSION)-%-book.pdf: combo-whist-$(VERSION)-%.pdf
+combo-whist-rules-$(VERSION)-%-book.pdf: combo-whist-rules-$(VERSION)-%.pdf
 	pdfbook2 --paper=a4paper --short-edge $<
