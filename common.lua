@@ -34,12 +34,34 @@ end
 
 function tableItemsSpecialBids()
 	for _, bid in ipairs(special_bids) do
-		tex.print("\\\\ \\hline")
-		tex.print("\\textsc{".. bid[1] .."} &")
-		tex.print(bid[2] .." &")
-		tex.print(bid[3] .." &")
-		tex.print("\\raggedright\\textit{".. bid[4] .."} &")
-		tex.print("\\small ".. bid[5])
-		tex.print("")
+		tex.print("\\\\ \\hline")               -- Caption rule
+		tex.print("\\textsc{".. bid[1] .."} &") -- Designation
+		tex.print(bid[2] .." &")                -- Worth
+
+		-- Order
+		if bid[3] then
+			tex.print(bid[3] .." &")
+		else
+			tex.print("{---} &")
+		end
+
+		-- Incompatibility
+		if bid[4] then
+			tex.print{"\\raggedright\\textit{%"}
+			for i, incompat in ipairs(bid[4]) do
+				print_str = incompat
+				if i < #(bid[4]) then
+					print_str = print_str ..", "
+				end
+				tex.print(print_str)
+			end
+			tex.print{"}"}
+			tex.print(" &")
+		else
+			tex.print("--- &")
+		end
+
+		tex.print("\\small ".. bid[5]) -- Rules
+		tex.print("")                  -- New line
 	end
 end

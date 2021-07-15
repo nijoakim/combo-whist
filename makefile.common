@@ -6,7 +6,7 @@ VERSION_BASE=?.?.?
 VIEW=xdg-open
 
 # Files
-OUT=../combo-whist-rules-$(VERSION)-$(LANGUAGE).pdf
+OUT_RULES=../combo-whist-rules-$(VERSION)-$(LANGUAGE).pdf
 TEX=$(wildcard *.tex) $(wildcard ../*.tex) tmp/vars.tex
 SVG=$(wildcard *.svg) $(wildcard ../*.svg)
 LUA=$(wildcard *.lua) $(wildcard ../*.lua)
@@ -22,11 +22,11 @@ clean:
 
 .PHONY: view
 view: all
-	$(VIEW) $(OUT) &
+	$(VIEW) $(OUT_RULES) &
 
 .PHONY: copy-down
 copy-down: rules.pdf
-	@cp $< $(OUT)
+	@cp $< $(OUT_RULES)
 
 tmp/vars.tex: ../makefile ../makefile.common
 	@mkdir -p tmp
@@ -40,6 +40,6 @@ endif
 
 %.pdf: $(TEX) $(SVG) $(LUA)
 	@mkdir -p tmp
-	rubber --module lualatex --synctex --unsafe --into tmp/ $<
+	rubber --module lualatex --synctex --unsafe --into tmp/ $(patsubst %.pdf,%.tex,$@)
 	@cp tmp/$@ .
 	@cp $(patsubst %.pdf,%.synctex.gz,tmp/$@) .

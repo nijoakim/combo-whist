@@ -1,5 +1,5 @@
-combo-whist-*.pdf
+*.pdf
 tmp/
-*/rules.pdf
-*/rules.synctex.gz
+*/*.pdf
+*/*.synctex.gz
 */tmp
