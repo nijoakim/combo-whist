@@ -19,19 +19,28 @@
 % Packages
 %==========
 
-\usepackage[utf8]{inputenc}
-\usepackage[protrusion=true]{microtype} % More readable layout
+\usepackage[utf8]{inputenc}             % UTF-8 character encoding
+\usepackage{booktabs}                   % Better-looking tabulars
+\usepackage{tabularx}                   % X column specifier in tabulars
 \usepackage{graphicx}                   % \rotatebox
-\usepackage{tabularx}                   % X column specifier in tables
+\usepackage[protrusion=true]{microtype} % More readable layout
 \usepackage[pass]{geometry}             % Changing margins
-\usepackage{siunitx}                    % Number alignment in tables
 \usepackage{verbatim}                   % Monospaced text
 \usepackage[inkscapepath=tmp]{svg}      % .svg images
+
+% Link and URL colors
 \usepackage[
 	ocgcolorlinks=true,
 	urlcolor={[rgb]{0,0,1}},
 	linkcolor={[rgb]{0.4,0,0}},
 ]{hyperref}
+
+% Number alignment in tables
+\usepackage{siunitx}
+\sisetup{
+	table-format           = 1.0,
+	table-number-alignment = center,
+}
 
 %======================================
 % Include makefile generated variables

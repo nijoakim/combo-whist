@@ -124,7 +124,7 @@ special_bids = {
 		"Plague",
 		2,
 		1,
-		{"Bid of Shame", "Master's Bid of Shame", "Zero"},
+		{"Bid of~Shame", "Master's Bid of~Shame", "Zero"},
 		"The declarer chooses a suit to be the \\emph{plague suit}. The declarer must not become \\emph{beplagued}; that is, must not bring home the solitary greatest amount of plague cards (note: \\emph{not} tricks), unless they become \\emph{honorably beplagued} and bring home the whole plague suit as well as fulfill all the other requirements of the combo bid, in which case they also score 1 honorable extra point. The declarer must not lead in the plague suit before the plague suit has been played in some other way, provided the declarer does not hold only plague cards.",
 	},
 
