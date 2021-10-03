@@ -67,28 +67,24 @@
 	}
 }
 
+% Full section reference
+\newcommand{\sectionref}[1]{%
+	\ref{sec:#1}--\nameref{sec:#1}
+}
+
+% URL to the rules
 \newcommand{\rulesUrl}{%
 	\href{http://nijoakim.com/combo-whist}{http://nijoakim.com/combo-whist}%
 }
 
+% URL to the RSS feed
 \newcommand{\rssUrl}{%
 	\href{http://nijoakim.com/news.rss}{http://nijoakim.com/news.rss}%
 }
 
-
 % Rotate text 90 degrees
 \newcommand{\rotccw}[1]{%
 	\rotatebox{75}{{#1}}
-}
-
-\newcommand{\standardBidItem}[6]{%
-	\\ \hline
-	\textsc{#1} &
-	#2 &
-	#3 &
-	#4 &
-	#5 &
-	\small #6
 }
 
 \newcommand{\introPages}{%

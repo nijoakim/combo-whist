@@ -82,7 +82,7 @@
 			Efter spelet noteras spelarnas poäng och en ny giv börjar där spelaren till vänster om den föregående given blir ny giv.
 
 			\subsubsection{Spelet}
-				Spelet spelas likt de flesta Whist-varianter. Spelaren till höger om \emph{spelföraren}\footnote{Begreppet ``spelförare'' förklaras i stycket \textit{\nameref{sec:bidding}}.} börjar med att spela ut ett kort. Sen blir det spelaren till höger om denne som spelar ut nästa kort som dessutom måste följa färg. Därefter spelar näste spelare (till vänster om föregående) ut ännu ett kort som också måste följa det första kortets färg och så vidare till det att alla spelare har spelat ut ett kort vardera.
+				Spelet spelas likt de flesta Whist-varianter. Spelaren till höger om \emph{spelföraren}\footnote{Begreppet ``spelförare'' förklaras i Stycke~\sectionref{bidding}.} börjar med att spela ut ett kort. Sen blir det spelaren till höger om denne som spelar ut nästa kort som dessutom måste följa färg. Därefter spelar näste spelare (till vänster om föregående) ut ännu ett kort som också måste följa det första kortets färg och så vidare till det att alla spelare har spelat ut ett kort vardera.
 
 				Om en spelare har slut kort i den först utspelade färgen får denne saka valfritt kort eller spela en trumf. Till skillnad från många Whist-varianter finns inget trumftvång.
 
@@ -96,7 +96,7 @@
 
 				Ett buds värde definieras som det kombinerade värdet av standard- och specialbudet som det består av. För att ett bud ska få budas måste det ha ett värde av minst 1. Det föreslås att en tidsgräns på 20 sekunder sätts mellan varje bud och 1 minut före det första budet. För nybörjare är dock längre eller inga tidsgränser rekommenderade. Om en spelare inte har lagt ett bud inom den givna tiden så passar denne automatiskt. Budgivningen fortsätter fram till att alla spelare förutom en har passat. Den spelaren blir spelförare och spelet börjar.
 
-				De standardbud och specialbud som finns att tillgå finns listade i Tabellerna~\ref{tab:standardBids}~respektive~\ref{tab:specialBids}. Antalet stick att ta hem för att ett bud ska gå hem finnes i standardbudstabellens ``Stick''-kolumn. Ett specialbud kan inte kombineras med ett annat bud som finns listade i ``Inkompatibilitet''-kolumnen. För övrigt är kombinationsbud som omöjligen kan gå hem oavsett motspelarnas kortfördelning förbjudna. Notera att det finns en skillnad mellan värde och poäng. Värde är budets värde (Rätt gissat!) och poäng är antalet poäng som spelföraren får om dennes bud går hem.
+				De standardbud och specialbud som finns att tillgå finns listade i tabellerna i Stycke~\sectionref{standardBids} och Stycke~\sectionref{specialBids}. Antalet stick att ta hem för att ett bud ska gå hem finnes i standardbudstabellens ``Stick''-kolumn. Ett specialbud kan inte kombineras med ett annat bud som finns listade i ``Inkompatibilitet''-kolumnen. För övrigt är kombinationsbud som omöjligen kan gå hem oavsett motspelarnas kortfördelning förbjudna. Notera att det finns en skillnad mellan värde och poäng. Värde är budets värde (Rätt gissat!) och poäng är antalet poäng som spelföraren får om dennes bud går hem.
 
 				Om det är oklart \emph{när} en händelse som inträffar på grund av ett bud ska ske, se specialbudens ``Ordning''-kolumn. Ett buds ordning bestämmer i vilken ordning de olika händelserna som ges av dess regler ska ske. De bud med lägst ordning går först. Alla standardbud har ordningen 0.
 
@@ -133,6 +133,7 @@
 	\newgeometry{left=1cm, right=1cm, top=1cm}
 
 	\section{Standardbud}
+		\label{sec:standardBids}
 		\begin{center}
 			\begin{tabularx}{\textwidth}{
 				p{2.5cm}
@@ -154,6 +155,7 @@
 
 	\newcommand{\nonTrump}{\textnormal{icke-trumf-bud}}
 	\section{Specialbud}
+		\label{sec:specialBids}
 		\begin{center}
 				\begin{tabularx}{\textwidth}{
 					p{2.1cm}
