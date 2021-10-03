@@ -18,7 +18,7 @@ Version 1.4.0&mdash;13 March 2021
 =============================
 ## General changes
 - In case of 3 players, &clubs;6 is removed instead of &spades;6.
-- The logo was updated to an SVG version.
+- The logo was updated to an SVG variant.
 
 ## Bid adjustments
 - The special bid _Master's Mail's_ incompatibilities were removed, but instead it's worth was reduced to 1 if combined with the previously incompatible bids. The number of cards to exchange was also reduced from 4 to 3.
