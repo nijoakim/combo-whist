@@ -21,22 +21,22 @@ dofile('../standard-bids.lua')
 
 function tableItemsStandardBids()
 	for _, bid in ipairs(standard_bids) do
-		tex.print("\\\\ \\midrule")
-		tex.print("\\raggedright \\textsc{".. bid[1] .."} &")
-		tex.print(bid[2] .." &")
-		tex.print(bid[3] .." &")
-		tex.print(bid[4] .." &")
-		tex.print(bid[5] .." &")
-		tex.print("\\small ".. bid[6])
-		tex.print("")
+		tex.print("\\\\ \\midrule")                           -- Caption rule
+		tex.print("\\raggedright \\textsc{".. bid[1] .."} &") -- Designation
+		tex.print(bid[2] .." &")                              -- Worth
+		tex.print(bid[3] .." &")                              -- Score
+		tex.print(bid[4] .." &")                              -- Trump
+		tex.print(bid[5] .." &")                              -- Tricks
+		tex.print("\\small ".. bid[6])                        -- Rules
+		tex.print("")                                         -- New line
 	end
 end
 
 function tableItemsSpecialBids()
 	for _, bid in ipairs(special_bids) do
-		tex.print("\\\\ \\midrule")               -- Caption rule
+		tex.print("\\\\ \\midrule")                           -- Caption rule
 		tex.print("\\raggedright \\textsc{".. bid[1] .."} &") -- Designation
-		tex.print(bid[2] .." &")                -- Worth
+		tex.print(bid[2] .." &")                              -- Worth
 
 		-- Order
 		if bid[3] then
