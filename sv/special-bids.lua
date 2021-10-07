@@ -124,7 +124,7 @@ special_bids = {
 		"Pest",
 		2,
 		1,
-		{"Skambud", "Mästarskambud", "Noll"},
+		{"Mästarskambud", "Noll", "Skambud"},
 		"Spelföraren väljer en färg som blir \\emph{pestfärgen}. Spelföraren får inte bli \\emph{förpestad}, det vill säga, får inte ta hem enskilt flest kort (observera: \\emph{ej} stick) i pestfärgen, såvida inte denne blir \\emph{hedervärt förpestad} och tar hem hela pestfärgen samt att budet i övrigt går hem, i vilket fall spelföraren får 1 hedervärt extra-poäng. Spelföraren får inte spela ut i pestfärgen före pestfärgen har spelats på annat sätt, såvida inte spelföraren enbart besitter pest-kort.",
 	},
 
