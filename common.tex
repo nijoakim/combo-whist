@@ -58,6 +58,7 @@
 % Commands
 %==========
 
+% Define title text
 \newcommand{\defTitle}[2]{%
 	\title{
 		\rule{\textwidth}{0.4mm}
@@ -65,6 +66,18 @@
 		\Large \textsc{#2} \\
 		\rule{\textwidth}{0.4mm}
 	}
+}
+
+% Define link text
+\newcommand{\defLinks}[1]{%
+	\def\makeLinks{%
+		\noindent
+		\fbox{%
+			\parbox{\textwidth}{%
+				#1
+			}%
+		}%
+	}%
 }
 
 % Full section reference
@@ -88,6 +101,7 @@
 }
 
 \newcommand{\introPages}{%
+	% Title
 	\maketitle
 
 	\vfill
@@ -98,19 +112,24 @@
 	\end{center}
 
 	\vfill
+	\vfill
 
-	% License
-	\input{../../license.tex}
+	% Links
+	\makeLinks
 
 	% Style, then new page
 	\thispagestyle{empty}
 	\pagebreak
 
-	% Table of contents and list of tables without protrusion
+	% Table of contents without protrusion
 	\microtypesetup{protrusion=false}
-	\setcounter{tocdepth}{3}
-	\tableofcontents
+		\setcounter{tocdepth}{3}
+		\tableofcontents
 	\microtypesetup{protrusion=true}
 	\vfill
+
+	% License
+	\input{../../license.tex}
+
 	\thispagestyle{empty}
 }
