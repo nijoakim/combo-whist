@@ -17,7 +17,7 @@
 
 standard_bids = {
 	{
-		"Bid of Shame",
+		"Bid of~Shame",
 		0,
 		1,
 		"no",
@@ -80,7 +80,7 @@ standard_bids = {
 	},
 
 	{
-		"Master's Bid of Shame",
+		"Master's Bid of~Shame",
 		3,
 		2,
 		"no",
@@ -157,6 +157,6 @@ standard_bids = {
 		"*",
 		"no",
 		"min 12",
-		"*If the bid is completed, the declarer scores as many points as the combo bid's worth. Furthermore, in case the combo bid's worth is 13 or higher, the declarer immediately wins the game regardless of previous scores. When this occurs the declarer also earns the right to the title, \\emph{Taintless~Master~of~Combo~Whist}, for the rest of their life.",
+		"*If the bid is completed, the declarer scores as many points as the combo bid's worth. Furthermore, in case the combo bid's worth is 13 or higher, the declarer immediately wins the game regardless of previous scores. When this occurs the declarer also earns the right to the title, \\emph{Taintless Master of~Combo~Whist}, for the rest of their life.",
 	}
 }

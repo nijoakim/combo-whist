@@ -157,6 +157,6 @@ standard_bids = {
 		"*",
 		"no",
 		"min 12",
-		"*Om budet går hem får spelföraren lika många poäng som kombinationsbudets värde. Skulle dessutom kombinationsbudets värde vara 13 eller högre vinner spelföraren spelet omedelbart, oavsett poängställning. När detta inträffar erhåller dessutom spelföraren rätten att titulera sig \\emph{Obesudlad~Mästare~av~Kombinations-Whist} under resten av sitt liv.",
+		"*Om budet går hem får spelföraren lika många poäng som kombinationsbudets värde. Skulle dessutom kombinationsbudets värde vara 13 eller högre vinner spelföraren spelet omedelbart, oavsett poängställning. När detta inträffar erhåller dessutom spelföraren rätten att titulera sig \\emph{Obesudlad Mästare av~Kombinations-Whist} under resten av sitt liv.",
 	}
 }
