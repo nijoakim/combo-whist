@@ -26,7 +26,7 @@ Version 1.4.0&mdash;13 March 2021
 - The honorable rule in the special bid _Plague_ now only applies if the full combo bid is fulfilled. Furthermore, the declarer is no longer allowed to lead in the plague suit before the plague suit has been played in some other way. Moreover, the choosing of plague color now happens before all other events.
 
 ## New bids
-- A new standard bid _Rank Trump_ was introduced.
+- A new standard bid, _Rank Trump_, was introduced.
 
 ## Renamed bids
 - The special bids _Switcheroo_ and _Master's Switcheroo_ were renamed to _Mail_ and _Master's Mail_, respectively.
@@ -55,7 +55,7 @@ Version 1.2.0&mdash;27 Nov 2017
 
 ## Bid adjustments
 - The standard bid _Greed_ was converted to a special bid and adjusted to fit that role.
-- The standard bid _Round Trump_ was removed in favor of a new standard bid _Sneaky Trump_.
+- The standard bid _Round Trump_ was removed in favor of a new standard bid, _Sneaky Trump_.
 - The standard bid _Taintless Master's Game_ was modified. Its score and worth were adjusted, the former to match the worth of the combo bid. Another not-so-insignificant rule was also added to the bid.
 - The worth of the special bid _Triumph Trump_ was decreased from -3 to -4.
 - The special bid _Master's Switcheroo_ is now incompatible with _Grill_.
@@ -81,7 +81,7 @@ Version 1.1.0&mdash;5 Apr 2016
 - The rules for winning were slightly adjusted.
 
 ## Bid adjustments
-- The special bid _Theft_ was removed in favor of a new special bid _Triumph Trump_.
+- The special bid _Theft_ was removed in favor of a new special bid, _Triumph Trump_.
 
 ## Renamed bids
 - The special bid _Nada_ was renamed to _Zero_.
