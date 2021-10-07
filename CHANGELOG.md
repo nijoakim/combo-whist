@@ -1,7 +1,8 @@
 Development Version
 ===================
 
-- No changes
+## General changes
+- Instructions on how to deal with unintentional cheating were added.
 
 Version 1.4.1&mdash;23 May 2021
 ===================
