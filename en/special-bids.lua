@@ -90,7 +90,7 @@ special_bids = {
 
 	{
 		"Master's Mail",
-		"{1\\text{ or }3}",
+		"{1 or 3}",
 		3,
 		nil,
 		"If the bid is combined with a trump bid that is not \\emph{Grill}, its worth is 3, but otherwise merely 1. Before the game starts, all players but the declarer sends 3 cards to the player to the right (skipping the declarer).",
@@ -124,7 +124,11 @@ special_bids = {
 		"Plague",
 		2,
 		1,
-		{"Bid of~Shame", "Master's Bid of~Shame", "Zero"},
+		{
+			"Bid of~Shame",
+			"Master's Bid of~Shame",
+			"Zero"
+		},
 		"The declarer chooses a suit to be the \\emph{plague suit}. The declarer must not become \\emph{beplagued}; that is, must not bring home the solitary greatest amount of plague cards (note: \\emph{not} tricks), unless they become \\emph{honorably beplagued} and bring home the whole plague suit as well as fulfill all the other requirements of the combo bid, in which case they also score 1 honorable extra point. The declarer must not lead in the plague suit before the plague suit has been played in some other way, provided the declarer does not hold only plague cards.",
 	},
 
@@ -132,7 +136,10 @@ special_bids = {
 		"Open Hand",
 		3,
 		nil,
-		{"Atelier", "Open Trump"},
+		{
+			"Atelier",
+			"Open Trump",
+		},
 		"The declarer must play with an open hand. That is, all of the their cards must be shown to all players during the game.",
 	},
 }

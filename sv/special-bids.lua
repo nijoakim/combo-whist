@@ -82,7 +82,7 @@ special_bids = {
 
 	{
 		"Mästarbrev",
-		"{1 or 3}",
+		"{1 el. 3}",
 		3,
 		nil,
 		"Om budet budas i kombination med ett trumf-bud some inte är \\emph{Grill} är värdet 3, men annars endast 1. Före spelet börjar skickar alla utom spelföraren 3 kort till spelaren till höger (spelföraren hoppas över).",
@@ -100,7 +100,11 @@ special_bids = {
 		"Öppen Trumf",
 		1,
 		nil,
-		{"\\nonTrump", "Grill", "Öppen Hand"},
+		{
+			"\\nonTrump",
+			"Grill",
+			"Öppen Hand",
+		},
 		"Spelföraren måste spela med öppna trumfkort. Det vill säga, spelförarens trumfkort måste visas till samtliga spelare under spelets gång. Om detta bud kombineras med \\emph{Ateljé} så får ateljén inte innehålla några trumfkort.",
 	},
 
@@ -124,7 +128,11 @@ special_bids = {
 		"Pest",
 		2,
 		1,
-		{"Mästarskambud", "Noll", "Skambud"},
+		{
+			"Mästarskambud",
+			"Noll",
+			"Skambud"
+		},
 		"Spelföraren väljer en färg som blir \\emph{pestfärgen}. Spelföraren får inte bli \\emph{förpestad}, det vill säga, får inte ta hem enskilt flest kort (observera: \\emph{ej} stick) i pestfärgen, såvida inte denne blir \\emph{hedervärt förpestad} och tar hem hela pestfärgen samt att budet i övrigt går hem, i vilket fall spelföraren får 1 hedervärt extra-poäng. Spelföraren får inte spela ut i pestfärgen före pestfärgen har spelats på annat sätt, såvida inte spelföraren enbart besitter pest-kort.",
 	},
 
@@ -132,7 +140,10 @@ special_bids = {
 		"Öppen Hand",
 		3,
 		nil,
-		{"Ateljé", "Öppen Trumf"},
+		{
+			"Ateljé",
+			"Öppen Trumf"
+		},
 		"Spelföraren måste spela med öppen hand. Det vill säga, alla dennes kort måste visas för samtliga spelare under spelets gång.",
 	},
 }
