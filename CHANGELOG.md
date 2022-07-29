@@ -3,6 +3,7 @@ Development Version
 
 ## General changes
 - Instructions on how to deal with unintentional cheating were added.
+- In case of 3 players, the values of the cards to remove increased by one.
 
 Version 1.4.1&mdash;23 May 2021
 ===================
