@@ -94,7 +94,7 @@ standard_bids = {
 		2,
 		"nej",
 		"se $\\rightarrow$",
-		"Före spelets början gissar spelföraren på en möjlig mängd stick denne kommer att ta hem. Spelföraren måste ta hem den mängd stick som gissades.",
+		"Före spelets början gissar spelföraren på en möjlig mängd stick denne kommer att ta hem. Spelföraren måste ta hem den gissade mängden stick.",
 	},
 
 	{
