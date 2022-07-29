@@ -1,4 +1,4 @@
-Development Version
+Version 1.4.2&mdash;23 May 2021
 ===================
 
 ## General changes

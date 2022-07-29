@@ -1,6 +1,6 @@
 # Version configuration
-VERSION=dev
-VERSION_BASE=1.4.1
+VERSION=1.4.2
+VERSION_BASE=1.4.2
 LANGUAGES=sv en
 
 # Files
