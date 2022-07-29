@@ -1,4 +1,4 @@
--- Copyright 2022 Joakim Nilsson
+-- Copyright 2021-2022 Joakim Nilsson
 --
 -- This file is part of Combo Whist.
 --
