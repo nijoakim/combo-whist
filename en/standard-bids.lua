@@ -31,7 +31,7 @@ standard_bids = {
 		1,
 		"no",
 		"see $\\rightarrow$",
-		"The declarer guesses, before the beginning of the game, two possible amounts of tricks they think they could bring home. They must bring home one of the amounts of tricks they guessed.",
+		"The declarer guesses, before the beginning of the game, two possible amounts of tricks they think they could bring home. They must bring home one of the guessed amount of tricks.",
 	},
 
 	{
@@ -67,7 +67,7 @@ standard_bids = {
 		1,
 		"no",
 		"see $\\rightarrow$",
-		"The declarer must bring home fewer tricks of the 7 first tricks than of the 6 last.",
+		"The declarer must bring home fewer of the 7 first tricks than of the 6 last.",
 	},
 
 	{
@@ -94,7 +94,7 @@ standard_bids = {
 		2,
 		"no",
 		"see $\\rightarrow$",
-		"The declarer guesses, before the start of the game, how many tricks they think they will bring home. They must bring home the number of tricks they guessed.",
+		"The declarer guesses, before the start of the game, how many tricks they think they will bring home. They must bring home the guessed amount of tricks.",
 	},
 
 	{

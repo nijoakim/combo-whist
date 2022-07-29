@@ -1,4 +1,4 @@
--- Copyright 2022 Joakim Nilsson
+-- Copyright 2021-2022 Joakim Nilsson
 --
 -- This file is part of Combo Whist.
 --
@@ -67,7 +67,7 @@ standard_bids = {
 		1,
 		"nej",
 		"se $\\rightarrow$",
-		"Spelföraren måste ta hem färre stick av de 7 första sticken än av de 6 sista.",
+		"Spelföraren måste ta hem färre av de 7 första sticken än av de 6 sista.",
 	},
 
 	{
