@@ -21,7 +21,7 @@ standard_bids = {
 		0,
 		1,
 		"no",
-		"varies",
+		"see $\\rightarrow$",
 		"The declarer must not bring home the greatest amount of tricks---not even if this amount is shared with another player.",
 	},
 
@@ -30,7 +30,7 @@ standard_bids = {
 		1,
 		1,
 		"no",
-		"varies",
+		"see $\\rightarrow$",
 		"The declarer guesses, before the beginning of the game, two possible amounts of tricks they think they could bring home. They must bring home one of the amounts of tricks they guessed.",
 	},
 
@@ -66,7 +66,7 @@ standard_bids = {
 		2,
 		1,
 		"no",
-		"varies",
+		"see $\\rightarrow$",
 		"The declarer must bring home fewer tricks of the 7 first tricks than of the 6 last.",
 	},
 
@@ -84,7 +84,7 @@ standard_bids = {
 		3,
 		2,
 		"no",
-		"varies",
+		"see $\\rightarrow$",
 		"The declarer must bring home the least amount of tricks. If no one brings home fewer tricks than the declerer, the bid is completed.",
 	},
 
@@ -93,7 +93,7 @@ standard_bids = {
 		3,
 		2,
 		"no",
-		"varies",
+		"see $\\rightarrow$",
 		"The declarer guesses, before the start of the game, how many tricks they think they will bring home. They must bring home the number of tricks they guessed.",
 	},
 
@@ -129,7 +129,7 @@ standard_bids = {
 		4,
 		3,
 		"no",
-		"varies",
+		"see $\\rightarrow$",
 		"The declarer must bring home the solitary greatest amount of tricks.",
 	},
 

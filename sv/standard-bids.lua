@@ -21,7 +21,7 @@ standard_bids = {
 		0,
 		1,
 		"nej",
-		"varierar",
+		"se $\\rightarrow$",
 		"Spelföraren får inte ta hem flest stick---inte ens om nån annan spelare har tagit hem lika många stick.",
 	},
 
@@ -30,7 +30,7 @@ standard_bids = {
 		1,
 		1,
 		"nej",
-		"varierar",
+		"se $\\rightarrow$",
 		"Före spelets början gissar spelföraren på två möjliga mängder stick denne kommer att ta hem. Spelföraren måste ta hem en av de gissade möjliga mängderna stick.",
 	},
 
@@ -66,7 +66,7 @@ standard_bids = {
 		2,
 		1,
 		"nej",
-		"varierar",
+		"se $\\rightarrow$",
 		"Spelföraren måste ta hem färre stick av de 7 första sticken än av de 6 sista.",
 	},
 
@@ -84,7 +84,7 @@ standard_bids = {
 		3,
 		2,
 		"nej",
-		"varierar",
+		"se $\\rightarrow$",
 		"Spelföraren måste ta hem färst stick. Om ingen tar hem färre stick än spelföraren går budet hem.",
 	},
 
@@ -93,7 +93,7 @@ standard_bids = {
 		3,
 		2,
 		"nej",
-		"varierar",
+		"se $\\rightarrow$",
 		"Före spelets början gissar spelföraren på en möjlig mängd stick denne kommer att ta hem. Spelföraren måste ta hem den mängd stick som gissades.",
 	},
 
@@ -129,7 +129,7 @@ standard_bids = {
 		4,
 		3,
 		"nej",
-		"varierar",
+		"se $\\rightarrow$",
 		"Spelföraren måste ta hem enskilt flest stick.",
 	},
 
