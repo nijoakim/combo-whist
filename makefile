@@ -1,5 +1,5 @@
 # Version configuration
-VERSION=1.4.2
+VERSION=dev
 VERSION_BASE=1.4.2
 LANGUAGES=sv en
 
