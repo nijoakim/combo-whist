@@ -1,4 +1,4 @@
--- Copyright 2021 Joakim Nilsson
+-- Copyright 2021-2022 Joakim Nilsson
 --
 -- This file is part of Combo Whist.
 --
@@ -42,7 +42,7 @@ function tableItemsSpecialBids()
 		if bid[3] then
 			tex.print(bid[3] .." &")
 		else
-			tex.print("{---} &")
+			tex.print("{\\dash} &")
 		end
 
 		-- Incompatibility
@@ -58,7 +58,7 @@ function tableItemsSpecialBids()
 			tex.print{"}"}
 			tex.print(" &")
 		else
-			tex.print("--- &")
+			tex.print("{\\dash} &")
 		end
 
 		tex.print("\\small ".. bid[5]) -- Rules

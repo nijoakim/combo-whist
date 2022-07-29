@@ -22,7 +22,7 @@ standard_bids = {
 		1,
 		"nej",
 		"se $\\rightarrow$",
-		"Spelföraren får inte ta hem flest stick---inte ens om nån annan spelare har tagit hem lika många stick.",
+		"Spelföraren får inte ta hem flest stick -- inte ens om nån annan spelare har tagit hem lika många stick.",
 	},
 
 	{
@@ -76,7 +76,7 @@ standard_bids = {
 		2,
 		"nej",
 		"min. 5",
-		"---",
+		" -- ",
 	},
 
 	{
@@ -139,7 +139,7 @@ standard_bids = {
 		4,
 		"nej",
 		0,
-		"---",
+		" -- ",
 	},
 
 	{

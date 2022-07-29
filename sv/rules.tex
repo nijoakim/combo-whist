@@ -19,7 +19,17 @@
 \documentclass[a4paper]{article}
 
 \usepackage[swedish]{babel}
+
+% Language-dependent dash
+\newcommand{\dash}{ -- }
+
+% Common code to all languages
 \input{../../common.tex}
+
+% Change em dash to en dash in section references
+\renewcommand{\sectionref}[1]{%
+	\ref{sec:#1} -- \nameref{sec:#1}%
+}
 
 % Title
 \defTitle{Kombinations-Whist}{Det Obesudlade Kortspelet}
@@ -32,9 +42,9 @@
 
 % Date and version
 \ifdefined\varDev
-	\date{Utvecklingsversion (baserad på version \varVersion-\varLanguage)---\today}
+	\date{Utvecklingsversion (baserad på version \varVersion-\varLanguage) -- \today}
 \else
-	\date{Version \varVersion-\varLanguage\---\today}
+	\date{Version \varVersion-\varLanguage\ -- \today}
 \fi
 
 % Document
@@ -51,7 +61,7 @@
 	%======
 
 	\section{Översikt}
-		Kombinations-Whist är ett kortspel som bygger på sticktagande och är---som namnet antyder---en variant av Whist. Kombinations-Whists nyckelegenskap är dess varierade utbud av möjliga strategier med acceptabelt simpla regler. (Det måste dock erkännas att regelboken trots allt är någorlunda lång.) Möjligheten att spela enligt många varierade strategier undviker en substantiell mängd slump som vanligtvis finnes i andra Whist-spel utan att att göra spelet alltför komplicerat. Detta gör Kombinations-Whist till ett spel som är kul att spela både för erfarna spelare såväl som för nybörjare.
+		Kombinations-Whist är ett kortspel som bygger på sticktagande och är -- som namnet antyder -- en variant av Whist. Kombinations-Whists nyckelegenskap är dess varierade utbud av möjliga strategier med acceptabelt simpla regler. (Det måste dock erkännas att regelboken trots allt är någorlunda lång.) Möjligheten att spela enligt många varierade strategier undviker en substantiell mängd slump som vanligtvis finnes i andra Whist-spel utan att att göra spelet alltför komplicerat. Detta gör Kombinations-Whist till ett spel som är kul att spela både för erfarna spelare såväl som för nybörjare.
 
 		\paragraph{Antal spelare:}
 		4 är att föredra, men 3 till $\infty$ går också bra med vissa regeljusteringar.
