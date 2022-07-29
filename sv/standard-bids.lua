@@ -39,7 +39,7 @@ standard_bids = {
 		1,
 		1,
 		"ja",
-		"min 5",
+		"min. 5",
 		"Spelföraren bestämmer trumffärg.",
 	},
 
@@ -48,7 +48,7 @@ standard_bids = {
 		1,
 		2,
 		"ja",
-		"min 5",
+		"min. 5",
 		"Spelföraren börjar med att bestämma trumffärg. Denna trumffärg gäller dock bara under det första sticket. Därefter blir den färg som spelades ut i föregångde stick ny trumffärg och så fortsätter det till spelets slut.",
 	},
 
@@ -57,7 +57,7 @@ standard_bids = {
 		2,
 		1,
 		"ja",
-		"min 5",
+		"min. 5",
 		"Spelföraren bestämmer trumffärg. Spelföraren får inte spela något trumfkort förrän någon annan spelare spelar trumf (såvida inte spelföraren enbart besitter trumfkort).",
 	},
 
@@ -75,7 +75,7 @@ standard_bids = {
 		2,
 		2,
 		"nej",
-		"min 5",
+		"min. 5",
 		"---",
 	},
 
@@ -102,7 +102,7 @@ standard_bids = {
 		3,
 		3,
 		"ja",
-		"min 7",
+		"min. 7",
 		"Spelföraren väljer trumffärg.",
 	},
 
@@ -111,7 +111,7 @@ standard_bids = {
 		3,
 		3,
 		"ja",
-		"min 5",
+		"min. 5",
 		"Spelföraren väljer trumffärg. Denne får dock inte välja en trumffärg som denne har flest kort i.",
 	},
 
@@ -120,7 +120,7 @@ standard_bids = {
 		3,
 		4,
 		"ja",
-		"min 5",
+		"min. 5",
 		"Alla spelare väljer ett kort var och lägger det på bordet med bildsidan nedåt. Korten vänds sedan upp och spelföraren byter ut sitt kort med det av motspelarnas som är högst. Skulle det finnas flera högsta kort väljer spelföraren ett av dem. Det valda kortets färg är trumffärgen.",
 	},
 
@@ -147,7 +147,7 @@ standard_bids = {
 		6,
 		6,
 		"ja",
-		"min 5",
+		"min. 5",
 		"Spelaren till vänster om spelföraren bestämmer trumffärg, men först får de andra icke-spelförarna säga vilken trumffärg de föredrar och hur mycket de föredrar denna på en skala från 1 till 5 (utan motivering).",
 	},
 
@@ -156,7 +156,7 @@ standard_bids = {
 		8,
 		"*",
 		"nej",
-		"min 12",
+		"min. 12",
 		"*Om budet går hem får spelföraren lika många poäng som kombinationsbudets värde. Skulle dessutom kombinationsbudets värde vara 13 eller högre vinner spelföraren spelet omedelbart, oavsett poängställning. När detta inträffar erhåller dessutom spelföraren rätten att titulera sig \\emph{Obesudlad Mästare av~Kombinations-Whist} under resten av sitt liv.",
 	}
 }

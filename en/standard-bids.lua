@@ -39,7 +39,7 @@ standard_bids = {
 		1,
 		1,
 		"yes",
-		"min 5",
+		"min. 5",
 		"The declarer decides trump suit.",
 	},
 
@@ -48,7 +48,7 @@ standard_bids = {
 		1,
 		2,
 		"yes",
-		"min 5",
+		"min. 5",
 		"The declarer begins by deciding trump suit. This trump suit only applies to the first trick. After that trick, the new trump suit is the suit which was led in the previous trick, and this procedure is repeated until the game is finished.",
 	},
 
@@ -57,7 +57,7 @@ standard_bids = {
 		2,
 		1,
 		"yes",
-		"min 5",
+		"min. 5",
 		"The declarer decides trump suit. The declarer is not allowed to play any trump card until any other player plays trump (unless the declarer holds only trump cards).",
 	},
 
@@ -75,7 +75,7 @@ standard_bids = {
 		2,
 		2,
 		"no",
-		"min 5",
+		"min. 5",
 		"---",
 	},
 
@@ -102,7 +102,7 @@ standard_bids = {
 		3,
 		3,
 		"yes",
-		"min 7",
+		"min. 7",
 		"The declarer chooses trump suit.",
 	},
 
@@ -111,7 +111,7 @@ standard_bids = {
 		3,
 		3,
 		"yes",
-		"min 5",
+		"min. 5",
 		"The declarer chooses trump suit. They must not choose one of the suits in which they have the most cards.",
 	},
 
@@ -120,7 +120,7 @@ standard_bids = {
 		3,
 		4,
 		"yes",
-		"min 5",
+		"min. 5",
 		"All players choose one card each and put them face-down on the table. The cards are then revealed and the declarer switches their card with a card of one of the opponent's which has the highest rank. If there are multiple cards with the highest rank, the declarer chooses one of them. The chosen card's suit is the trump suit.",
 	},
 
@@ -147,7 +147,7 @@ standard_bids = {
 		6,
 		6,
 		"yes",
-		"min 5",
+		"min. 5",
 		"The player to the left of the declarer decides trump suit, but first the other non-declarer players may say what trump suit they prefer and how much they prefer it on a scale from 1 to 5 (without motivation).",
 	},
 
@@ -156,7 +156,7 @@ standard_bids = {
 		8,
 		"*",
 		"no",
-		"min 12",
+		"min. 12",
 		"*If the bid is completed, the declarer scores as many points as the combo bid's worth. Furthermore, in case the combo bid's worth is 13 or higher, the declarer immediately wins the game regardless of previous scores. When this occurs the declarer also earns the right to the title, \\emph{Taintless Master of~Combo~Whist}, for the rest of their life.",
 	}
 }
