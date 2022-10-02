@@ -1,12 +1,12 @@
 Version 1.4.2&mdash;23 May 2021
-===================
+===============================
 
 ## General changes
 - Instructions on how to deal with unintentional cheating were added.
 - In case of 3 players, the values of the cards to remove increased by one.
 
 Version 1.4.1&mdash;23 May 2021
-===================
+===============================
 
 ## Bid adjustments
 - The standard bid _Taintless Master's Game_ was modified. Its worth was reduced from 9 to 8, and its stick requirement was changed to minimum 12.
@@ -17,7 +17,7 @@ Version 1.4.1&mdash;23 May 2021
 - The special bid _Triumph Trump_ was renamed to _Justice_.
 
 Version 1.4.0&mdash;13 March 2021
-=============================
+=================================
 ## General changes
 - In case of 3 players, &clubs;6 is removed instead of &spades;6.
 - The logo was updated to an SVG variant.
@@ -35,7 +35,7 @@ Version 1.4.0&mdash;13 March 2021
 - The hyphen was removed in the special bid _Sub-Trump_.
 
 Version 1.3.0&mdash;15 May 2020
-===========================
+===============================
 ## General changes
 - A variant on determining who is the winner was introduced. The variants are now separated into the _classic_ and _limited_ variants.
 
@@ -50,7 +50,7 @@ Version 1.3.0&mdash;15 May 2020
 - The standard bid _Sneaky Trump_ was renamed to _Sub-Trump_.
 
 Version 1.2.0&mdash;27 Nov 2017
-===========================
+===============================
 ## General changes
 - 13 cards are now dealt to each player even in the case of only 3 players.
 - The rules for winning were slightly adjusted to deal with players who conspire to delay the game.
@@ -74,11 +74,11 @@ Version 1.2.0&mdash;27 Nov 2017
 - The special bid _Punishment_ was renamed to _Penalty_.
 
 Version 1.1.1&mdash;18 Sep 2016
-===========================
+===============================
 - The winning score is now decreased by 1 point at a time instead of 2.
 
 Version 1.1.0&mdash;5 Apr 2016
-==========================
+==============================
 ## General changes
 - The rules for winning were slightly adjusted.
 
@@ -93,5 +93,5 @@ Version 1.1.0&mdash;5 Apr 2016
 - The special bid _Bingo_ was removed.
 
 Version 1.0.0&mdash;2 Feb 2014
-==========================
+==============================
 - 7 years after Combo Whist's first conception, "Combo Whist&mdash;Version 1.0.0" was published.
