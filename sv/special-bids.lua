@@ -75,7 +75,7 @@ special_bids = {
 	{
 		"Ateljé",
 		1,
-		nil,
+		4,
 		{"Öppen Hand"},
 		"Spelföraren väljer 4 kort som denne lägger i \\emph{ateljén}. Dessa kort visas till samtliga spelare under spelets gång. Så fort det inte längre finns 4 kort i ateljen måste spelföraren, om möjligt, lägga dit ett nytt kort från handen.",
 	},
@@ -99,7 +99,7 @@ special_bids = {
 	{
 		"Öppen Trumf",
 		1,
-		nil,
+		4,
 		{
 			"\\nonTrump",
 			"Grill",
@@ -139,7 +139,7 @@ special_bids = {
 	{
 		"Öppen Hand",
 		3,
-		nil,
+		4,
 		{
 			"Ateljé",
 			"Öppen Trumf"

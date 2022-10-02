@@ -1,3 +1,9 @@
+Development version
+===================
+
+# Bid adjustments
+- The special bids _Atelier_, _Open Trump_ and _Open Hand_ were given an order in order to avoid ambiguity.
+
 Version 1.4.2&mdash;23 May 2021
 ===============================
 

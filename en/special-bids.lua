@@ -75,7 +75,7 @@ special_bids = {
 	{
 		"Atelier",
 		1,
-		nil,
+		4,
 		{"Open Hand"},
 		"The declarer chooses 4 cards that they put in \\emph{the atelier}. These cards must be shown to all players during the game. As soon as the atelier no longer consists of 4 cards, the declarer must add a card to it, if possible.",
 	},
@@ -99,7 +99,7 @@ special_bids = {
 	{
 		"Open Trump",
 		1,
-		nil,
+		4,
 		{"\\nonTrump", "Grill", "Open Hand"},
 		"The declarer must play with open trump cards. That is, all of the declarer’s trump cards must be shown to all players during the game. If combined with \\emph{Atelier}, the atelier must not contain any trump cards.",
 	},
@@ -135,7 +135,7 @@ special_bids = {
 	{
 		"Open Hand",
 		3,
-		nil,
+		4,
 		{
 			"Atelier",
 			"Open Trump",
