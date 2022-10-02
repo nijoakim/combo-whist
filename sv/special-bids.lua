@@ -85,7 +85,7 @@ special_bids = {
 		"{1 el. 3}",
 		3,
 		nil,
-		"Om budet budas i kombination med ett trumf-bud some inte är \\emph{Grill} är värdet 3, men annars endast 1. Före spelet börjar skickar alla utom spelföraren 3 kort till spelaren till höger (spelföraren hoppas över).",
+		"Om budet budas i kombination med ett trumf-bud som inte är \\emph{Grill} är värdet 3, men annars endast 1. Före spelet börjar skickar alla utom spelföraren 3 kort till spelaren till höger (spelföraren hoppas över).",
 	},
 
 	{
