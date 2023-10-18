@@ -102,7 +102,7 @@
 
 				De standardbud och specialbud som finns att tillgå finns listade i tabellerna i Stycke~\sectionref{standardBids} samt Stycke~\sectionref{specialBids}. Antalet stick att ta hem för att ett bud ska gå hem listas i standardbudstabellens stickkolumn. Ett specialbud kan inte kombineras med ett annat bud som finns listade i inkompatibilitetskolumnen. För övrigt är kombinationsbud som omöjligen kan gå hem oavsett motspelarnas kortfördelning förbjudna. Notera att det finns en skillnad mellan värde och poäng; Värde är budets värde (Rätt gissat!) och poäng är antalet poäng som spelföraren får om dennes bud går hem.
 
-				Om det är oklart när en händelse som inträffar på grund av ett bud ska ske, se specialbudens ordningskolumn. Ett buds ordning bestämmer i vilken ordning de olika händelserna som ges av dess regler ska ske. De bud med lägst ordning går först. Alla standardbud har ordningen 0.
+				Om det är oklart när en händelse som inträffar på grund av ett bud ska ske, se specialbudens prioritetsskolumn. Ett buds prioritet bestämmer i vilken ordning de olika händelserna som ges av dess regler ska ske. De bud med lägst prioritetsnummer går först. Alla standardbud har prioritetsnummer 0.
 
 			\subsubsection{Poängberäkningen}
 				Efter att spelet är klart får spelföraren ett antal poäng baserat på vilket kombinationsbud som lagts och huruvida detta bud gick hem. Om budet gick hem får spelföraren det antal poäng som specificeras poängkolumnen för standardbudet. Om budet inte gick hem så förlorar spelföraren 2 poäng. En spelare kan anta en negativ poängsumma. Om en spelare antar en poängsumma lägre än $-5$, så tillåts denne inte längre att buda i budgivningar. Denne får dock 1 gratispoäng efter varje giv som denne deltar i (även om ingen budar och det blir omgiv).
@@ -167,7 +167,7 @@
 	\section{Specialbud}
 		\label{sec:specialBids}
 		\begin{center}
-				\begin{tabularx}{\textwidth}{
+			\begin{tabularx}{\textwidth}{
 					p{2.1cm}
 					S[table-number-alignment=center, table-format=1.0]
 					S[table-number-alignment=center, table-format=1.0]
@@ -177,7 +177,7 @@
 
 				\textbf{B\scriptsize ENÄMNING} &
 				\rotccw{\textbf{Värde}} &
-				\rotccw{\textbf{Ordning}} &
+				\rotccw{\textbf{Prioritet}} &
 				\textbf{Inkompatibilitet} &
 				\textbf{Regler}
 				\\[-3ex]
