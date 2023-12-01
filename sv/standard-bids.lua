@@ -152,11 +152,11 @@ standard_bids = {
 	},
 
 	{
-		"Obesudlat Mästarspel",
+		"Obesudlat Bud",
 		8,
 		"*",
 		"nej",
 		"min. 12",
-		"*Om budet går hem får spelföraren lika många poäng som kombinationsbudets värde. Skulle dessutom kombinationsbudets värde vara 13 eller högre vinner spelföraren spelet omedelbart, oavsett poängställning. När detta inträffar erhåller dessutom spelföraren rätten att titulera sig \\emph{Obesudlad Mästare av~Kombinations-Whist} under resten av sitt liv.",
+		"Spelföraren måste ta hem alla tvåor. Alla tvåor måste visas till samtliga spelare under spelets gång och får inte ingå i en ateljé. *Om budet går hem får spelföraren lika många poäng som kombinationsbudets värde. Skulle dessutom kombinationsbudets värde vara 13 eller högre vinner spelföraren spelet omedelbart, oavsett poängställning. När detta inträffar erhåller dessutom spelföraren rätten att titulera sig \\emph{Obesudlad Mästare av~Kombinations-Whist} under resten av sitt liv.",
 	}
 }

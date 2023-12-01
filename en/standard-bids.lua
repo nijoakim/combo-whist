@@ -152,11 +152,11 @@ standard_bids = {
 	},
 
 	{
-		"Taintless Master's Game",
+		"Taintless Bid",
 		8,
 		"*",
 		"no",
-		"min. 12",
-		"*If the bid is completed, the declarer scores as many points as the combo bid's worth. Furthermore, in case the combo bid's worth is 13 or higher, the declarer immediately wins the game regardless of previous scores. When this occurs the declarer also earns the right to the title, \\emph{Taintless Master of~Combo~Whist}, for the rest of their life.",
+		"see $\\rightarrow$",
+		"The declarer must bring home all twos. All twos must be shown to all players during the game and must not be included in an atelier. *If the bid is completed, the declarer scores as many points as the combo bid's worth. Furthermore, in case the combo bid's worth is 13 or higher, the declarer immediately wins the game regardless of previous scores. When this occurs the declarer also earns the right to the title, \\emph{Taintless Master of~Combo~Whist}, for the rest of their life.",
 	}
 }
