@@ -2,7 +2,7 @@ Development version
 ===================
 
 # Bid adjustments
-- The special bids _Atelier_, _Open Trump_ and _Open Hand_ were given a priority number in order to avoid ambiguity.
+- The special bids _Atelier_, _Open Trump_ and _Open Hand_ were given a priority number in order to avoid ambiguity on when they are supposed to occur.
 
 Version 1.4.2&mdash;23 May 2021
 ===============================
