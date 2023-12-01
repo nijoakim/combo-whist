@@ -2,7 +2,7 @@ Development version
 ===================
 
 # Bid adjustments
-- The standard bid _Taintless Master's Game_ was removed in favor of a new standard bid _Taintless Bid_.
+- The standard bid _Taintless Master's Game_ was removed in favor of a new standard bid, _Taintless Bid_.
 - The special bids _Atelier_, _Open Trump_ and _Open Hand_ were given a priority number in order to avoid ambiguity on when they are supposed to occur.
 
 Version 1.4.2&mdash;23 May 2021
@@ -47,7 +47,7 @@ Version 1.3.0&mdash;15 May 2020
 - A variant on determining who is the winner was introduced. The variants are now separated into the _classic_ and _limited_ variants.
 
 ## Bid adjustments
-- The standard bid _Spades_ was removed in favor of a new standard bid _Block Trump_.
+- The standard bid _Spades_ was removed in favor of a new standard bid, _Block Trump_.
 - The special bid _Potential_ was adjusted to yield a more permanent benefit when completed. As a result, the special bid _Extended Bid_ is no longer needed and has thus been removed.
 - An honorable rule was added to the special bid _Plague_.
 - The special bid _Plague_ is no longer compatible with the standard bid _Taintless Master's Game_.
@@ -64,7 +64,7 @@ Version 1.2.0&mdash;27 Nov 2017
 
 ## Bid adjustments
 - The standard bid _Greed_ was converted to a special bid and adjusted to fit that role.
-- The standard bid _Round Trump_ was removed in favor of a new standard bid _Sneaky Trump_.
+- The standard bid _Round Trump_ was removed in favor of a new standard bid, _Sneaky Trump_.
 - The standard bid _Taintless Master's Game_ was modified. Its score and worth were adjusted, the former to match the worth of the combo bid. Another not-so-insignificant rule was also added to the bid.
 - The worth of the special bid _Triumph Trump_ was decreased from -3 to -4.
 - The special bid _Master's Switcheroo_ is now incompatible with _Grill_.
