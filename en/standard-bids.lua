@@ -1,4 +1,4 @@
--- Copyright 2021-2022 Joakim Nilsson
+-- Copyright 2021-2023 Joakim Nilsson
 --
 -- This file is part of Combo Whist.
 --
@@ -22,7 +22,7 @@ standard_bids = {
 		1,
 		"no",
 		"see $\\rightarrow$",
-		"The declarer must not bring home the greatest amount of tricks---not even if this amount is shared with another player.",
+		"The declarer must not bring home the greatest nor shared greatest amount of tricks.",
 	},
 
 	{

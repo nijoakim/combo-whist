@@ -1,4 +1,4 @@
--- Copyright 2021-2022 Joakim Nilsson
+-- Copyright 2021-2023 Joakim Nilsson
 --
 -- This file is part of Combo Whist.
 --
@@ -22,7 +22,7 @@ standard_bids = {
 		1,
 		"nej",
 		"se $\\rightarrow$",
-		"Spelföraren får inte ta hem flest stick -- inte ens om nån annan spelare har tagit hem lika många stick.",
+		"Spelföraren får varken ta hem flest eller delat flest stick.",
 	},
 
 	{
