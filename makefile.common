@@ -40,6 +40,6 @@ endif
 
 %.pdf: $(TEX) $(SVG) $(LUA)
 	@mkdir -p tmp
-	rubber --module lualatex --synctex --unsafe --into tmp/ $(patsubst %.pdf,%.tex,$@)
+	rubber --module lualatex --force --synctex --unsafe --into tmp/ $(patsubst %.pdf,%.tex,$@)
 	@cp tmp/$@ .
 	@cp $(patsubst %.pdf,%.synctex.gz,tmp/$@) .
