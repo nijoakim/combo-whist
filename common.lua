@@ -1,4 +1,4 @@
--- Copyright 2021-2022 Joakim Nilsson
+-- Copyright 2021-2023 Joakim Nilsson
 --
 -- This file is part of Combo Whist.
 --
@@ -23,7 +23,7 @@ function tableItemsStandardBids()
 	for _, bid in ipairs(standard_bids) do
 		tex.print("\\\\ \\midrule")                           -- Caption rule
 		tex.print("\\raggedright \\textsc{".. bid[1] .."} &") -- Designation
-		tex.print(bid[2] .." &")                              -- Worth
+		tex.print(bid[2] .." &")                              -- Rank
 		tex.print(bid[3] .." &")                              -- Score
 		tex.print(bid[4] .." &")                              -- Trump
 		tex.print(bid[5] .." &")                              -- Tricks
@@ -36,7 +36,7 @@ function tableItemsSpecialBids()
 	for _, bid in ipairs(special_bids) do
 		tex.print("\\\\ \\midrule")                           -- Caption rule
 		tex.print("\\raggedright \\textsc{".. bid[1] .."} &") -- Designation
-		tex.print(bid[2] .." &")                              -- Worth
+		tex.print(bid[2] .." &")                              -- Rank
 
 		-- Order
 		if bid[3] then

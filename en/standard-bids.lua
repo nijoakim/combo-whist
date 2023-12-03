@@ -22,7 +22,7 @@ standard_bids = {
 		1,
 		"no",
 		"see $\\rightarrow$",
-		"The declarer must not bring home the greatest nor shared greatest amount of tricks.",
+		"The declarer must not bring home the greatest nor shared greatest number of tricks.",
 	},
 
 	{
@@ -31,7 +31,7 @@ standard_bids = {
 		1,
 		"no",
 		"see $\\rightarrow$",
-		"The declarer guesses, before the beginning of the game, two possible amounts of tricks they think they could bring home. They must bring home one of the guessed amount of tricks.",
+		"The declarer guesses two possible numbers of tricks they they could bring home. They must bring home one of the guessed numbers of tricks.",
 	},
 
 	{
@@ -49,7 +49,7 @@ standard_bids = {
 		2,
 		"yes",
 		"min. 5",
-		"The declarer begins by deciding trump suit. This trump suit only applies to the first trick. After that trick, the new trump suit is the suit which was led in the previous trick, and this procedure is repeated until the game is finished.",
+		"The declarer decides trump suit. However, said trump suit only applies to the first trick. After that trick, the new trump suit is the suit which was led in the previous trick, and this procedure is repeated until the hand is finished.",
 	},
 
 	{
@@ -58,7 +58,7 @@ standard_bids = {
 		1,
 		"yes",
 		"min. 5",
-		"The declarer decides trump suit. The declarer is not allowed to play any trump card until any other player plays trump (unless the declarer holds only trump cards).",
+		"The declarer decides trump suit. Unless the declarer holds only trump, they are not allowed to play trump until a non-declarer has played trump.",
 	},
 
 	{
@@ -67,7 +67,7 @@ standard_bids = {
 		1,
 		"no",
 		"see $\\rightarrow$",
-		"The declarer must bring home fewer of the 7 first tricks than of the 6 last.",
+		"The declarer must bring home fewer of the first 7 tricks than of the last 6.",
 	},
 
 	{
@@ -80,12 +80,12 @@ standard_bids = {
 	},
 
 	{
-		"Master's Bid of~Shame",
+		"Master Bid of~Shame",
 		3,
 		2,
 		"no",
 		"see $\\rightarrow$",
-		"The declarer must bring home the least amount of tricks. If no one brings home fewer tricks than the declerer, the bid is completed.",
+		"The declarer must bring home the least or shared least number of tricks.",
 	},
 
 	{
@@ -94,7 +94,7 @@ standard_bids = {
 		2,
 		"no",
 		"see $\\rightarrow$",
-		"The declarer guesses, before the start of the game, how many tricks they think they will bring home. They must bring home the guessed amount of tricks.",
+		"The declarer guesses how many tricks they will bring home. They must bring home the guessed number of tricks.",
 	},
 
 	{
@@ -121,16 +121,16 @@ standard_bids = {
 		4,
 		"yes",
 		"min. 5",
-		"All players choose one card each and put them face-down on the table. The cards are then revealed and the declarer switches their card with a card of one of the opponent's which has the highest rank. If there are multiple cards with the highest rank, the declarer chooses one of them. The chosen card's suit is the trump suit.",
+		"The non-declarers choose one card each and put them face-down on the table. The cards are then revealed and the declarer swaps one of their cards with one of the revealed cards that ranks the highest or shared highest. The trump suit is that of the chosen card.",
 	},
 
 	{
-		"Master's Game",
+		"Master Game",
 		4,
 		3,
 		"no",
 		"see $\\rightarrow$",
-		"The declarer must bring home the solitary greatest amount of tricks.",
+		"The declarer must bring home the solitary greatest number of tricks.",
 	},
 
 	{
@@ -143,12 +143,12 @@ standard_bids = {
 	},
 
 	{
-		"Master's Trump",
+		"Master Trump",
 		6,
 		6,
 		"yes",
 		"min. 5",
-		"The player to the left of the declarer decides trump suit, but first the other non-declarer players may say what trump suit they prefer and how much they prefer it on a scale from 1 to 5 (without motivation).",
+		"The player to the right of the declarer decides trump suit, but first the other non-declarer players may say what trump suit they prefer and how much they prefer it on a scale from 1 to 5 (without motivation).",
 	},
 
 	{
@@ -157,6 +157,6 @@ standard_bids = {
 		"*",
 		"no",
 		"see $\\rightarrow$",
-		"The declarer must bring home all twos. All twos must be shown to all players during the game and must not be included in an atelier. *If the bid is completed, the declarer scores as many points as the combo bid's worth. Furthermore, in case the combo bid's worth is 13 or higher, the declarer immediately wins the game regardless of previous scores. When this occurs the declarer also earns the right to the title, \\emph{Taintless Master of~Combo~Whist}, for the rest of their life.",
+		"The declarer must bring home all 2s. All 2s must be shown to all players during the hand and must not be included in an atelier. *If the bid is completed, the declarer scores as many points as the combo bid's rank. Furthermore, in case the combo bid's rank is 13 or higher, the declarer immediately wins the game regardless of previous scores. When this occurs, the declarer earns the right to the title, \\emph{Taintless Master of~Combo~Whist}, for the rest of their life.",
 	}
 }

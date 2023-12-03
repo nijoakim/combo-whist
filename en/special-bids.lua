@@ -21,7 +21,7 @@ special_bids = {
 		-4,
 		1,
 		nil,
-		"The declarer selects any card before the game begins. This card becomes the \\emph{card of justice}. The declarer decides who takes a trick containing the card of justice when this trick is brought home.",
+		"Before the hand begins, the declarer selects any card to be become the \\emph{card of justice}. When the trick containing the card of justice has been played, the declarer decides which player brings it home.",
 	},
 
 	{
@@ -37,7 +37,7 @@ special_bids = {
 		-2,
 		nil,
 		nil,
-		"If this bid is completed it is marked by a P, a \\emph{potential}, in the declarer's column. A player who has more potentials than another can over-bid the latter's bid with a bid worth as much as the leading bid.",
+		"If the bid is completed, a P---a \\emph{potential}---is marked in the declarer's column. A player who has more potentials than another can over-bid the latter's combo bid with a combo bid ranking as high the leading bid.",
 	},
 
 	{
@@ -45,7 +45,7 @@ special_bids = {
 		-2,
 		nil,
 		nil,
-		"The declarer leads the first trick.",
+		"The declarer becomes forehand and thus leads the first trick.",
 	},
 
 	{
@@ -61,7 +61,7 @@ special_bids = {
 		-1,
 		2,
 		nil,
-		"Before the game starts, all players send 3 cards in a direction the declarer chooses (to the right, to the left or across)."
+		"Before the hand begins, all players send 3 cards in a direction the declarer chooses (to the right, to the left or across)."
 	},
 
 	{
@@ -69,7 +69,7 @@ special_bids = {
 		0,
 		nil,
 		nil,
-		"At the end of the game, one virtual trick is added to or subtracted from the declarer's stick count in such a way that it disfavors them. If the bid is completed, the declarer scores 1 extra point.",
+		"At the end of the hand, one virtual trick is added to or subtracted from the declarer's stick count in such a way that it disfavors them. If the bid is completed, the declarer scores 1 extra point.",
 	},
 
 	{
@@ -77,7 +77,7 @@ special_bids = {
 		1,
 		4,
 		{"Open Hand"},
-		"The declarer chooses 4 cards that they put in \\emph{the atelier}. These cards must be shown to all players during the game. As soon as the atelier no longer consists of 4 cards, the declarer must add a card to it, if possible.",
+		"The declarer chooses 4 cards that they put in \\emph{the atelier}. These cards must be shown to all players during the hand. As soon as the atelier no longer holds 4 cards, if possible, the declarer must add one card to it.",
 	},
 
 	{
@@ -89,11 +89,11 @@ special_bids = {
 	},
 
 	{
-		"Master's Mail",
+		"Master Mail",
 		"{1 or 3}",
 		3,
 		nil,
-		"If the bid is combined with a trump bid that is not \\emph{Grill}, its worth is 3, but otherwise merely 1. Before the game starts, all players but the declarer sends 3 cards to the player to the right (skipping the declarer).",
+		"If this bid is combined with a trump bid that is not \\emph{Grill}, its rank is 3, but otherwise it is 1. Before the hand starts, all players but the declarer send 3 cards to the player to the right, skipping over the declarer.",
 	},
 
 	{
@@ -101,7 +101,7 @@ special_bids = {
 		1,
 		4,
 		{"\\nonTrump", "Grill", "Open Hand"},
-		"The declarer must play with open trump cards. That is, all of the declarer’s trump cards must be shown to all players during the game. If combined with \\emph{Atelier}, the atelier must not contain any trump cards.",
+		"The declarer must play with open trump cards; That is, all of the declarer’s trump cards must be shown to all players during the hand. If combined with \\emph{Atelier}, the atelier must not hold trump cards.",
 	},
 
 	{
@@ -117,7 +117,7 @@ special_bids = {
 		2,
 		nil,
 		nil,
-		"If the declarer does not complete their bid, 2 extra points are subtracted from their score.",
+		"If the declarer does not complete the bid, 2 additional points are subtracted from their score.",
 	},
 
 	{
@@ -126,10 +126,10 @@ special_bids = {
 		1,
 		{
 			"Bid of~Shame",
-			"Master's Bid of~Shame",
+			"Master Bid of~Shame",
 			"Zero"
 		},
-		"The declarer chooses a suit to be the \\emph{plague suit}. The declarer must not become \\emph{beplagued}; that is, must not bring home the solitary greatest amount of plague cards (note: \\emph{not} tricks), unless they become \\emph{honorably beplagued} and bring home the whole plague suit as well as fulfill all the other requirements of the combo bid, in which case they also score 1 honorable extra point. The declarer must not lead in the plague suit before the plague suit has been played in some other way, provided the declarer does not hold only plague cards.",
+		"The declarer chooses a suit to be the \\emph{plague suit}. The declarer must not become \\emph{beplagued}; That is, they must not bring home the solitary greatest amount of plague cards (note: \\emph{not} tricks), unless they bring home the whole plague suit as well as fulfill all the other requirements of the combo bid, in which case they become \\emph{honorably beplagued} and score 1 honorable extra point. Unless the declarer holds only plague cards, they must not lead in the plague suit before the plague suit has been played in some other way.",
 	},
 
 	{
@@ -140,6 +140,6 @@ special_bids = {
 			"Atelier",
 			"Open Trump",
 		},
-		"The declarer must play with an open hand. That is, all of the their cards must be shown to all players during the game.",
+		"The declarer must play with an open hand; That is, all of the their cards must be shown to all players during the hand.",
 	},
 }

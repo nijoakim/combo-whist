@@ -31,7 +31,7 @@ standard_bids = {
 		1,
 		"nej",
 		"se $\\rightarrow$",
-		"Före spelets början gissar spelföraren på två möjliga mängder stick denne kommer att ta hem. Spelföraren måste ta hem en av de gissade möjliga mängderna stick.",
+		"Före handens början gissar spelföraren på två möjliga mängder stick denne kommer att ta hem. Spelföraren måste ta hem en av de gissade stickmängderna.",
 	},
 
 	{
@@ -49,7 +49,7 @@ standard_bids = {
 		2,
 		"ja",
 		"min. 5",
-		"Spelföraren börjar med att bestämma trumffärg. Denna trumffärg gäller dock bara under det första sticket. Därefter blir den färg som spelades ut i föregångde stick ny trumffärg och så fortsätter det till spelets slut.",
+		"Spelföraren börjar med att bestämma trumffärg. Denna trumffärg gäller dock bara under det första sticket. Därefter blir den färg som spelades ut i föregående stick ny trumffärg och så fortsätter det fram till handens slut.",
 	},
 
 	{
@@ -85,7 +85,7 @@ standard_bids = {
 		2,
 		"nej",
 		"se $\\rightarrow$",
-		"Spelföraren måste ta hem färst stick. Om ingen tar hem färre stick än spelföraren går budet hem.",
+		"Spelföraren måste ta hem färst eller delat färst stick.",
 	},
 
 	{
@@ -94,7 +94,7 @@ standard_bids = {
 		2,
 		"nej",
 		"se $\\rightarrow$",
-		"Före spelets början gissar spelföraren på en möjlig mängd stick denne kommer att ta hem. Spelföraren måste ta hem den gissade mängden stick.",
+		"Före handens början gissar spelföraren på en möjlig mängd stick denne kommer att ta hem. Spelföraren måste ta hem den gissade stickmängden.",
 	},
 
 	{
@@ -112,7 +112,7 @@ standard_bids = {
 		3,
 		"ja",
 		"min. 5",
-		"Spelföraren väljer trumffärg. Denne får dock inte välja en trumffärg som denne har flest kort i.",
+		"Spelföraren väljer trumffärg. Denne får dock inte välja en trumffärg som denne har flest eller delat flest kort i.",
 	},
 
 	{
@@ -121,7 +121,7 @@ standard_bids = {
 		4,
 		"ja",
 		"min. 5",
-		"Alla spelare väljer ett kort var och lägger det på bordet med bildsidan nedåt. Korten vänds sedan upp och spelföraren byter ut sitt kort med det av motspelarnas som är högst. Skulle det finnas flera högsta kort väljer spelföraren ett av dem. Det valda kortets färg är trumffärgen.",
+		"Icke-spelförarna väljer ett kort var och lägger dem på bordet med bildsidan nedåt. Korten vänds sedan upp och spelföraren byter ut ett av sina kort mot ett av motspelarnas som är högst eller delat högst. Det valda kortets färg är trumffärgen.",
 	},
 
 	{
@@ -148,7 +148,7 @@ standard_bids = {
 		6,
 		"ja",
 		"min. 5",
-		"Spelaren till vänster om spelföraren bestämmer trumffärg, men först får de andra icke-spelförarna säga vilken trumffärg de föredrar och hur mycket de föredrar denna på en skala från 1 till 5 (utan motivering).",
+		"Spelaren till höger om spelföraren bestämmer trumffärg, men först får de andra icke-spelförarna säga vilken trumffärg de föredrar och hur mycket de föredrar denna på en skala från 1 till 5 (utan motivering).",
 	},
 
 	{
@@ -156,7 +156,7 @@ standard_bids = {
 		8,
 		"*",
 		"nej",
-		"min. 12",
-		"Spelföraren måste ta hem alla tvåor. Alla tvåor måste visas till samtliga spelare under spelets gång och får inte ingå i en ateljé. *Om budet går hem får spelföraren lika många poäng som kombinationsbudets värde. Skulle dessutom kombinationsbudets värde vara 13 eller högre vinner spelföraren spelet omedelbart, oavsett poängställning. När detta inträffar erhåller dessutom spelföraren rätten att titulera sig \\emph{Obesudlad Mästare av~Kombinations-Whist} under resten av sitt liv.",
+		"se $\\rightarrow$",
+		"Spelföraren måste ta hem alla 2:or. Alla 2:or måste visas till samtliga spelare under handens gång och får inte ingå i en ateljé. *Om budet går hem får spelföraren lika många poäng som kombinationsbudets rang. Skulle dessutom kombinationsbudets rang vara 13 eller högre vinner spelföraren spelet omedelbart, oavsett poängställning. När detta inträffar erhåller spelföraren rätten att titulera sig \\emph{Obesudlad Mästare av~Kombinations-Whist} under resten av sitt liv.",
 	}
 }

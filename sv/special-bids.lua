@@ -1,4 +1,4 @@
--- Copyright 2021-2022 Joakim Nilsson
+-- Copyright 2021-2023 Joakim Nilsson
 --
 -- This file is part of Combo Whist.
 --
@@ -21,7 +21,7 @@ special_bids = {
 		-4,
 		1,
 		nil,
-		"Spelföraren väljer ett valfritt kort innan spelet börjar. Detta kort blir \\emph{rättvisans kort}. Spelföraren bestämmer vem som tar sticket med rättvisans kort när detta stick tas hem."
+		"Innan handen börjar väljer spelföraren ett valfritt som blir \\emph{rättvisans kort}. När sticket som innehåller rättvisans kort har spelats bestämmer spelföraren vilken spelare som tar hem det."
 	},
 
 	{
@@ -29,7 +29,7 @@ special_bids = {
 		-3,
 		nil,
 		nil,
-		"För de stick därvar spelföraren inte spelar ut, spelar spelföraren sist.",
+		"För de stick där spelföraren inte spelar ut, spelar spelföraren sist.",
 	},
 
 	{
@@ -37,7 +37,7 @@ special_bids = {
 		-2,
 		nil,
 		nil,
-		"Om budet går hem markeras det med ett P, en \\emph{potential}, i spelförarens kolumn. En spelare som innehar fler potentialer än en annan kan buda över den senares bud med ett bud värt lika mycket som det ledande budet.",
+		"Om budet går hem markeras det med ett P, en \\emph{potential}, i spelförarens kolumn. En spelare som innehar fler potentialer än en annan kan buda över den senares bud med ett bud rankat lika högt som det ledande budet.",
 	},
 
 	{
@@ -45,7 +45,7 @@ special_bids = {
 		-2,
 		nil,
 		nil,
-		"Spelföraren spelar ut i första sticket.",
+		"Spelföraren blir förhand och spelar därmed ut i första sticket.",
 	},
 
 	{
@@ -77,7 +77,7 @@ special_bids = {
 		1,
 		4,
 		{"Öppen Hand"},
-		"Spelföraren väljer 4 kort som denne lägger i \\emph{ateljén}. Dessa kort visas till samtliga spelare under spelets gång. Så fort det inte längre finns 4 kort i ateljen måste spelföraren, om möjligt, lägga dit ett nytt kort från handen.",
+		"Spelföraren väljer 4 kort som denne lägger i \\emph{ateljén}. Dessa kort visas för samtliga spelare under handens gång. Så fort det inte längre finns 4 kort i ateljen måste spelföraren, om möjligt, lägga dit ett nytt kort från handen.",
 	},
 
 	{
@@ -85,7 +85,7 @@ special_bids = {
 		"{1 el. 3}",
 		3,
 		nil,
-		"Om budet budas i kombination med ett trumf-bud som inte är \\emph{Grill} är värdet 3, men annars endast 1. Före spelet börjar skickar alla utom spelföraren 3 kort till spelaren till höger (spelföraren hoppas över).",
+		"Om budet budas i kombination med ett trumf-bud som inte är \\emph{Grill} är rangen 3, men annars endast 1. Före handen börjar skickar alla utom spelföraren 3 kort till spelaren till höger (spelföraren hoppas över).",
 	},
 
 	{
@@ -105,7 +105,7 @@ special_bids = {
 			"Grill",
 			"Öppen Hand",
 		},
-		"Spelföraren måste spela med öppna trumfkort. Det vill säga, spelförarens trumfkort måste visas till samtliga spelare under spelets gång. Om detta bud kombineras med \\emph{Ateljé} så får ateljén inte innehålla några trumfkort.",
+		"Spelföraren spelar med öppna trumfkort; Det vill säga spelförarens trumfkort måste visas för samtliga spelare under handens gång. Om detta bud kombineras med \\emph{Ateljé} så får ateljén inte innehålla några trumfkort.",
 	},
 
 	{
@@ -133,7 +133,7 @@ special_bids = {
 			"Noll",
 			"Skambud"
 		},
-		"Spelföraren väljer en färg som blir \\emph{pestfärgen}. Spelföraren får inte bli \\emph{förpestad}; det vill säga, får inte ta hem enskilt flest kort (observera: \\emph{ej} stick) i pestfärgen, såvida inte denne blir \\emph{hedervärt förpestad} och tar hem hela pestfärgen samt att budet i övrigt går hem, i vilket fall spelföraren får 1 hedervärt extra-poäng. Spelföraren får inte spela ut i pestfärgen före pestfärgen har spelats på annat sätt, såvida inte spelföraren enbart besitter pest-kort.",
+		"Spelföraren väljer en färg som blir \\emph{pestfärgen}. Spelföraren får inte bli \\emph{förpestad}; det vill säga får inte ta hem enskilt flest pestkort (observera: \\emph{ej} stick), såvida inte denne blir \\emph{hedervärt förpestad} och tar hem hela pestfärgen samt att budet i övrigt går hem, i vilket fall spelföraren tilldelas 1 hedervärt extra-poäng. Såvida spelföraren inte enbart besitter pestkort får denne inte spela ut i pestfärgen före pestfärgen har spelats på annat sätt.",
 	},
 
 	{
@@ -144,6 +144,6 @@ special_bids = {
 			"Ateljé",
 			"Öppen Trumf"
 		},
-		"Spelföraren måste spela med öppen hand. Det vill säga, alla dennes kort måste visas för samtliga spelare under spelets gång.",
+		"Spelföraren spelar med öppen hand. Det vill säga, alla dennes kort visas för samtliga spelare under handens gång.",
 	},
 }
