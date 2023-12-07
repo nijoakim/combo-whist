@@ -1,13 +1,16 @@
 Development version
 ===================
 
-# Bid adjustments
+## General changes
+- For the limited winning variant, a player can no longer win at the end of the last of the predetermined number of rounds.
+
+## Bid adjustments
 - The standard bid _Taintless Master's Game_ was removed in favor of a new standard bid, _Taintless Bid_.
 - The special bids _Atelier_, _Open Trump_ and _Open Hand_ were given a priority number in order to avoid ambiguity on when they are supposed to occur.
 - The special bid _Rank Trump_ was modified. The declarer no longer has to show a card.
 - For _Master's Trump_, the player to the right of the declarer decides trump suit.
 
-# Renamed bids
+## Renamed bids
 - The apostrophe and s were removed from bids containing the word "Master's".
 
 Version 1.4.2&mdash;23 May 2021
