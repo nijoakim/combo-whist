@@ -4,18 +4,19 @@ Combo Whist, a variant of Whist, is a trick-taking card game with a taintless bi
 For more detailed information as well as downloads check out the [rules and background story](http://nijoakim.com/combo-whist).
 
 ## Building
-Combo whist is distributed as a LaTeX source which can generate PDFs containing the rules. To generate the ruleset for all languages run
+Combo whist is distributed as a LaTeX source which can generate PDFs containing the rules. To generate the ruleset for all languages in both normal and book format as well as the helper cards, run
 
-	$ make
+	$ make rules
+
+### Rules
+To generate only the rules, run
+	$ make rules
 
 ### Book format
-It is also possible to generate PDFs in book format which can be folded into a mini-book when printed. Use:
+The book format is a PDF which can be folded into a mini-book when printed.
 
-	$ make book
-
-Of course, books can be made only for a specific language too, like so:
-
-	$ make LANGUAGES=<languages> book
+### Helper cards
+The _optional_ helper cards can facilitate the bidding process, making it quicker by aiding in organizing a player's thoughts.
 
 ### Languages
 To only make a specific language or a set of languages, run
@@ -52,7 +53,7 @@ Major version is bumped only when very major changes to the game are made. This 
 
 Minor version is bumped when significant changes are made to the rules. An example would be that bids are added or removed from the game.
 
-Revision is bumped when smaller tweaks are made to the rules. An example would be changing the worth of a bid or modifying an existing bid slightly.
+Revision is bumped when smaller tweaks are made to the rules. An example would be changing the rank of a bid or modifying an existing bid slightly.
 
 ## Translations
 Combo Whist is currently available in the following languages:

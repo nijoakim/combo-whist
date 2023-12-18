@@ -1,0 +1,38 @@
+% Copyright 2023 Joakim Nilsson
+% Copyright 2012 Tom Bombadil
+%
+% This file is part of Combo Whist.
+%
+% Combo Whist is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% Combo Whist is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with Combo Whist.  If not, see <http://www.gnu.org/licenses/>.
+
+\documentclass[a4paper]{article} % Document class
+\input{../language.tex}          % Language-dependent code
+\input{../../cards.tex}          % Common code to all languages
+
+% Headers
+\ifdefined\varDev
+	\fancyhead[RE,RO]{Development version (based on version \varVersion-\varLanguage)}
+\else
+	\fancyhead[RE,RO]{Version \varVersion-\varLanguage\}
+\fi
+\fancyhead[LE,LO]{Combo Whist helper cards}
+\fancyhead[CE,CO]{\today}
+
+% Document
+\begin{document}
+	\noindent
+	\directlua{dofile('../../common.lua')}
+	\directlua{cardsStandardBids(4)}
+	\directlua{cardsSpecialBids(4)}
+\end{document}

@@ -4,39 +4,49 @@ VERSION_BASE=1.4.2
 LANGUAGES=sv en
 
 # Files
-PDF=$(patsubst %,combo-whist-rules-$(VERSION)-%.pdf,$(LANGUAGES))
-BOOK_PDF=$(patsubst %.pdf,%-book.pdf,$(PDF))
+RULES=$(patsubst %,combo-whist-rules-$(VERSION)-%.pdf,$(LANGUAGES))
+RULES_BOOK=$(patsubst %.pdf,%-book.pdf,$(RULES))
+CARDS=$(patsubst %,combo-whist-cards-$(VERSION)-%.pdf,$(LANGUAGES))
 TEX=$(wildcard *.tex)
 SVG=$(wildcard *.svg)
 LUA=$(wildcard *.lua)
 
 .PHONY: all
-all: pdf
+all: rules rules-book cards
 
-.PHONY: pdf
-pdf: $(PDF)
+.PHONY: rules
+rules: $(RULES)
 
-.PHONY: book
-book: $(BOOK_PDF)
+.PHONY: rules-book
+rules-book: $(RULES_BOOK)
+
+.PHONY: cards
+cards: $(CARDS)
 
 .PHONY: clean
 clean:
-	$(foreach var,$(LANGUAGES),cd $(var); make clean; cd ..;)
-	rm -f $(PDF)
-	rm -f $(patsubst %.pdf,%-book.pdf,$(PDF))
+	$(foreach var,$(LANGUAGES),cd $(var); $(MAKE) clean; cd ..;)
+	rm -f $(RULES)
+	rm -f $(patsubst %.pdf,%-book.pdf,$(RULES))
+	rm -f $(CARDS)
 
 .PHONY: view
-view: pdf
+view: rules
 	for lang in $(LANGUAGES) ; do \
 		cd $$lang ; \
-		make view VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE); \
+		$(MAKE) view VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE); \
 		cd .. ; \
 	done
 
-# %.pdf
+# %rules.pdf
 combo-whist-rules-$(VERSION)-%.pdf: % $(TEX) $(SVG) $(LUA) makefile makefile.common
-	@cd $<; make copy-down VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE)
+	@cd $<; $(MAKE) copy-up VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE)
 
-# %-book.pdf
+# %rules-book.pdf
+.NOTPARALLEL: combo-whist-rules-$(VERSION)-%-book.pdf # Uses temporary files with non-unique names
 combo-whist-rules-$(VERSION)-%-book.pdf: combo-whist-rules-$(VERSION)-%.pdf
 	pdfbook2 --paper=a4paper --short-edge $<
+
+# %cards.pdf
+combo-whist-cards-$(VERSION)-%.pdf: % $(TEX) $(SVG) $(LUA) makefile makefile.common
+	@cd $<; $(MAKE) copy-up VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE)

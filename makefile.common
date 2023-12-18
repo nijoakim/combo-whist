@@ -7,26 +7,30 @@ VIEW=xdg-open
 
 # Files
 OUT_RULES=../combo-whist-rules-$(VERSION)-$(LANGUAGE).pdf
+OUT_CARDS=../combo-whist-cards-$(VERSION)-$(LANGUAGE).pdf
 TEX=$(wildcard *.tex) $(wildcard ../*.tex) tmp/vars.tex
 SVG=$(wildcard *.svg) $(wildcard ../*.svg)
 LUA=$(wildcard *.lua) $(wildcard ../*.lua)
 
 .PHONY: all
-all: rules.pdf
+all: rules.pdf cards.pdf
 
 .PHONY: clean
 clean:
 	rm -rf tmp/*
 	rm -f  rules.pdf
 	rm -f  rules.synctex.gz
+	rm -f  cards.pdf
+	rm -f  cards.synctex.gz
 
 .PHONY: view
 view: all
 	$(VIEW) $(OUT_RULES) &
 
-.PHONY: copy-down
-copy-down: rules.pdf
-	@cp $< $(OUT_RULES)
+.PHONY: copy-up
+copy-up: $(OUT_RULES) $(OUT_CARDS)
+
+# cards.pdf: rules.pdf
 
 tmp/vars.tex: ../makefile ../makefile.common
 	@mkdir -p tmp
@@ -37,6 +41,10 @@ else
 endif
 	@echo '\\newcommand*{\\varVersion}{$(VERSION_BASE)}' >> tmp/vars.tex
 	@echo '\\newcommand*{\\varLanguage}{$(LANGUAGE)}' >> tmp/vars.tex
+
+# Copying up
+../combo-whist-%-$(VERSION)-$(LANGUAGE).pdf: %.pdf
+	@cp $< $@
 
 %.pdf: $(TEX) $(SVG) $(LUA)
 	@mkdir -p tmp

@@ -1,0 +1,87 @@
+% Copyright 2023 Joakim Nilsson
+% Copyright 2012 Tom Bombadil
+%
+% This file is part of Combo Whist.
+%
+% Combo Whist is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% Combo Whist is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with Combo Whist.  If not, see <http://www.gnu.org/licenses/>.
+
+\input{../tmp/vars.tex}
+
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+
+\newgeometry{left=1cm, right=1cm, top=2cm, bottom=2cm}
+\pagestyle{fancy}
+
+% Dimensions [cm]
+\pgfmathsetmacro{\cardWidth}{6}
+\pgfmathsetmacro{\cardHeight}{8}
+\pgfmathsetmacro{\stripWidth}{0.7}
+\pgfmathsetmacro{\stripPadding}{0.1}
+\pgfmathsetmacro{\textPadding}{0.3}
+\pgfmathsetmacro{\cornerRadius}{0.2}
+
+\newcommand{\card}[7]{%
+	\begin{tikzpicture}
+		% Outline
+		\draw[rounded corners=\cornerRadius*1cm]
+			(0,0)
+			rectangle
+			(\cardWidth, \cardHeight);
+
+		% Right strip
+		\fill[#2, rounded corners=\cornerRadius*1cm]
+			(\cardWidth-\stripPadding, \stripPadding)
+			rectangle
+			(\cardWidth-\stripPadding-\stripWidth, \cardHeight-\stripPadding);
+
+		% Top strip
+		\fill[#2, rounded corners=\cornerRadius*1cm]
+			(\stripPadding, \cardHeight-\stripPadding)
+			rectangle
+			(\cardWidth-\stripPadding, \cardHeight-\stripPadding-\stripWidth);
+
+		% Text at top right
+		\node[below left, black, font=\LARGE]
+			at
+			(\cardWidth-\stripPadding, \cardHeight-1.5*\stripPadding)
+			{#5}; % Rank
+
+		% Text at side
+		\node[rotate=90, above right, black, font=\LARGE]
+			at
+			(\cardWidth-\stripPadding, \stripPadding)
+			{\Large \textsc{#1}}; % Bid type
+
+		% Text at top
+		\node[text width=(1.0*\cardWidth-\stripPadding-\stripWidth-2*\textPadding)*1cm, below right]
+			at
+			(\textPadding, \cardHeight-\textPadding) {
+				{\large \textsc{#3}} \\[0.5em] % Designation
+				#4 \\[0.5em]                   % Rules
+		};
+
+		% Text at bottom
+		\node[text width=(1.0*\cardWidth-\stripPadding-\stripWidth-2*\textPadding)*1cm, above right]
+			at (\textPadding, \textPadding) {
+				#6 % Additional information
+			};
+
+		% Tiny text at bottom left corner
+		\node[above right, black, font=\tiny]
+			at (0, 0)
+			{#7}; %series
+	\end{tikzpicture}
+}

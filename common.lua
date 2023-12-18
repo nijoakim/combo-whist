@@ -19,6 +19,10 @@
 dofile('../special-bids.lua')
 dofile('../standard-bids.lua')
 
+--========
+-- Tables
+--========
+
 function tableItemsStandardBids()
 	for _, bid in ipairs(standard_bids) do
 		tex.print("\\\\ \\midrule")                           -- Caption rule
@@ -63,5 +67,104 @@ function tableItemsSpecialBids()
 
 		tex.print("\\small ".. bid[5]) -- Rules
 		tex.print("")                  -- New line
+	end
+end
+
+--=======
+-- Cards
+--=======
+
+num_cards = 0
+
+function cardsStandardBids(numSeries)
+	for _, bid in ipairs(standard_bids) do
+		for series = 1, numSeries do
+			tex.print("\\card")              -- Command
+			tex.print("{\\standardBidText}") -- Bid type
+			tex.print("{pink}")              -- Color
+			tex.print("{".. bid[1] .."}")    -- Designation
+
+			-- Rules
+			if #bid[6] > 300 then
+				tex.print("{\\scriptsize ".. bid[6] .."}")
+			else
+				tex.print("{".. bid[6] .."}")
+			end
+
+			tex.print("{".. bid[2] .."}") -- Rank
+
+			tex.print("{%")
+				tex.print("\\begin{tabular}{ll}")
+					tex.print("\\textbf{Score:}  & ".. bid[3] .." \\\\") -- Score
+					tex.print("\\textbf{Trump:}  & ".. bid[4] .." \\\\") -- Trump
+					tex.print("\\textbf{Tricks:} & ".. bid[5] .." \\\\") -- Tricks
+				tex.print("\\end{tabular}")
+			tex.print("}")
+
+			tex.print("{".. series .."}") -- Series
+
+			-- Line breaks every third card to avoid exceeding margins
+			if num_cards % 3 == 2 then
+				tex.print("\\\\[1.5em]")
+			end
+			num_cards = num_cards + 1
+		end
+	end
+end
+
+function cardsSpecialBids(numSeries)
+	for _, bid in ipairs(special_bids) do
+		for series = 1,numSeries do
+			tex.print("\\card")             -- Command
+			tex.print("{\\specialBidText}") -- Bid type
+			tex.print("{lime}")             -- Color
+			tex.print("{".. bid[1] .."}")   -- Designation
+
+			-- Rules
+			if #bid[5] > 400 then
+				tex.print("{\\scriptsize ".. bid[5] .."}")
+			else
+				tex.print("{".. bid[5] .."}")
+			end
+
+			-- Rank
+			tex.print("{")
+			if type(bid[2]) == "number" then
+				tex.print("$")
+			end
+			tex.print(bid[2])
+			if type(bid[2]) == "number" then
+				tex.print("$")
+			end
+			tex.print("}")
+
+			tex.print("{%")
+				-- Order
+				if bid[3] then
+					tex.print("\\textbf{Order:} ".. bid[3] .."\\\\[1em]")
+				end
+
+				-- Incompatibility
+				if bid[4] then
+					tex.print{"\\textbf{Incompatibility:} \\raggedright\\textit{\\nobreak%"}
+					for j, incompat in ipairs(bid[4]) do
+						print_str = incompat
+						if j < #(bid[4]) then
+							print_str = print_str ..", "
+						end
+						tex.print(print_str)
+					end
+					tex.print{"}"}
+				end
+			tex.print("}")
+
+			tex.print("{".. series .."}") -- Series
+
+			-- Line breaks every third card to avoid exceeding margins
+			if num_cards % 3 == 2 then
+				tex.print("\\\\[1.5em]")
+			end
+			num_cards = num_cards + 1
+		end
 	end
 end
