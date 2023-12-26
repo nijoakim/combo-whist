@@ -71,7 +71,7 @@ standard_bids = {
 	},
 
 	{
-		"Spel",
+		"Överflöd",
 		2,
 		2,
 		"nej",

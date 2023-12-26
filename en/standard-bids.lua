@@ -71,7 +71,7 @@ standard_bids = {
 	},
 
 	{
-		"Game",
+		"Abundance",
 		2,
 		2,
 		"no",
@@ -125,7 +125,7 @@ standard_bids = {
 	},
 
 	{
-		"Master Game",
+		"Master Abundance",
 		4,
 		3,
 		"no",
