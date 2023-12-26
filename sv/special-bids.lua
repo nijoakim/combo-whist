@@ -21,7 +21,7 @@ special_bids = {
 		-4,
 		1,
 		nil,
-		"Innan handen börjar väljer spelföraren ett valfritt som blir \\emph{rättvisans kort}. När sticket som innehåller rättvisans kort har spelats bestämmer spelföraren vilken spelare som tar hem det."
+		"Innan handen börjar väljer spelföraren ett valfritt som blir \\emph{rättvisans kort}. När sticket som innehåller rättvisans kort har spelats bestämmer spelföraren vilken spelare som tar hem det.",
 	},
 
 	{
@@ -131,7 +131,7 @@ special_bids = {
 		{
 			"Misär",
 			"Mästarmisär",
-			"Noll"
+			"Noll",
 		},
 		"Spelföraren väljer en färg som blir \\emph{pestfärgen}. Spelföraren får inte bli \\emph{förpestad}; det vill säga får inte ta hem enskilt flest pestkort (observera: \\emph{ej} stick), såvida inte denne blir \\emph{hedervärt förpestad} och tar hem hela pestfärgen samt att budet i övrigt går hem, i vilket fall spelföraren tilldelas 1 hedervärt extra-poäng. Såvida spelföraren inte enbart besitter pestkort får denne inte spela ut i pestfärgen före pestfärgen har spelats på annat sätt.",
 	},
@@ -142,7 +142,7 @@ special_bids = {
 		4,
 		{
 			"Ateljé",
-			"Öppen Trumf"
+			"Öppen Trumf",
 		},
 		"Spelföraren spelar med öppen hand. Det vill säga, alla dennes kort visas för samtliga spelare under handens gång.",
 	},

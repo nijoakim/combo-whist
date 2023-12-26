@@ -61,7 +61,7 @@ special_bids = {
 		-1,
 		2,
 		nil,
-		"Before the hand begins, all players send 3 cards in a direction the declarer chooses (to the right, to the left or across)."
+		"Before the hand begins, all players send 3 cards in a direction the declarer chooses (to the right, to the left or across).",
 	},
 
 	{
@@ -127,7 +127,7 @@ special_bids = {
 		{
 			"Misery",
 			"Master Misery",
-			"Zero"
+			"Zero",
 		},
 		"The declarer chooses a suit to be the \\emph{plague suit}. The declarer must not become \\emph{beplagued}; That is, they must not bring home the solitary greatest amount of plague cards (note: \\emph{not} tricks), unless they bring home the whole plague suit as well as fulfill all the other requirements of the combo bid, in which case they become \\emph{honorably beplagued} and score 1 honorable extra point. Unless the declarer holds only plague cards, they must not lead in the plague suit before the plague suit has been played in some other way.",
 	},
