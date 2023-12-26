@@ -12,6 +12,7 @@ Development version
 
 ## Renamed bids
 - The apostrophe and s were removed from bids containing the word "Master's".
+- The standard bids _Precise_ and _Approximate_ were renamed to _Certainty_ and _Uncertainty_, respectively.
 
 Version 1.4.2&mdash;23 May 2021
 ===============================

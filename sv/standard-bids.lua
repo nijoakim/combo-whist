@@ -26,7 +26,7 @@ standard_bids = {
 	},
 
 	{
-		"Ungefär",
+		"Osäkerhet",
 		1,
 		1,
 		"nej",
@@ -89,7 +89,7 @@ standard_bids = {
 	},
 
 	{
-		"Precis",
+		"Säkerhet",
 		3,
 		2,
 		"nej",

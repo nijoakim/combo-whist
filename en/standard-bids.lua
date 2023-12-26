@@ -26,7 +26,7 @@ standard_bids = {
 	},
 
 	{
-		"Approximate",
+		"Uncertainty",
 		1,
 		1,
 		"no",
@@ -89,7 +89,7 @@ standard_bids = {
 	},
 
 	{
-		"Precise",
+		"Certainty",
 		3,
 		2,
 		"no",
