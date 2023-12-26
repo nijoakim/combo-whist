@@ -3,6 +3,7 @@ Development version
 
 ## General changes
 - For the limited winning variant, a player can no longer win at the end of the last of the predetermined number of rounds.
+- Because it may be hard to prove which bids are impossible to complete, the ban of impossible bids was lifted.
 
 ## Bid adjustments
 - The standard bid _Taintless Master's Game_ was removed in favor of a new standard bid, _Taintless Bid_.
