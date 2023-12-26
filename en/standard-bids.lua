@@ -17,7 +17,7 @@
 
 standard_bids = {
 	{
-		"Bid of~Shame",
+		"Misery",
 		0,
 		1,
 		"no",
@@ -80,7 +80,7 @@ standard_bids = {
 	},
 
 	{
-		"Master Bid of~Shame",
+		"Master Misery",
 		3,
 		2,
 		"no",

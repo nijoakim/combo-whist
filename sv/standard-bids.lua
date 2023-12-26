@@ -17,7 +17,7 @@
 
 standard_bids = {
 	{
-		"Skambud",
+		"Misär",
 		0,
 		1,
 		"nej",
@@ -80,7 +80,7 @@ standard_bids = {
 	},
 
 	{
-		"Mästarskambud",
+		"Mästarmisär",
 		3,
 		2,
 		"nej",

@@ -13,6 +13,7 @@ Development version
 ## Renamed bids
 - The apostrophe and s were removed from bids containing the word "Master's".
 - The standard bids _Precise_ and _Approximate_ were renamed to _Certainty_ and _Uncertainty_, respectively.
+- The standard bids _Bid of Shame_ and _Master Bid of Shame_ were renamed to _Misery_ and _Master Misery_ to match terminology in other Whist variants.
 
 Version 1.4.2&mdash;23 May 2021
 ===============================
