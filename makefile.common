@@ -13,7 +13,13 @@ SVG=$(wildcard *.svg) $(wildcard ../*.svg)
 LUA=$(wildcard *.lua) $(wildcard ../*.lua)
 
 .PHONY: all
-all: rules.pdf cards.pdf
+all: rules cards
+
+.PHONY: rules
+rules: rules.pdf
+
+.PHONY: cards
+cards: cards.pdf
 
 .PHONY: clean
 clean:
@@ -27,11 +33,6 @@ clean:
 view: all
 	$(VIEW) $(OUT_RULES) &
 
-.PHONY: copy-up
-copy-up: $(OUT_RULES) $(OUT_CARDS)
-
-# cards.pdf: rules.pdf
-
 tmp/vars.tex: ../makefile ../makefile.common
 	@mkdir -p tmp
 ifeq ($(VERSION),dev)
@@ -41,10 +42,6 @@ else
 endif
 	@echo '\\newcommand*{\\varVersion}{$(VERSION_BASE)}' >> tmp/vars.tex
 	@echo '\\newcommand*{\\varLanguage}{$(LANGUAGE)}' >> tmp/vars.tex
-
-# Copying up
-../combo-whist-%-$(VERSION)-$(LANGUAGE).pdf: %.pdf
-	@cp $< $@
 
 %.pdf: $(TEX) $(SVG) $(LUA)
 	@mkdir -p tmp
