@@ -69,30 +69,30 @@
 	Make a column for each player on the paper. This is done in order to keep track of each player's score and some additional information. When the paper has been prepared, choose a dealer at random.
 
 	\subsection{Deal}
-	A deal consists of two main parts---the \emph{bidding} and the \emph{hand}. Because it should be easier to understand the bidding if the hand has been described already, the hand is described first.
+	A deal consists of two main parts---the \emph{bidding} and the \emph{hand}. Because it should be easier to understand the bidding if the hand is already understood, the hand is described first.
 
-	A deal begins with the dealer dealing 13 cards to each player. Next, the bidding starts, and when it has finished, the hand starts.
+	A deal begins with the dealer dealing 13 cards to each player, whereafter the bidding starts. After the bidding is complete, the hand starts.
 
-	After the hand, players' new scores are recorded and a new deal begins with the next dealer being the player who is seated to the left of the previous dealer.
+	After the hand, players' new scores are recorded, and a new deal begins with the next dealer being the player on the current dealer's left.
 
 	\subsubsection{Hand}
-	The hand plays similarly to how a hand is played in most Whist variants: The player seated to the right of the \emph{declarer}\footnote{The term ``declarer'' is explained in Section~\sectionref{bidding}.} is called \emph{forehand} and leads by playing a card. Next, in a clockwise manner, the other players play one card each. The other players must---if they can---play cards which follow the suit of forehand's card. Otherwise they must discard any card or play a \emph{trump}\footnote{A trump is a card from the trump suit. The trump suit is determined during bidding.}. Unlike in some Whist variants, there is no obligation for a player to play a trump in case they are out of cards in the leading suit.
+	The hand plays similarly to how a hand is played in most Whist variants: The player to the \emph{declarer's}\footnote{The term ``declarer'' is explained in Section~\sectionref{bidding}.} right is called \emph{forehand} and leads by playing a card. Next, in a clockwise manner, the other players play one card each. The other players must---if they can---play cards which follow the suit of forehand's card. Otherwise they must discard any card or play a \emph{trump}\footnote{A trump is a card from the trump suit. The trump suit is determined during bidding.}. Unlike in some Whist variants, there is no obligation for a player to play a trump in case they are out of cards in the leading suit.
 
 	The player who played the highest card in the leading suit brings home the \emph{trick}\footnote{That is, takes all the played and discarded cards and puts them face-down on the table.} unless a trump is played, in which case the player who played the highest trump takes the trick. The player who brought home the last trick leads the next one.
 
 	\subsubsection{Bidding}
 	\label{sec:bidding}
-	In Combo Whist, players make \emph{combo bids}. A combo bid is composed of exactly one standard bid and any number of unique special bids, including zero. The bids have specific rules associated with them which are applied during the hand and during scoring.
+	In Combo Whist, players make \emph{combo bids}. A combo bid is composed of exactly one standard bid and any number (including zero) of unique special bids. The bids have specific rules associated with them, which are applied during the hand and during scoring.
 
-	The players take turns by bidding in a clockwise manner and the player to the left of the dealer makes the first bid. A player can either make a combo bid that ranks higher than the previous combo bid, or pass. A player who passes is out of the bidding and may therefore not make any new bids until the next deal. If all players pass, a \emph{redeal} occurs, where the same dealer deals again.
+	The players take turns by bidding in a clockwise manner and the player to the dealer's left makes the first bid. A player can either make a combo bid that ranks higher than the previous combo bid, or pass. A player who passes is out of the bidding and may therefore not make any new bids until the next deal. If all players pass, a \emph{redeal} occurs, where the same dealer deals again.
 
 	A combo bid's rank is defined as the combined rank of all its constituent standard and special bids. A combo bid must have a rank of at least 1.
 
-	A proposed time limit between bids is 30 seconds, with an extra 60 seconds before the first bid. However for beginners, higher limits or no limits are recommended. A player who does not make a bid within the given time limit, automatically pass. The bidding continues until all players but one have passed. That non-passing player is appointed declarer and the hand begins.
+	A proposed time limit between bids is 30 seconds, with an extra 60 seconds before the first bid. However for beginners, higher limits or no limits are recommended. A player who does not make a bid within the given time limit, passes automatically. The bidding continues until all players but one have passed. That non-passing player is appointed declarer and the hand begins.
 
 	The standard and special bids that are available to combine into a combo bid are listed in the tables in Section~\sectionref{standardBids}, and Section~\sectionref{specialBids}, respectively. The number of tricks to bring home in order to complete a combo bid is listed in the standard bids table in the ``Tricks'' column. A special bid cannot be combined with bids listed in its ``Incompatibility'' column.
 
-	If it is unclear when an event triggered by a bid is supposed to occur, refer to the special bids' ``Priority'' column. The priority number listed in said column decides in what order the events specified by a bid's rules will take place. The bids with the lowest priority numbers go first. All standard bids have a priority number of 0.
+	If it is unclear when an event triggered by a bid is supposed to occur, refer to the special bids' ``Priority'' column. The priority number listed in said column decides in what order the events specified by a bid's rules will take place. The bids with the lowest priority numbers go first. All standard bids have the priority number 0.
 
 	\subsubsection{Scoring}
 	After a hand has been played, the declarer scores a number of points determined by what combo bid was bid and whether it was completed. If the bid was completed, they score as many points as as listed in the ``Score'' column for the standard bid. If the bid was not completed, 2 points are subtracted from the declarer's previous score. A player is allowed to attain a negative score, but if a player has a score below $-5$, they are not allowed to take part in the bidding. However, said players automatically score 1 free point after every deal they participate in (even in the event that no one bids and a redeal occurs).
@@ -102,7 +102,7 @@
 	There are two variants for determining the winner in Combo Whist: \emph{classic} and \emph{limited}.
 
 	\paragraph{Classic:}
-	The winner is the player who first attains or exceeds the \emph{winning score}. The winning score starts at 13, but 1 is subtracted from it every time all players have dealt one deal each---after one \emph{round}. The winning score decreases \emph{after} the score for the final hand has been recorded. This continues until the winning score reaches 1, where it stays until someone wins. A player must win by completing a bid and can therefore not win merely because the winning score decreases. A player can also not win unless they have the solitary highest score.
+	The winner is the player who first attains or exceeds the \emph{winning score}. The winning score starts at 13, but 1 is subtracted from it each time all players have dealt one deal each---after one \emph{round}. The winning score decreases \emph{after} the score for the final hand has been recorded. This continues until the winning score reaches 1, where it stays until someone wins. A player must win by completing a bid and can therefore not win merely because the winning score decreases. A player can also not win unless they have the solitary highest score.
 
 	\paragraph{Limited:}
 	A predetermined number of rounds are first played (one suggestion is 3). After all rounds have been played, the next player wins who completes a bid which results in said player attaining the solitary highest score. To clarify: A player can not win at the end of the last of the predetermined number of rounds.
@@ -112,7 +112,7 @@
 
 	\section{Miscellaneous}
 	\subsection{Rules for more than 4 players}
-	If there are more than 4 players participating in the game, for every deal, all players but 4 sit out; That is, they don't participate in the deal. These are the players seated closest to the right of the dealer.
+	If there are more than 4 players participating in the game, for each deal, all players but 4 \emph{sit out}; That is, they don't participate in the deal. These are the players seated closest to the right of the dealer.
 		
 	\subsection{Talking}
 	Players are allowed to talk on the condition that they don't hint about what cards they have.
