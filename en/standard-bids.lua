@@ -80,21 +80,21 @@ standard_bids = {
 	},
 
 	{
-		"Master Misery",
-		3,
-		2,
-		"no",
-		"see $\\rightarrow$",
-		"The declarer must bring home the least or shared least number of tricks.",
-	},
-
-	{
 		"Certainty",
 		3,
 		2,
 		"no",
 		"see $\\rightarrow$",
 		"The declarer guesses how many tricks they will bring home. They must bring home the guessed number of tricks.",
+	},
+
+	{
+		"Master Misery",
+		3,
+		2,
+		"no",
+		"see $\\rightarrow$",
+		"The declarer must bring home the least or shared least number of tricks.",
 	},
 
 	{
