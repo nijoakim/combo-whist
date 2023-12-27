@@ -125,7 +125,7 @@ standard_bids = {
 	},
 
 	{
-		"Mästarspel",
+		"Mästaröverflöd",
 		4,
 		3,
 		"nej",
