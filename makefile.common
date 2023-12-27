@@ -32,6 +32,7 @@ clean:
 .PHONY: view
 view: all
 	$(VIEW) $(OUT_RULES) &
+	$(VIEW) $(OUT_CARDS) &
 
 tmp/vars.tex: ../makefile ../makefile.common
 	@mkdir -p tmp
