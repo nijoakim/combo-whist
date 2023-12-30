@@ -68,7 +68,7 @@ special_bids = {
 		"Greed",
 		0,
 		nil,
-		nil,
+		{"Taintless bid"},
 		"At the end of the hand, one virtual trick is added to or subtracted from the declarer's stick count in such a way that it disfavors them. If the bid is completed, the declarer scores 1 extra point.",
 	},
 

@@ -68,7 +68,7 @@ special_bids = {
 		"Girighet",
 		0,
 		nil,
-		nil,
+		{"Obesudlat Bud"},
 		"I slutet av spelet läggs ett virtuellt stick till eller dras bort från spelföraren så att det missgynnar denne. Om budet går hem får spelföraren 1 extra-poäng.",
 	},
 
