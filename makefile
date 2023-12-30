@@ -31,7 +31,7 @@ clean:
 	rm -f $(CARDS)
 
 .PHONY: view
-view: rules
+view: rules cards
 	for lang in $(LANGUAGES) ; do \
 		cd $$lang ; \
 		$(MAKE) view VERSION=$(VERSION) VERSION_BASE=$(VERSION_BASE); \

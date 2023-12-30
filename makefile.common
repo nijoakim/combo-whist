@@ -30,7 +30,7 @@ clean:
 	rm -f  cards.synctex.gz
 
 .PHONY: view
-view: all
+view: $(OUT_RULES) $(OUT_CARDS)
 	$(VIEW) $(OUT_RULES) &
 	$(VIEW) $(OUT_CARDS) &
 
