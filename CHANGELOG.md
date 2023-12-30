@@ -1,5 +1,5 @@
-Development version
-===================
+Version 1.5.0&mdash;29 Dec 2023
+===============================
 
 ## General changes
 - For the limited winning variant, a player can no longer win at the end of the last of the predetermined number of rounds.
