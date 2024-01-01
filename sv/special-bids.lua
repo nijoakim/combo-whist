@@ -61,7 +61,7 @@ special_bids = {
 		-1,
 		2,
 		nil,
-		"Före spelet börjar skickar alla spelare 3 kort i en riktning som spelföraren väljer (till höger, till vänster eller tvärs över).",
+		"Före handen börjar skickar alla spelare 3 kort i en riktning som spelföraren väljer (till höger, till vänster eller tvärs över).",
 	},
 
 	{
@@ -69,7 +69,7 @@ special_bids = {
 		0,
 		nil,
 		{"Obesudlat Bud"},
-		"I slutet av spelet läggs ett virtuellt stick till eller dras bort från spelföraren så att det missgynnar denne. Om budet går hem får spelföraren 1 extra-poäng.",
+		"I slutet av handen läggs ett virtuellt stick till eller dras bort från spelföraren så att det missgynnar denne. Om budet går hem får spelföraren 1 extra-poäng.",
 	},
 
 	{
