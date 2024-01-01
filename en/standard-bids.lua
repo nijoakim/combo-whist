@@ -116,21 +116,21 @@ standard_bids = {
 	},
 
 	{
-		"Rank Trump",
-		3,
-		4,
-		"yes",
-		"min. 5",
-		"The non-declarers choose one card each and put them face-down on the table. The cards are then revealed and the declarer swaps one of their cards with one of the revealed cards that ranks the highest or shared highest. The trump suit is that of the chosen card.",
-	},
-
-	{
 		"Master Abundance",
 		4,
 		3,
 		"no",
 		"see $\\rightarrow$",
 		"The declarer must bring home the solitary greatest number of tricks.",
+	},
+
+	{
+		"Rank Trump",
+		4,
+		4,
+		"yes",
+		"min. 5",
+		"The non-declarers choose one card each and put them face-down on the table. The cards are then revealed and the declarer swaps one of their cards with one of the revealed cards that ranks the highest or shared highest. The trump suit is that of the chosen card.",
 	},
 
 	{

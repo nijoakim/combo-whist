@@ -116,15 +116,6 @@ standard_bids = {
 	},
 
 	{
-		"Rangtrumf",
-		3,
-		4,
-		"ja",
-		"min. 5",
-		"Icke-spelförarna väljer ett kort var och lägger dem på bordet med bildsidan nedåt. Korten vänds sedan upp och spelföraren byter ut ett av sina kort mot ett av motspelarnas som är högst eller delat högst. Det valda kortets färg är trumffärgen.",
-	},
-
-	{
 		"Mästaröverflöd",
 		4,
 		3,
@@ -140,6 +131,15 @@ standard_bids = {
 		"nej",
 		0,
 		" -- ",
+	},
+
+	{
+		"Rangtrumf",
+		4,
+		4,
+		"ja",
+		"min. 5",
+		"Icke-spelförarna väljer ett kort var och lägger dem på bordet med bildsidan nedåt. Korten vänds sedan upp och spelföraren byter ut ett av sina kort mot ett av motspelarnas som är högst eller delat högst. Det valda kortets färg är trumffärgen.",
 	},
 
 	{

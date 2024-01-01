@@ -3,6 +3,7 @@ Development version
 
 ## Bid adjustments
 - The special bid _Greed_ is now incompatible with _Taintless Bid_.
+- The standard bid _Rank Trump's_ rank was increased from 3 to 4.
 
 Version 1.5.0&mdash;29 Dec 2023
 ===============================
