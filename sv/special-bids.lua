@@ -21,7 +21,7 @@ special_bids = {
 		-4,
 		1,
 		nil,
-		"Innan handen börjar väljer spelföraren ett valfritt som blir \\emph{rättvisans kort}. När sticket som innehåller rättvisans kort har spelats bestämmer spelföraren vilken spelare som tar hem det.",
+		"Innan handen börjar väljer spelföraren ett valfritt kort som blir \\emph{rättvisans kort}. När sticket som innehåller rättvisans kort har spelats bestämmer spelföraren vilken spelare som tar hem det.",
 	},
 
 	{
