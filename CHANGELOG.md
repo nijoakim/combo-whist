@@ -8,7 +8,7 @@ Version 1.5.0&mdash;29 Dec 2023
 ===============================
 
 ## General changes
-- For the limited winning variant, a player can no longer win at the end of the last of the predetermined number of rounds.
+- For the "limited" winning variant, a player can no longer win at the end of the last of the predetermined number of rounds.
 - Because it may be hard to prove which bids are impossible to complete, the ban of impossible bids was lifted.
 
 ## Bid adjustments
@@ -21,7 +21,7 @@ Version 1.5.0&mdash;29 Dec 2023
 - The apostrophe and s were removed from bids containing the word "Master's".
 - The standard bids _Precise_ and _Approximate_ were renamed to _Certainty_ and _Uncertainty_, respectively.
 - The standard bids _Bid of Shame_ and _Master Bid of Shame_ were renamed to _Misery_ and _Master Misery_ to better match terminology in other Whist variants.
-- The standard bids _Game_ and _Master Game_ were renamed to _Abundance_ and _Abundance_ to better match terminology in other Whist variants.
+- The standard bids _Game_ and _Master Game_ were renamed to _Abundance_ and _Master Abundance_ to better match terminology in other Whist variants.
 
 Version 1.4.2&mdash;23 May 2021
 ===============================
