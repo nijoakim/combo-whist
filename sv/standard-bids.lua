@@ -58,7 +58,7 @@ standard_bids = {
 		1,
 		"ja",
 		"min. 5",
-		"Spelföraren bestämmer trumffärg. Spelföraren får inte spela något trumfkort förrän någon annan spelare spelar trumf (såvida inte spelföraren enbart besitter trumfkort).",
+		"Spelföraren bestämmer trumffärg. Såvida spelföraren inte enbart besitter trumfkort får denne inte spela trumf förrän någon annan spelare har spelat trumf.",
 	},
 
 	{
