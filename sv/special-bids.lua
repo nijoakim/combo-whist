@@ -101,7 +101,7 @@ special_bids = {
 		1,
 		4,
 		{
-			"\\nonTrump",
+			"\\textnormal{\\nonTrumpText}",
 			"Grill",
 			"Öppen Hand",
 		},

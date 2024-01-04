@@ -95,9 +95,9 @@ function cardsStandardBids(numSeries)
 
 			tex.print("{%")
 				tex.print("\\begin{tabular}{ll}")
-					tex.print("\\textbf{Score:}  & ".. bid[3] .." \\\\") -- Score
-					tex.print("\\textbf{Trump:}  & ".. bid[4] .." \\\\") -- Trump
-					tex.print("\\textbf{Tricks:} & ".. bid[5] .." \\\\") -- Tricks
+					tex.print("\\textbf{\\scoreText:}  & ".. bid[3] .." \\\\") -- Score
+					tex.print("\\textbf{\\trumpText:}  & ".. bid[4] .." \\\\") -- Trump
+					tex.print("\\textbf{\\tricksText:} & ".. bid[5] .." \\\\") -- Tricks
 				tex.print("\\end{tabular}")
 			tex.print("}")
 
@@ -139,14 +139,14 @@ function cardsSpecialBids(numSeries)
 			tex.print("}")
 
 			tex.print("{%")
-				-- Order
+				-- Priority
 				if bid[3] then
-					tex.print("\\textbf{Order:} ".. bid[3] .."\\\\[1em]")
+					tex.print("\\textbf{\\priorityText:} ".. bid[3] .."\\\\[1em]")
 				end
 
 				-- Incompatibility
 				if bid[4] then
-					tex.print{"\\textbf{Incompatibility:} \\raggedright\\textit{\\nobreak%"}
+					tex.print{"\\textbf{\\incompatibilityText:} \\raggedright\\textit{\\nobreak%"}
 					for j, incompat in ipairs(bid[4]) do
 						print_str = incompat
 						if j < #(bid[4]) then
