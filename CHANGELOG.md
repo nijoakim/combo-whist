@@ -4,6 +4,8 @@ Development version
 ## Bid adjustments
 - The special bid _Greed_ is now incompatible with _Taintless Bid_.
 - The standard bid _Rank Trump's_ rank was increased from 3 to 4.
+- For the special bid _Mail_, the cards are always sent to the right.
+- For the special bid _Master Mail_, the cards are always sent to the left.
 
 Version 1.5.0&mdash;29 Dec 2023
 ===============================

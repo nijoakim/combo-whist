@@ -61,7 +61,7 @@ special_bids = {
 		-1,
 		2,
 		nil,
-		"Before the hand begins, all players send 3 cards in a direction the declarer chooses (to the right, to the left or across).",
+		"Before the hand begins, all players send 3 cards to the right.",
 	},
 
 	{
@@ -93,7 +93,7 @@ special_bids = {
 		"{1 or 3}",
 		3,
 		nil,
-		"If this bid is combined with a trump bid that is not \\emph{Grill}, its rank is 3, but otherwise it is 1. Before the hand starts, all players but the declarer send 3 cards to the player to the right, skipping over the declarer.",
+		"If this bid is combined with a trump bid that is not \\emph{Grill}, its rank is 3, but otherwise it is 1. Before the hand starts, all players but the declarer send 3 cards to the player to the left, skipping over the declarer.",
 	},
 
 	{
@@ -117,7 +117,7 @@ special_bids = {
 		2,
 		nil,
 		nil,
-		"If the declarer does not complete the bid, the declarer loses two additional points.",
+		"If the declarer does not complete the bid, they lose two additional points.",
 	},
 
 	{

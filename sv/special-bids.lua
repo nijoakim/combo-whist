@@ -61,7 +61,7 @@ special_bids = {
 		-1,
 		2,
 		nil,
-		"Före handen börjar skickar alla spelare 3 kort i en riktning som spelföraren väljer (till höger, till vänster eller tvärs över).",
+		"Före handens början skickar alla spelare 3 kort till höger.",
 	},
 
 	{
@@ -85,7 +85,7 @@ special_bids = {
 		"{1 el. 3}",
 		3,
 		nil,
-		"Om budet budas i kombination med ett trumf-bud som inte är \\emph{Grill} är rangen 3, men annars endast 1. Före handen börjar skickar alla utom spelföraren 3 kort till spelaren till höger (spelföraren hoppas över).",
+		"Om budet budas i kombination med ett trumf-bud som inte är \\emph{Grill} är rangen 3, men annars endast 1. Före handen börjar skickar alla utom spelföraren 3 kort till spelaren till vänster (spelföraren hoppas över).",
 	},
 
 	{
