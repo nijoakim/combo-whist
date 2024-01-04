@@ -1,5 +1,5 @@
-Development version
-===================
+Version 1.5.1&mdash;4 Jan 2024
+==============================
 
 ## Bid adjustments
 - The special bid _Greed_ is now incompatible with _Taintless Bid_.
