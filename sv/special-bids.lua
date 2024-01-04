@@ -21,7 +21,7 @@ special_bids = {
 		-4,
 		1,
 		nil,
-		"Innan handen börjar väljer spelföraren ett valfritt kort som blir \\emph{rättvisans kort}. När sticket som innehåller rättvisans kort har spelats bestämmer spelföraren vilken spelare som tar hem det.",
+		"Före handens början väljer spelföraren ett valfritt kort som blir \\emph{rättvisans kort}. När sticket som innehåller rättvisans kort har spelats bestämmer spelföraren vilken spelare som tar hem det.",
 	},
 
 	{
@@ -85,7 +85,7 @@ special_bids = {
 		"{1 el. 3}",
 		3,
 		nil,
-		"Om budet budas i kombination med ett trumf-bud som inte är \\emph{Grill} är rangen 3, men annars endast 1. Före handen börjar skickar alla utom spelföraren 3 kort till spelaren till vänster (spelföraren hoppas över).",
+		"Om budet budas i kombination med ett trumf-bud som inte är \\emph{Grill} är rangen 3, men annars endast 1. Före handens början skickar alla utom spelföraren 3 kort till spelaren till vänster (spelföraren hoppas över).",
 	},
 
 	{
