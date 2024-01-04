@@ -133,7 +133,7 @@ special_bids = {
 			"Master Misery",
 			"Zero",
 		},
-		"The declarer chooses a suit to be the \\emph{plague suit}. The declarer must not become \\emph{beplagued}; That is, they must not bring home the solitary greatest amount of plague \\emph{cards}, unless they bring home the whole plague suit as well as fulfill all the other requirements of the combo bid, in which case they become \\emph{honorably beplagued} and score 1 honorable extra point. Unless the declarer holds only plague cards, they must not lead in the plague suit before the plague suit has been played in some other way.",
+		"The declarer chooses a suit to be the \\emph{plague suit}. The declarer must not become \\emph{beplagued}; That is, they must not bring home the solitary greatest amount of plague \\emph{cards}, unless they bring home the whole plague suit as well as fulfill all the other requirements of the combo bid, in which case they become \\emph{honorably beplagued} and score 1 honorable extra point. Unless the declarer has no other choice, they must not lead in the plague suit before the plague suit has been played in some other way.",
 	},
 
 	{
