@@ -117,7 +117,7 @@ special_bids = {
 		2,
 		nil,
 		nil,
-		"If the declarer does not complete the bid, 2 additional points are subtracted from their score.",
+		"If the declarer does not complete the bid, the declarer loses two additional points.",
 	},
 
 	{

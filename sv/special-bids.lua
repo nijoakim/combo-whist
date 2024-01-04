@@ -121,7 +121,7 @@ special_bids = {
 		2,
 		nil,
 		nil,
-		"Om budet inte går hem så dras 2 extra-poäng bort från spelförarens poängsumma.",
+		"Om budet inte går hem så dras förlorar spelföraren ytterligare 2 poäng.",
 	},
 
 	{
