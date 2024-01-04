@@ -100,7 +100,11 @@ special_bids = {
 		"Open Trump",
 		1,
 		4,
-		{"\\textnormal{\\nonTrumpText}", "Grill", "Open Hand"},
+		{
+			"\\textnormal{\\nonTrumpText}",
+			"Grill",
+			"Open Hand",
+		},
 		"The declarer must play with open trump cards; That is, all of the declarer’s trump cards must be shown to all players during the hand. If combined with \\emph{Atelier}, the atelier must not hold trump cards.",
 	},
 
