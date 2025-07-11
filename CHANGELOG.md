@@ -1,7 +1,7 @@
 Development version
 ===================
 
-- No changes
+- The helper card size was adjusted to that of standard card decks.
 
 Version 1.5.1&mdash;4 Jan 2024
 ==============================
@@ -37,6 +37,7 @@ Version 1.4.2&mdash;23 May 2021
 ## General changes
 - Instructions on how to deal with unintentional cheating were added.
 - In case of 3 players, the values of the cards to remove increased by one.
+- The optional helper cards were added.
 
 Version 1.4.1&mdash;23 May 2021
 ===============================

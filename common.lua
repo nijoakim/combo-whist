@@ -1,4 +1,4 @@
--- Copyright 2021-2023 Joakim Nilsson
+-- Copyright 2021-2025 Joakim Nilsson
 --
 -- This file is part of Combo Whist.
 --
@@ -85,8 +85,8 @@ function cardsStandardBids(numSeries)
 			tex.print("{".. bid[1] .."}")    -- Designation
 
 			-- Rules
-			if #bid[6] > 300 then
-				tex.print("{\\scriptsize ".. bid[6] .."}")
+			if #bid[6] > 450 then
+				tex.print("{\\footnotesize ".. bid[6] .."}")
 			else
 				tex.print("{".. bid[6] .."}")
 			end
@@ -105,7 +105,7 @@ function cardsStandardBids(numSeries)
 
 			-- Line breaks every third card to avoid exceeding margins
 			if num_cards % 3 == 2 then
-				tex.print("\\\\[1.5em]")
+				tex.print("\\\\[-\\lineskip]")
 			end
 			num_cards = num_cards + 1
 		end
@@ -121,7 +121,7 @@ function cardsSpecialBids(numSeries)
 			tex.print("{".. bid[1] .."}")   -- Designation
 
 			-- Rules
-			if #bid[5] > 400 then
+			if #bid[5] > 500 then
 				tex.print("{\\scriptsize ".. bid[5] .."}")
 			else
 				tex.print("{".. bid[5] .."}")
@@ -162,7 +162,7 @@ function cardsSpecialBids(numSeries)
 
 			-- Line breaks every third card to avoid exceeding margins
 			if num_cards % 3 == 2 then
-				tex.print("\\\\[1.5em]")
+				tex.print("\\\\[-\\lineskip]")
 			end
 			num_cards = num_cards + 1
 		end

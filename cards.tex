@@ -1,4 +1,4 @@
-% Copyright 2023 Joakim Nilsson
+% Copyright 2023-2025 Joakim Nilsson
 % Copyright 2012 Tom Bombadil
 %
 % This file is part of Combo Whist.
@@ -22,12 +22,13 @@
 \usepackage{fancyhdr}
 \usepackage{tikz}
 
-\newgeometry{left=1cm, right=1cm, top=2cm, bottom=2cm}
+\newgeometry{left=9mm, right=9mm, top=15mm, bottom=9mm}
 \pagestyle{fancy}
+\cfoot{} % No page numbers
 
 % Dimensions [cm]
-\pgfmathsetmacro{\cardWidth}{6}
-\pgfmathsetmacro{\cardHeight}{8}
+\pgfmathsetmacro{\cardWidth}{6.35}
+\pgfmathsetmacro{\cardHeight}{8.89}
 \pgfmathsetmacro{\stripWidth}{0.7}
 \pgfmathsetmacro{\stripPadding}{0.1}
 \pgfmathsetmacro{\textPadding}{0.2}
@@ -84,5 +85,6 @@
 			at (0, 0) {
 				#7 % Series
 			};
-	\end{tikzpicture}
+	\end{tikzpicture}%
+	\negthickspace\hspace{-1.4mm}
 }
